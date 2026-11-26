@@ -15,7 +15,7 @@
 - Akış: F0 başlangıç → F1 lore_bible → F2 omurga + motifler + duygu eğrisi → F3 eklemli karakter/mekân kartları → F4 bölüm döngüsü (örgü → blok animatik → ham kareler → animatik) → F5 ses → F6 master → F7 yayın.
 
 ## Açık işler
-1. **F0 soruları** (kullanıcıya soruldu): karakter ve dizi, sezon kapsamı, hedef süre, anlatıcı.
+1. ✅ F0 tamam: Michael Scofield · S1–S4 + The Final Break · ~9 dk · yeni ElevenLabs sesi. Aktif proje: `projeler/michael-scofield/`.
 2. ElevenLabs anahtarlarını kullanıcıdan al → `/home/claude/.secrets/` (ses aşamasına kadar acil değil).
 3. F0 cevabından sonra `projeler/<slug>/` iskeleti (`studyo/sablonlar/proje_iskeleti.md`) ve proje `CLAUDE.md`'si; karaktere özgü "kopyalanmayacak imza tasarımı" sınırı araştırılıp yazılacak.
 4. F1 araştırma + F2 omurga (motif listesi ve duygu eğrisiyle) → kullanıcıya sunum.
