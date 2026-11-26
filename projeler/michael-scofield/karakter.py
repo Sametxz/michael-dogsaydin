@@ -14,9 +14,9 @@ INK = "#15110E"
 PLAN = "#7FE6FF"
 
 # ── karakter özellikleri (yalnız genel öğeler; oyuncu benzerliği yok)
-MICHAEL = dict(skin="#D9A988", hair="#2B2420", iris="#7C9A8E", brow="#2B2420", jaw=1.0, face_len=1.08,
+MICHAEL = dict(skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True)
-MICHAEL_COCUK = dict(MICHAEL, child=True, hair="#3A302A", shirt="#B8563E", shirt_d="#93412F", pants="#3C4A5C",
+MICHAEL_COCUK = dict(MICHAEL, child=True, keskin=False, goz_k=1.0, jaw=1.0, face_len=1.08, hair="#3A302A", shirt="#B8563E", shirt_d="#93412F", pants="#3C4A5C",
                      stripes="#E9D9B8", buzz=False)
 LINCOLN = dict(skin="#C99C7C", hair="#3A322C", iris="#6F7F88", brow="#2A2420", jaw=1.22, face_len=1.0,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True)
@@ -35,11 +35,13 @@ IFADE = {
     "neutral":  (0, 0, 0.15, 0.0, "flat", ""),
 }
 
+KESKIN_KAS = [False]
 def _brow(cx, cy, w, inner, outer, color, toward, thick=6.0):
     """İnce, düz, modern kaş (Ragnar'ın kama kaşı değil)."""
     xi, xo = cx - toward * w * 0.95, cx + toward * w * 1.2
     yi, yo = cy - 17 - inner * 1.3, cy - 18 - outer * 1.3
     mx, my = (xi + xo) / 2, min(yi, yo) - 4
+    if KESKIN_KAS[0]: my = (yi + yo) / 2 - 1.5; yi += 3; yo += 3
     return (f'<path d="M{xi:.1f},{yi:.1f} Q{mx:.1f},{my:.1f} {xo:.1f},{yo:.1f}" stroke="{color}" stroke-width="{thick}" '
             f'fill="none" stroke-linecap="round"/>')
 
@@ -49,6 +51,8 @@ def kafa(spec, view="3q", ifade="odak", look=None):
     child = spec.get("child"); fem = spec.get("female")
     L = spec.get("face_len", 1.0) * (0.9 if child else 1.0); J = spec.get("jaw", 1.0) * (0.85 if child else 1.0)
     bi, bo, lu, ll, mk, extra = IFADE[ifade]
+    KESKIN_KAS[0] = bool(spec.get("keskin"))
+    if spec.get("keskin"): lu = max(lu, 0.38) if mk != "open_s" else lu
     o = []; late = []
     yb = 92 * L  # çene alt
     if view == "front":
@@ -101,7 +105,8 @@ def kafa(spec, view="3q", ifade="odak", look=None):
     lk = 0.3 if look is None else look
     eh = 11.5 if not child else 13.5
     for k, (ex, ey, ew) in enumerate(eyes):
-        o.append(_eye(ex, ey, ew * (1.1 if child else 1), eh * (ew / 18), lu, ll, spec["iris"], lk, sk))
+        gk = spec.get("goz_k", 1.0)
+        o.append(_eye(ex, ey, ew * (1.1 if child else 1) * gk, eh * (ew / 18) * gk * (0.9 if spec.get('keskin') else 1), lu, ll, spec["iris"], lk, sk))
         o.append(f'<path d="M{ex-ew*0.9:.1f},{ey-eh*1.55:.1f} Q{ex:.1f},{ey-eh*2.0:.1f} {ex+ew*0.9:.1f},{ey-eh*1.45:.1f}" stroke="{dk}" stroke-width="2" fill="none" opacity="0.55"/>')
         tw = 1 if k == len(eyes) - 1 else -1
         if view == "front": tw = 1 if ex > 0 else -1
@@ -123,8 +128,14 @@ def kafa(spec, view="3q", ifade="odak", look=None):
     mw = 15 if view == "front" else (13 if view == "3q" else 8)
     if fem: o.append(f'<ellipse cx="{mx}" cy="{my+5:.0f}" rx="{mw*0.8:.1f}" ry="4" fill="#C2786A" opacity="0.7"/>')
     o.append(_mouth(mx, my, mw, mk, sk))
+    if spec.get("keskin") and view != "side":
+        cx0 = 0 if view == "front" else 20
+        late.append(f'<path d="M{cx0+46},{12} Q{cx0+40},{38*L:.0f} {cx0+30},{50*L:.0f}" stroke="{dk}" stroke-width="3" fill="none" opacity="0.7" stroke-linecap="round"/>'
+                    f'<path d="M{cx0-46 if view=="front" else cx0-58},{14} Q{cx0-44 if view=="front" else cx0-54},{36*L:.0f} {cx0-36 if view=="front" else cx0-46},{48*L:.0f}" stroke="{dk}" stroke-width="2.6" fill="none" opacity="0.55" stroke-linecap="round"/>'
+                    f'<path d="M{cx0+12},{yb-14:.0f} Q{cx0+20},{yb-6:.0f} {cx0+28},{yb-16:.0f}" stroke="{dk}" stroke-width="2.4" fill="none" opacity="0.6"/>'
+                    f'<path d="M{mx-mw-6},{my-16} Q{mx-mw-2},{my-6} {mx-mw},{my}" stroke="{dk}" stroke-width="2" fill="none" opacity="0.45"/>')
     if not child and not fem:  # yetişkin erkek: çene hattında hafif sakal gölgesi, düşünce çizgisi
-        o.append(f'<g clip-path="url(#{cid})"><path d="M-70,{40*L:.0f} Q0,{yb+30:.0f} 90,{40*L:.0f} L90,{yb+20:.0f} L-70,{yb+20:.0f} Z" fill="{hair}" opacity="0.12"/></g>')
+        o.append(f'<g clip-path="url(#{cid})"><path d="M-70,{40*L:.0f} Q0,{yb+30:.0f} 90,{40*L:.0f} L90,{yb+20:.0f} L-70,{yb+20:.0f} Z" fill="{hair}" opacity="{0.2 if spec.get('keskin') else 0.12}"/></g>')
         cxb = {"front": 0, "3q": 18, "side": 36}[view]
         late.append(f'<path d="M{cxb+2},-30 v10" stroke="{dk}" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>')
     if extra == "tear":
@@ -213,47 +224,37 @@ def figur(spec, ifade="odak", kol_sol=None, kol_sag=None, eller=("relax", "relax
     return "".join(o)
 
 def turna(s=1.0, isik=0.0, kanat=0.0, kagit="#F7F3EA", golge=True):
-    """Kâğıt turna TEK KAYNAK (v3.1, gerçekçi origami). Merkez (0,0) gövde ortası, sağa bakar.
-    Elmas gövde, ince yukarı boyun ve kuyruk sivrileri, aşağı katlı baş, V açısıyla kalkan iki geniş
-    üçgen kanat (her biri kat iziyle ışık/gölge yüzeyine bölünür), hafif kâğıt dokusu.
-    isik: 0..1 sabah ışığı; kanat: -1..1 kanat çırpma (V açılır/kapanır)."""
-    L = kagit; M = shade(kagit, 0.91); D = shade(kagit, 0.80); DD = shade(kagit, 0.68)
-    lw = 2.4 / max(s, 0.3) ** 0.6; crease = shade(kagit, 0.58)
+    """Kâğıt turna TEK KAYNAK (v4). Klasik origami fotoğrafı açısı: hafif yukarıdan 3/4.
+    Kanatlar iki yana geniş açılır (yakın kanat öne-aşağı, uzak kanat arkaya-yukarı), boyun ve kuyruk
+    ince sivriler olarak kalkar, baş belirgin gagayla aşağı katlanır. Merkez (0,0) gövde ortası, sağa bakar.
+    kanat: -1..1 (yakın kanat aşağı/yukarı çırpar). isik: 0..1 sabah ışığı."""
+    L = kagit; M = shade(kagit, 0.90); D = shade(kagit, 0.79); DD = shade(kagit, 0.66)
+    lw = 2.5 / max(s, 0.3) ** 0.6; crease = shade(kagit, 0.55)
     def pg(pts, fill):
         d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in pts) + " Z"
         return f'<path d="{d}" fill="{fill}" stroke="{INK}" stroke-width="{lw:.2f}" stroke-linejoin="round"/>'
-    def ln(a, b, w=1.1, op=0.75):
+    def ln(a, b, w=1.2, op=0.75):
         return f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{crease}" stroke-width="{w/max(s,0.3)**0.5:.2f}" opacity="{op}"/>'
-    sp = 22 * kanat                                 # V açıklığı
-    fa = (-44 - sp, -112 + 46 * kanat)         # uzak kanat ucu
-    na = (54 + sp, -120 + 50 * kanat)          # yakın kanat ucu
-    o = [f'<g transform="scale({s})">'] + ([f'<ellipse cx="4" cy="48" rx="88" ry="9" fill="#000" opacity="0.22"/>'] if golge else [])
-    # uzak kanat: iki yüz
-    fm = (-4, -8)
-    o += [pg([(-38, 2), fa, fm], DD), pg([fm, fa, (30, -6)], D)]
-    # kuyruk
-    o += [pg([(-24, 0), (-106, -60), (-36, 12)], M), pg([(-24, 0), (-106, -60), (-14, -6)], L)]
-    # gövde elması (ışık sol üstten)
-    o += [pg([(-46, 6), (0, -12), (0, 36)], L), pg([(0, -12), (46, 6), (0, 36)], M),
-          pg([(-46, 6), (0, 36), (-10, 42)], D), pg([(0, 36), (46, 6), (10, 42)], DD)]
-    # boyun + baş
-    o += [pg([(24, 0), (98, -72), (36, 12)], D), pg([(24, 0), (98, -72), (14, -6)], M),
-          pg([(98, -72), (94, -64), (116, -54)], L), pg([(94, -64), (116, -54), (104, -52)], D)]
-    # yakın kanat: iki yüz (ışık + gölge), kat izi
-    nm = (8, -10)
-    o += [pg([(-30, 6), na, nm], M), pg([nm, na, (42, 2)], L), ln(nm, na)]
+    ny = 62 - 70 * kanat           # yakın kanat ucu y (çırpınca yukarı)
+    fy = -58 - 20 * kanat
+    o = [f'<g transform="scale({s})">'] + ([f'<ellipse cx="0" cy="96" rx="96" ry="12" fill="#000" opacity="0.2"/>'] if golge else [])
+    # uzak kanat (arkaya-yukarı açılır): iki yüz
+    o += [pg([(-34, -4), (-40, fy), (6, -14)], D), pg([(-34, -4), (-40, fy), (-62, fy + 22)], DD)]
+    # kuyruk (sol, ince sivri yukarı)
+    o += [pg([(-26, 4), (-118, -54), (-34, 16)], M), pg([(-26, 4), (-118, -54), (-14, -4)], L)]
+    # boyun (sağ, ince sivri yukarı) + baş/gaga (aşağı katlı)
+    o += [pg([(26, 4), (112, -66), (34, 16)], D), pg([(26, 4), (112, -66), (14, -4)], M),
+          pg([(112, -66), (106, -56), (134, -40)], L), pg([(106, -56), (134, -40), (120, -38)], D)]
+    # gövde (sırt elması, yukarıdan görünür)
+    o += [pg([(-36, 6), (0, -16), (0, 24)], L), pg([(0, -16), (36, 6), (0, 24)], M), pg([(-36, 6), (0, 24), (36, 6), (0, 40)], DD)]
+    # yakın kanat (öne-aşağı geniş açılır): iki yüz + kat izi
+    o += [pg([(-30, 12), (28, ny), (4, 18)], M), pg([(4, 18), (28, ny), (40, 10)], L), ln((4, 18), (28, ny))]
     # kat izleri
-    o += [ln((0, -12), (0, 36)), ln((-14, -6), (-106, -60), 0.9, 0.5), ln((14, -6), (98, -72), 0.9, 0.5), ln(fm, fa, 0.9, 0.5)]
-    # kâğıt dokusu: çok ince lifler (yalnız büyük ölçekte)
-    if False:
-        r = random.Random(7)
-        for _ in range(26):
-            x, y = r.uniform(-30, 40), r.uniform(-90, 30)
-            o.append(f'<path d="M{x:.0f},{y:.0f} l{r.uniform(4,10):.0f},{r.uniform(-3,3):.0f}" stroke="{D}" stroke-width="0.6" opacity="0.5"/>')
-    # kenar ışığı ve sabah ışığı
-    hl = "#FFF8DC"
-    o.append(f'<path d="M-30,6 L{na[0]:.0f},{na[1]:.0f} M24,0 L98,-72 M-24,0 L-106,-60 M-46,6 L0,-12" stroke="{hl}" stroke-width="{(1.2+1.6*isik)/max(s,0.3)**0.5:.2f}" opacity="{0.4+0.4*isik:.2f}" stroke-linecap="round"/>')
-    if isik > 0 and golge: o.append(f'<ellipse cx="10" cy="-40" rx="120" ry="90" fill="#FFE9B0" opacity="{0.10*isik:.2f}"/>')
+    o += [ln((0, -16), (0, 24)), ln((-14, -4), (-118, -54), 1.0, 0.5), ln((14, -4), (112, -66), 1.0, 0.5), ln((-34, -4), (-40, fy), 1.0, 0.5)]
+    # kâğıt kenar ışığı
+    hl = "#FFFFFF" if isik == 0 else "#FFF6D6"
+    o.append(f'<path d="M-30,12 L28,{ny:.0f} M26,4 L112,-66 M-26,4 L-118,-54 M-36,6 L0,-16 L36,6" fill="none" stroke="{hl}" stroke-width="{(1.3+1.4*isik)/max(s,0.3)**0.5:.2f}" opacity="{0.55+0.3*isik:.2f}" stroke-linecap="round" stroke-linejoin="round"/>')
+    if isik > 0 and golge: o.append(f'<ellipse cx="0" cy="0" rx="130" ry="80" fill="#FFE9B0" opacity="{0.10*isik:.2f}"/>')
     o.append('</g>')
     return "".join(o)
 

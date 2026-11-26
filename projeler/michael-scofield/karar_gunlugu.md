@@ -43,3 +43,9 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Turna v3.1: elmas gövde, ince boyun ve kuyruk sivrileri, aşağı katlı baş, V açısıyla kalkan geniş üçgen kanatlar (kat iziyle ışık/gölge yüzeyi), sabit kontur kalınlığı, kanat çırpma parametresi, elde tutulurken gölge/hale kapalı. `kartlar/turna_v3.png` (+ R13 kırpması, 120/60/32 px okunurluk).
 - Öz değerlendirme: turna 1. tur kanatlar şerit gibi, taç görünümü, kirli doku → 2. tur geniş üçgen kanatlar, hafif doku → 3. tur liflerin taşması ve kalın sabah ışığı giderildi. Eylem kartı: koşu orta karesi çökük → yeniden kuruldu; elde turnanın gölgesi kaldırıldı.
 - Ders: Origami gibi gerçek nesnelerde siluet önce doğru kurulmalı (kanat = gövde sırtından çıkan geniş üçgen); doku ve ışık ancak siluet okunduktan sonra eklenir. Küçük boyut (32 px) kontrolü siluet hatasını hemen gösterir.
+
+## Tur 6 · 26.11.2026 17:15–17:35 · Turna v4, Michael yüz tipi v2
+- Kullanıcı: turna "ilk bakışta kâğıttan turna olduğu daha anlaşılır olsun"; Michael "başrole biraz daha benzet, benzerlikten çok uzak kalmış".
+- Sınır: oyuncunun yüzü kopyalanmaz (değişmez sınır). Yalnız karakterin genel imza özellikleri güçlendirildi: daha uzun ve köşeli yüz (face_len 1.2, jaw 0.9), elmacık ve çene hatları, dar odaklı açık gözler, düz alçak kaşlar, belirgin sakal gölgesi, koyu kısa kazınmış saç.
+- Turna v4: klasik origami fotoğrafı açısı (hafif üstten 3/4), kanatlar iki yana geniş açık, belirgin katlı baş/gaga, ince boyun ve kuyruk. Hata: kenar ışığı yolunda `fill="none"` yoktu → SVG siyah doldurdu (v3'teki gri lekeler de buydu) → düzeltildi.
+- Ders: SVG'de çizgi olarak düşünülen her `path`'e `fill="none"` yazılır; yoksa açık yollar siyah dolgu üretir. Nesne tanınırlığında açı siluetten önemlidir: nesnenin en çok fotoğraflandığı açı seçilir.
