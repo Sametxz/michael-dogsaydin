@@ -1,0 +1,105 @@
+{
+  "proje": "michael-scofield",
+  "not": "Prolog v1 · ~30 sn · kanca onaylı (omurga v1). Stil B+A: sinematik 2D + plan görüşü (camgöbeği #7FE6FF).",
+  "bolumler": [
+    {
+      "ad": "Prolog · Kapının altındaki ışık",
+      "cekimler": [
+        {
+          "id": "P.01",
+          "anlatim": "Michael Scofield olarak doğsaydın, bir hapishaneyi ezbere bilirdin.",
+          "sure_tahmini": 4.6,
+          "plan": "genis",
+          "duygu": "merak",
+          "duygu_tasiyici": "Gece mavisi içinde tek sıcak projektör ışığı; duvarın plan çizgilerine çözülmesi (bilginin gücü).",
+          "ogeler": [
+            {"ad": "projektor", "kelime": "michael", "giris": "parla", "eylem": "kuleden yanar, duvarı soldan sağa tarar"},
+            {"ad": "duvar", "kelime": "hapishaneyi", "giris": "eylem", "eylem": "taş duvar camgöbeği plan çizgilerine çözülür, koridorlar görünür"},
+            {"ad": "plan_noktalari", "kelime": "ezbere", "giris": "ciz", "eylem": "01–04 numaralı noktalar sırayla yanar, kesik rota çizilir; 'EZBERE' kinetik kelimesi plana çizilir"}
+          ],
+          "kamera": "aşağıdan yukarı tilt (güç) + duvara yavaş itme 1.0 → 1.15",
+          "ikincil": ["projektör ışığında toz", "dikenli tel rüzgârda titrer", "uzakta kule ışığı yanıp söner"],
+          "katmanlar": ["gece gökyüzü 0.05", "uzak kuleler 0.3", "dış duvar 0.7", "dikenli tel 1.0", "ön plan çit 1.4 (bulanık)"],
+          "gecis_sonraki": {"tur": "zoom_icinden", "oge_a": "plan_noktalari", "bag": "Plandaki 01 noktası tek bir hücrenin penceresidir; kamera o noktanın içine dalar ve hücrenin içinde çıkar."},
+          "ses": {"ambiyans": "gece rüzgârı, uzak köpek, elektrik vızıltısı", "efekt": ["projektör şalteri 'michael'", "çizim/kalem hışırtısı 'ezbere'"]}
+        },
+        {
+          "id": "P.02",
+          "anlatim": "Sonra kendini içine kilitlerdin.",
+          "sure_tahmini": 3.0,
+          "plan": "orta",
+          "duygu": "gerilim",
+          "duygu_tasiyici": "Michael'ın kendi eliyle çektiği parmaklıklı kapı; kapanınca yüzüne düşen parmaklık gölgeleri.",
+          "ogeler": [
+            {"ad": "michael", "kelime": "kendini", "giris": "eylem", "eylem": "elini parmaklığa koyar, kapıyı kendi çeker"},
+            {"ad": "kapi", "kelime": "kilitlerdin", "giris": "eylem", "eylem": "kapı çarparak kapanır, kilit dili oturur, parmaklık gölgeleri yüzüne düşer"}
+          ],
+          "eylemler": ["kapı kapanınca kamera hafif sarsılır"],
+          "kamera": "koridordan hücreye bakış; kapı kapanırken hafif geri çekilme + sarsıntı",
+          "ikincil": ["nefes", "floresan titremesi"],
+          "katmanlar": ["koridor arka 0.3", "hücre içi 0.7", "michael 1.0", "parmaklıklar 1.25"],
+          "gecis_sonraki": {"tur": "on_plan_sil", "bag": "Kamera kapının parmaklıklarının arasından geçer; önden kayan parmaklık hücrenin içine, Michael'ın sırtına açılır."},
+          "ses": {"ambiyans": "koridor yankısı", "efekt": ["metal kapı çarpması 'kilitlerdin'", "kilit sesi"]}
+        },
+        {
+          "id": "P.03",
+          "anlatim": "Ve tarihe, haritası teninde yazılı adam olarak geçerdin.",
+          "sure_tahmini": 4.4,
+          "plan": "yakin",
+          "duygu": "merak",
+          "duygu_tasiyici": "Sırttaki özgün dövmenin içinden plan çizgilerinin ışıklanıp tenden yükselmesi; hayranlık.",
+          "ogeler": [
+            {"ad": "dovme", "kelime": "haritası", "giris": "parla", "eylem": "kapı kemeri ve turnaların içindeki plan çizgileri camgöbeği yanar"},
+            {"ad": "plan_cizgileri", "kelime": "teninde", "giris": "yuksel", "eylem": "çizgiler tenden kalkıp havada asılı kalır, hafif döner"},
+            {"ad": "kinetik_harita", "kelime": "adam", "giris": "ciz", "eylem": "'HARİTA' kinetik kelimesi havadaki çizgilerden kurulur"}
+          ],
+          "kamera": "sırta yavaş itme 1.0 → 1.18, hafif sağa kayma",
+          "ikincil": ["nefesle sırt yükselip iner", "havada toz", "plan çizgilerinde ışık nabzı"],
+          "katmanlar": ["hücre duvarı 0.5", "michael sırt 1.0", "havadaki çizgiler 1.2"],
+          "gecis_sonraki": {"tur": "eslesme", "oge_a": "plan_cizgileri", "oge_b": "isik_cizgisi", "bag": "Işıklar sönünce havadaki tek yatay plan çizgisi kalır; aynı çizgi karanlık deponun kapı aralığından sızan ışık çizgisine dönüşür (biçim eşleşmesi, zaman geriye atlar)."},
+          "ses": {"ambiyans": "hücre uğultusu", "efekt": ["elektrik cızırtısı 'haritası'", "yükselen ton 'teninde'"]}
+        },
+        {
+          "id": "P.04",
+          "anlatim": "Ama şu an? On bir yaşındasın. Karanlıktasın.",
+          "sure_tahmini": 5.0,
+          "plan": "detay",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "korku", "kelime": "karanlıktasın"},
+          "duygu_tasiyici": "Bütün ışığın sönüp tek ince ışık çizgisinin kalması; çizginin önünde küçük çocuk ayakkabıları ve titreyen eller.",
+          "ogeler": [
+            {"ad": "isik_cizgisi", "kelime": "ama", "giris": "eylem", "eylem": "her şey söner, yalnız kapı altındaki ince ışık çizgisi kalır"},
+            {"ad": "cocuk_ayak", "kelime": "yaşındasın", "giris": "kay_sol", "eylem": "çizginin önüne iki küçük, yıpranmış ayakkabı ucu girer"},
+            {"ad": "cocuk_yuz", "kelime": "karanlıktasın", "giris": "belir", "eylem": "kamera yukarı kayar; yarısı ışıkta 11 yaş Michael'ın gözleri belirir, korkuyla açılır"}
+          ],
+          "kamera": "yer seviyesinde ışık çizgisinde sabit, sonra yavaşça yukarı tilt çocuğun yüzüne",
+          "ikincil": ["ışık çizgisinde toz zerreleri", "çocuğun nefesi", "ellerde titreme"],
+          "katmanlar": ["karanlık depo 0.3", "kapı 0.6", "ışık çizgisi 0.9", "çocuk 1.0", "ön plan tahta kalas 1.4"],
+          "vurucu": true,
+          "vfx": "'Ama' kelimesinde bütün ışıklar bir anda söner (ters ışık patlaması), ses kesilir",
+          "gecis_sonraki": {"tur": "zoom_icinden", "oge_a": "cocuk_yuz", "bag": "Kamera çocuğun gözüne dalar; gözünün içinden baktığı kapı aralığına, ayrıntıların yanmaya başladığı 'plan görüşü'ne girilir."},
+          "ses": {"ambiyans": "ses çekilir; yalnız uzak bir saat tıkırtısı", "efekt": ["derin bas vuruşu 'ama'", "titrek nefes 'karanlıktasın'"]}
+        },
+        {
+          "id": "P.05",
+          "anlatim": "Ve kapının altından sızan ışığı sayıyorsun.",
+          "sure_tahmini": 4.2,
+          "plan": "yakin",
+          "duygu": "korku",
+          "duygu_donusum": {"hedef": "merak", "kelime": "sayıyorsun"},
+          "duygu_tasiyici": "Korkudan merak/odak dönüşümü: karanlıkta ayrıntılar tek tek camgöbeği yanar; çocuğun gözünde plan yansıması (Michael'ın zihni doğuyor).",
+          "ogeler": [
+            {"ad": "kapi_araligi", "kelime": "kapının", "giris": "eylem", "eylem": "ışık çizgisi hafif genişler, ötesinden gölge geçer"},
+            {"ad": "ayrinti_isiklari", "kelime": "sızan", "giris": "parla", "eylem": "tahta çatlakları, çivi başları, toz zerreleri tek tek camgöbeği yanar"},
+            {"ad": "sayac_rakamlar", "kelime": "sayıyorsun", "giris": "pop", "eylem": "yanan her ayrıntının yanında 01, 02, 03… belirir; çocuğun gözünde camgöbeği yansıma"}
+          ],
+          "kamera": "çocuğun yüzünden ışık çizgisine yavaş itme, sonra çizgiye dalış",
+          "ikincil": ["toz zerreleri süzülür", "çocuğun nefesi yavaşlar"],
+          "katmanlar": ["karanlık 0.2", "kapı ve çatlaklar 0.7", "çocuk 1.0 (yarım siluet)", "toz 1.3"],
+          "gecis_sonraki": {"tur": "maske", "oge_a": "kapi_araligi", "bag": "Işık çizgisi beyaz bir kapıya genişler; kapının açıklığından başlık kartına, oradan Bölüm I'in evinin kapısına geçilir (kapı motifi)."},
+          "ses": {"ambiyans": "saat tıkırtısı + çok hafif yükselen yaylı", "efekt": ["her rakamda küçük tık 'sayıyorsun'"]}
+        }
+      ]
+    }
+  ]
+}
