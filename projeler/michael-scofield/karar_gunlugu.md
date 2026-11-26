@@ -50,3 +50,9 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Turna v4: klasik origami fotoğrafı açısı (hafif üstten 3/4), kanatlar iki yana geniş açık, belirgin katlı baş/gaga, ince boyun ve kuyruk. Hata: kenar ışığı yolunda `fill="none"` yoktu → SVG siyah doldurdu (v3'teki gri lekeler de buydu) → düzeltildi.
 - Ders: SVG'de çizgi olarak düşünülen her `path`'e `fill="none"` yazılır; yoksa açık yollar siyah dolgu üretir. Nesne tanınırlığında açı siluetten önemlidir: nesnenin en çok fotoğraflandığı açı seçilir.
 - Kararlar: Turna v4 → **onaylı, kilitlendi**. Michael → kullanıcı: "benzerlik için 2 ajan çalışsın, hem küçüklüğü hem yetişkin hâli iyileştirilsin, optimal sonuç çıksın, denetçilerden geçsin" → A-Y (yetişkin) ve A-Ç (11 yaş) üretici ajanlar paralel, ardından bağımsız denetçi (D).
+
+## Tur 7 · 26.11.2026 16:26–17:20 · Michael ajan turu (A-Y, A-Ç, denetçi D)
+- Kullanıcı (16:26) oyuncunun iki fotoğrafını "referans görseller" olarak gönderdi → **kullanılmadı**: gerçek kişi fotoğrafından yüz çizmek değişmez sınır; fotoğraflar repoya ve ajanlara verilmedi. Yakınlık yalnız genel imza özellikleriyle.
+- A-Y (yetişkin) v3 → D denetimi: tanınırlık 2/3, çocuk 1,5/3, süreklilik 1/3. Kullanıcı (16:34): "tip benzemiş ama yüz sempatik, çekici durmuyor" → A-Y v4 (yüz %8 kısa, köşeli çene, çizgi gürültüsü yok, catchlight'lı canlı gözler, sıcak 2 ton ten, odak'ta hafif sıcaklık), A-Ç v3 (yetişkinin renk/göz/kaş/burun şablonu ortak, dağınık perçem, tek parça kol).
+- D yeniden denetim: tanınırlık Y 2/3, Ç 2/3; çekicilik Y 2/3, Ç 2,5/3; süreklilik 2,5/3; R1–R13 yok; karar ikisi de "küçük düzeltmeyle uygun". Kalan: sakal gölgesi (imza) hafifçe geri, çocuk sağ kol birleşimi, yetişkinde çene köşesi + hafif elmacık, saç dokusu biraz koyu.
+- Ders: Tanınırlık ile çekicilik ayrı eksenlerdir; tip özellikleri (çizgi, sakal noktası, sert gölge) eklendikçe çekicilik düşebilir → iki ekseni ayrı puanla, imza öğeyi en az görsel gürültüyle ver.
