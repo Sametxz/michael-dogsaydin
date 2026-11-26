@@ -1,0 +1,71 @@
+{
+  "proje": "ornek",
+  "not": "Motor demosunun (motor/ornek/demo.py) dökümü. Her yeni bölüm bu biçimde yazılır ve dokum_kontrol.py'den geçer.",
+  "bolumler": [
+    {
+      "ad": "Prolog",
+      "cekimler": [
+        {
+          "id": "P.01",
+          "anlatim": "Gece. Evinin penceresinde bir ışık yanıyor.",
+          "sure_tahmini": 4.6,
+          "plan": "genis",
+          "duygu": "yalnizlik",
+          "duygu_donusum": {"hedef": "huzur", "kelime": "penceresinde"},
+          "duygu_tasiyici": "Karanlıkta tek sıcak nokta: pencere. Soğuk gece rengi sıcak amber ışıkla kırılıyor.",
+          "ogeler": [
+            {"ad": "ay", "kelime": "gece", "giris": "belir", "eylem": "bulut arkasından sıyrılır"},
+            {"ad": "pencere", "kelime": "penceresinde", "giris": "parla", "eylem": "ışık yanar, çevresine hale yayılır"},
+            {"ad": "duman", "kelime": "yanıyor", "giris": "yuksel", "eylem": "bacadan duman kıvrılır"}
+          ],
+          "kamera": "yavaş itme pencereye (zoom 1.0 → 1.22), sona doğru hızlanır",
+          "ikincil": ["çimen rüzgârda salınır", "yıldızlar titrer", "ay süzülür"],
+          "katmanlar": ["gök 0.05", "ay 0.1", "uzak tepe 0.3", "yakın tepe 0.6", "ev 1.0", "ön plan çimen 1.45 (bulanık)"],
+          "gecis_sonraki": {"tur": "maske", "oge_a": "pencere", "bag": "Pencerenin ışığından içeri girilir: ışığın kaynağı iç mekândaki mum."},
+          "ses": {"ambiyans": "gece rüzgârı, cırcır", "efekt": ["kibrit/alev 'penceresinde'"]}
+        },
+        {
+          "id": "P.02",
+          "anlatim": "İçeride, babanın halkası masada.",
+          "sure_tahmini": 4.4,
+          "plan": "orta",
+          "duygu": "huzur",
+          "duygu_tasiyici": "Mum ışığının titreşimi; halkaya düşen tek sıcak parıltı (kimlik nesnesi).",
+          "ogeler": [
+            {"ad": "mum", "kelime": "içeride", "giris": "belir", "eylem": "alev titrer"},
+            {"ad": "halka", "kelime": "halkası", "giris": "dus", "eylem": "masaya düşer, iki kez seker, ışık yansır"}
+          ],
+          "kamera": "halkaya doğru itme + hafif sağa kayma",
+          "ikincil": ["mum alevi", "ışık titreşimi"],
+          "gecis_sonraki": {"tur": "nesne_tasi", "oge_a": "halka", "oge_b": "halka", "bag": "Halka yıllar boyunca taşınır: masadan fırtınadaki taşa uçar."},
+          "ses": {"ambiyans": "ateş çıtırtısı", "efekt": ["metal tıngırtı 'halkası'"]}
+        }
+      ]
+    },
+    {
+      "ad": "I · Fırtına",
+      "cekimler": [
+        {
+          "id": "1.01",
+          "anlatim": "Yıllar sonra aynı halka savaşa gidiyor.",
+          "sure_tahmini": 4.4,
+          "plan": "orta",
+          "duygu": "huzur",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "savaşa"},
+          "duygu_tasiyici": "Sıcak halka soğuk fırtınada tek renk; şimşekle birlikte dünya soğur.",
+          "vurucu": true,
+          "vfx": "şimşek flaşı + kamera sarsıntısı + yağmur başlar",
+          "ogeler": [
+            {"ad": "halka", "kelime": "halka", "giris": "eylem", "eylem": "taşa oturur, parlar"},
+            {"ad": "simsek", "kelime": "savaşa", "giris": "belir", "eylem": "beyaz flaş"},
+            {"ad": "yagmur", "kelime": "gidiyor", "giris": "belir", "eylem": "yağmur bastırır"}
+          ],
+          "kamera": "zoom 1.25 → 1.0 geri çekilme; 'savaşa'da 0.6 sn sarsıntı",
+          "ikincil": ["dalgalar", "yağmur"],
+          "gecis_sonraki": {"tur": "karart", "bag": "bölüm sonu"},
+          "ses": {"ambiyans": "fırtına, dalga", "efekt": ["gök gürültüsü 'savaşa' (satır arasına kaydırılır)"]}
+        }
+      ]
+    }
+  ]
+}

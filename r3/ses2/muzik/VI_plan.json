@@ -1,0 +1,128 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Ecbert",
+   "positive_local_styles": [
+    "old friends",
+    "melancholic",
+    "warm and sad"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 17480,
+   "lines": []
+  },
+  {
+   "section_name": "The plan",
+   "positive_local_styles": [
+    "secret",
+    "quiet resolve"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8600,
+   "lines": []
+  },
+  {
+   "section_name": "The cross",
+   "positive_local_styles": [
+    "tender",
+    "legacy",
+    "soft"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8120,
+   "lines": []
+  },
+  {
+   "section_name": "Cage",
+   "positive_local_styles": [
+    "grim",
+    "slow march",
+    "dark"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9480,
+   "lines": []
+  },
+  {
+   "section_name": "Ella",
+   "positive_local_styles": [
+    "defiance",
+    "tense drone"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8540,
+   "lines": []
+  },
+  {
+   "section_name": "They will come",
+   "positive_local_styles": [
+    "defiant",
+    "rising",
+    "fate"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6140,
+   "lines": []
+  },
+  {
+   "section_name": "Two ravens",
+   "positive_local_styles": [
+    "release",
+    "transcendent",
+    "swelling drones"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4740,
+   "lines": []
+  },
+  {
+   "section_name": "Farmer to king",
+   "positive_local_styles": [
+    "epic reflective",
+    "full",
+    "lyre theme returns",
+    "horn-like swell"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 10760,
+   "lines": []
+  },
+  {
+   "section_name": "Question",
+   "positive_local_styles": [
+    "open",
+    "resolve",
+    "gentle fade ending"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9840,
+   "lines": []
+  }
+ ]
+}

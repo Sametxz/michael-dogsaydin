@@ -1,0 +1,117 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Wessex",
+   "positive_local_styles": [
+    "new land",
+    "stately"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9567,
+   "lines": []
+  },
+  {
+   "section_name": "Friendship",
+   "positive_local_styles": [
+    "warm",
+    "gentle lyre",
+    "two voices intertwining"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 10010,
+   "lines": []
+  },
+  {
+   "section_name": "Light in water",
+   "positive_local_styles": [
+    "luminous",
+    "spiritual",
+    "soft"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5860,
+   "lines": []
+  },
+  {
+   "section_name": "Floki",
+   "positive_local_styles": [
+    "threat",
+    "dark drone",
+    "tension rising"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8020,
+   "lines": []
+  },
+  {
+   "section_name": "Death",
+   "positive_local_styles": [
+    "stark",
+    "single low hit then silence-like drone"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5640,
+   "lines": []
+  },
+  {
+   "section_name": "Aftermath",
+   "positive_local_styles": [
+    "grief",
+    "shock",
+    "quiet"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4160,
+   "lines": []
+  },
+  {
+   "section_name": "Burial",
+   "positive_local_styles": [
+    "deep mourning",
+    "slow lament",
+    "tagelharpa",
+    "rain mood",
+    "reverent"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 30800,
+   "lines": []
+  },
+  {
+   "section_name": "Pause",
+   "positive_local_styles": [
+    "soft reflective",
+    "gentle ending"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7339,
+   "lines": []
+  }
+ ]
+}

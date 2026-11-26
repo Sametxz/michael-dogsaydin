@@ -1,0 +1,86 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Legend",
+   "positive_local_styles": [
+    "mythic",
+    "rising",
+    "slow frame drum heartbeat",
+    "hopeful horn-like drone"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 21080,
+   "lines": []
+  },
+  {
+   "section_name": "Odin",
+   "positive_local_styles": [
+    "awe",
+    "huge low drone swell",
+    "divine",
+    "slow timpani-like frame drum rolls"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5320,
+   "lines": []
+  },
+  {
+   "section_name": "Belief",
+   "positive_local_styles": [
+    "soft lyre returns",
+    "tender"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4600,
+   "lines": []
+  },
+  {
+   "section_name": "Arm ring",
+   "positive_local_styles": [
+    "proud",
+    "gentle build",
+    "warm strings of tagelharpa"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8340,
+   "lines": []
+  },
+  {
+   "section_name": "Promise",
+   "positive_local_styles": [
+    "resolve",
+    "open fifths",
+    "gentle ending"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7020,
+   "lines": []
+  }
+ ]
+}

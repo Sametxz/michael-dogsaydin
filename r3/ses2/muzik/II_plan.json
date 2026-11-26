@@ -1,0 +1,201 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Bargain",
+   "positive_local_styles": [
+    "neutral",
+    "low pulse"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9790,
+   "lines": []
+  },
+  {
+   "section_name": "Plague",
+   "positive_local_styles": [
+    "grief",
+    "sparse",
+    "fragile lyre",
+    "mourning"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 13250,
+   "lines": []
+  },
+  {
+   "section_name": "Pyre",
+   "positive_local_styles": [
+    "sorrowful",
+    "slow",
+    "ritual drum soft"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7080,
+   "lines": []
+  },
+  {
+   "section_name": "Betrayal",
+   "positive_local_styles": [
+    "dark tension",
+    "brooding"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9167,
+   "lines": []
+  },
+  {
+   "section_name": "Brother",
+   "positive_local_styles": [
+    "conflict",
+    "war drums distant",
+    "heavy"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4820,
+   "lines": []
+  },
+  {
+   "section_name": "Mercy",
+   "positive_local_styles": [
+    "anguish",
+    "release"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6220,
+   "lines": []
+  },
+  {
+   "section_name": "Spared",
+   "positive_local_styles": [
+    "uneasy calm"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6500,
+   "lines": []
+  },
+  {
+   "section_name": "Aslaug",
+   "positive_local_styles": [
+    "mysterious",
+    "seductive soft drone"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 14140,
+   "lines": []
+  },
+  {
+   "section_name": "Farewell",
+   "positive_local_styles": [
+    "heartbreak",
+    "slow lament",
+    "tagelharpa solo"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 28650,
+   "lines": []
+  },
+  {
+   "section_name": "Four years",
+   "positive_local_styles": [
+    "time passing",
+    "steady",
+    "growing power"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 22067,
+   "lines": []
+  },
+  {
+   "section_name": "Ivar",
+   "positive_local_styles": [
+    "tender",
+    "fragile",
+    "aching",
+    "very soft"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 16070,
+   "lines": []
+  },
+  {
+   "section_name": "Little hand",
+   "positive_local_styles": [
+    "heartbreaking",
+    "almost silent",
+    "single sustained notes"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8240,
+   "lines": []
+  },
+  {
+   "section_name": "Prophecy",
+   "positive_local_styles": [
+    "ominous",
+    "low swell",
+    "fate"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 11357,
+   "lines": []
+  },
+  {
+   "section_name": "Horik",
+   "positive_local_styles": [
+    "intrigue",
+    "plucked tension"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9820,
+   "lines": []
+  },
+  {
+   "section_name": "Lies",
+   "positive_local_styles": [
+    "cunning",
+    "dark pulse"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 10480,
+   "lines": []
+  },
+  {
+   "section_name": "King",
+   "positive_local_styles": [
+    "triumphant",
+    "regal",
+    "full drums",
+    "horn-like swell"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5360,
+   "lines": []
+  }
+ ]
+}

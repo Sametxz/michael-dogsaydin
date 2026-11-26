@@ -1,0 +1,817 @@
+[
+ {
+  "out": "/home/claude/r3/bati/ses/a00.wav",
+  "text": "Год семьсот девяносто третий. Ты фермер на берегу фьорда в Каттегате. Тебя зовут Рагнар.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a01.wav",
+  "text": "Здесь правит ярл Харальдсон. Ярл — это владыка края.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a02.wav",
+  "text": "Каждое лето он шлёт своих людей на восток, грабить.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a03.wav",
+  "text": "Что на востоке? Бедные деревни. И ещё более бедные деревни.",
+  "tag": "[dry, amused]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a04.wav",
+  "text": "Ты веришь, что на западе есть богатые земли. Ярл смеётся и запрещает запад.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a05.wav",
+  "text": "Но запад — это открытое море. Ни карты, ни компаса.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a06.wav",
+  "text": "У странника ты берёшь два инструмента. Солнечную доску и солнечный камень.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a07.wav",
+  "text": "Камень показывает солнце даже за тучами. Ты больше не собьёшься с пути.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a08.wav",
+  "text": "Нужен ещё корабль. Его строит лучший друг, Флоки.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a09.wav",
+  "text": "Малость безумен, но гений. Его корабль выдержит океан и пройдёт по рекам.",
+  "tag": "[amused]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a10.wav",
+  "text": "Тайно от ярла ты выходишь в море с горсткой людей.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a11.wav",
+  "text": "В шторм Флоки хохочет. Ты молишься.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a12.wav",
+  "text": "Через несколько дней показывается земля. Англия. Перед тобой монастырь: Линдисфарн.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a13.wav",
+  "text": "У монахов много золота и нет оружия. Этот набег начнёт эпоху викингов.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a14.wav",
+  "text": "Один монах говорит на твоём языке. Его зовут Ательстан.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a15.wav",
+  "text": "Ты не убиваешь его. Берёшь с собой рабом. Этот человек однажды пошатнёт твою веру.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a16.wav",
+  "text": "Хватит. Ты вызываешь ярла на поединок. Щиты смыкаются в круг.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a17.wav",
+  "text": "Выйдет из него только один.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a18.wav",
+  "text": "Ярл падает.",
+  "tag": "[firm]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a19.wav",
+  "text": "Новый ярл Каттегата теперь ты.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a20.wav",
+  "text": "Первым делом ты делишь добычу с людьми.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b00.wav",
+  "text": "В Каттегат приходит чума.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b01.wav",
+  "text": "Первыми она забирает детей.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b02.wav",
+  "text": "Ты держишь за руку дочь Гюду.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b03.wav",
+  "text": "И свеча гаснет.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b04.wav",
+  "text": "Костёр зажигает её мать.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b05.wav",
+  "text": "Ты можешь лишь смотреть.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b06.wav",
+  "text": "Твой брат Ролло по ту сторону, рядом с ярлом Боргом.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b07.wav",
+  "text": "Он не может поднять на тебя оружие.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b08.wav",
+  "text": "А ты не можешь убить его.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b09.wav",
+  "text": "Король Хорик тебе доверяет. И ты ему.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b10.wav",
+  "text": "Вы оба лжёте.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b11.wav",
+  "text": "Но ты лжёшь лучше.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b12.wav",
+  "text": "Теперь ты король.",
+  "tag": "[proud]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n00.wav",
+  "text": "Аслауг дарит тебе ещё одного сына.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n01.wav",
+  "text": "Вы называете его Ивар.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n02.wav",
+  "text": "Но у малыша кривые ножки и кости хрупкие, как стекло.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n03.wav",
+  "text": "Аслауг прижимает его крепко. А ты отводишь глаза.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n04.wav",
+  "text": "В этом мире слабый не выживает. Ты знаешь это лучше всех.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n05.wav",
+  "text": "Ночью, когда все спят, ты забираешь сына из материнских рук.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n06.wav",
+  "text": "Берег реки ледяной.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n07.wav",
+  "text": "Ты поднимаешь клинок.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n08.wav",
+  "text": "Одно движение. И всё.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n09.wav",
+  "text": "Тут крошечная ручка находит твой палец.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n10.wav",
+  "text": "И крепко сжимает.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n11.wav",
+  "text": "Ты не можешь.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n12.wav",
+  "text": "Ты оставляешь его там, в тумане.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n13.wav",
+  "text": "Но мать всегда находит своё дитя.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n14.wav",
+  "text": "И этот ребёнок однажды станет Иваром Бескостным.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n15.wav",
+  "text": "Малыш, которого отец не смог тронуть, заставит дрожать весь мир.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n16.wav",
+  "text": "Ты уносишь его в лес.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n17.wav",
+  "text": "Жизнь размером с твой палец.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n18.wav",
+  "text": "Ты не можешь.",
+  "tag": "[soft, broken]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v00.wav",
+  "text": "Спустя годы ты без предупреждения возвращаешься в Каттегат.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v01.wav",
+  "text": "Твои сыновья уже мужчины.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v02.wav",
+  "text": "«Кто хочет быть королём?» — спрашиваешь ты. Никто не хочет.",
+  "tag": "[quiet, heavy]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v03.wav",
+  "text": "Лишь Ивар встречает тебя с распростёртыми объятиями.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v04.wav",
+  "text": "Однажды ты стоишь под огромным деревом. Ты больше не хочешь жить дальше.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v05.wav",
+  "text": "Но вороны перегрызают верёвку. Боги не отпускают тебя.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v06.wav",
+  "text": "Ты ищешь людей для последнего похода. Приходит один Ивар.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v07.wav",
+  "text": "Шторм поглощает твой флот. Выживаете только вы двое.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k00.wav",
+  "text": "Ательстан теперь твой лучший друг.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k01.wav",
+  "text": "Ночи напролёт вы говорите о богах.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k02.wav",
+  "text": "Ты размышляешь о его Боге, он — о твоих.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k03.wav",
+  "text": "Однажды утром он видит свет в воде.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k04.wav",
+  "text": "И возвращается к прежней вере.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k05.wav",
+  "text": "Флоки считает это предательством.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k06.wav",
+  "text": "Ательстан не бежит. Он заканчивает молитву.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k07.wav",
+  "text": "И Флоки убивает его.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k08.wav",
+  "text": "Когда ты возвращаешься, твой друг лежит на земле.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k09.wav",
+  "text": "Короткий перерыв.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k10.wav",
+  "text": "Какой персонаж родится следующим? Пишите в комментариях.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p0.wav",
+  "text": "Стены тебе не взять.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p1.wav",
+  "text": "Поэтому ты решаешь умереть.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p2.wav",
+  "text": "Все приходят проститься с твоим гробом.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p3.wav",
+  "text": "Ты слышишь всё.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p4.wav",
+  "text": "Шестеро безоружных несут тебя в город.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p5.wav",
+  "text": "Оружие лежит в гробу.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p6.wav",
+  "text": "В церкви ты встаёшь.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p7.wav",
+  "text": "Священники такого в программу не вносили.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p8.wav",
+  "text": "Ворота открываются.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p9.wav",
+  "text": "И ты падаешь в объятия сына.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r00.wav",
+  "text": "Ательстан рассказывал тебе о городе. Париж.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r01.wav",
+  "text": "Остров посреди реки. Вокруг неприступные каменные стены.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r02.wav",
+  "text": "Стены поглощают ваш первый штурм.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r03.wav",
+  "text": "Ты падаешь со стены. Раненый, в горячке.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r04.wav",
+  "text": "Если ворота не открываются, пусть тебя внесут внутрь.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r05.wav",
+  "text": "Ты принимаешь крещение. Потом умираешь. Или кажется, что умираешь.",
+  "tag": "[sly]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r06.wav",
+  "text": "Твои люди вносят гроб в город для христианских похорон.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r07.wav",
+  "text": "В соборе крышка сдвигается. И ты встаёшь.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r08.wav",
+  "text": "Ворота открываются. Париж пал.",
+  "tag": "[triumphant]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r09.wav",
+  "text": "На обратном пути ты говоришь Флоки одно слово. Я знаю.",
+  "tag": "[cold, whispering]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r10.wav",
+  "text": "Но победа пожирает и тебя. Лекарство с Востока.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r11.wav",
+  "text": "Ролло остаётся в Париже. Женится на франкской принцессе.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r12.wav",
+  "text": "Спустя годы ты возвращаешься в Париж. Теперь на стенах твой брат.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r13.wav",
+  "text": "И он побеждает тебя.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p00.wav",
+  "text": "Родись ты Рагнаром Лодброком, ты стал бы первым викингом, поплывшим на запад.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p01.wav",
+  "text": "Потом королём.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p02.wav",
+  "text": "Потом взял бы Париж, встав из собственного гроба.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p03.wav",
+  "text": "И всё это рождается из одного вопроса. Что на западе?",
+  "tag": "[curious, intrigued]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p04.wav",
+  "text": "По вечерам у очага ты рассказываешь детям сказания.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p05.wav",
+  "text": "Говоришь, что твой род восходит к Одину, богу войны и мудрости.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p06.wav",
+  "text": "Может, правда, может, нет. Но ты веришь.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p07.wav",
+  "text": "Твоему сыну Бьорну двенадцать. Сегодня ты ведёшь его на собрание.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p08.wav",
+  "text": "Из рук ярла он получает свой первый браслет.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p09.wav",
+  "text": "Теперь и он викинг. А ты обещаешь показать ему запад.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s00.wav",
+  "text": "Вместе с Иваром ты у дверей старого друга, короля Эгберта.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s01.wav",
+  "text": "Два старых короля. Оба стары, оба устали.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s02.wav",
+  "text": "Ты просишь о последнем одолжении. Выдать тебя королю Элле.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s03.wav",
+  "text": "Ты отправляешь Ивара домой. Шепчешь ему на ухо поручение.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s04.wav",
+  "text": "Месть достанется Эгберту, а не Элле.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s05.wav",
+  "text": "Уходя, ты надеваешь на шею маленького Альфреда крест Ательстана. Он принадлежал его отцу.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s06.wav",
+  "text": "Затем тебя запирают в клетке.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s07.wav",
+  "text": "В пути ты встречаешь Провидца. Говоришь ему, что больше не веришь в богов.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s08.wav",
+  "text": "Король Элла ждёт раскаяния. Ты его не даёшь.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s09.wav",
+  "text": "Тебя бросают в яму со змеями.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s10.wav",
+  "text": "Твои последние слова обращены к сыновьям. Они придут, говоришь ты.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s11.wav",
+  "text": "А в небе два ворона.",
+  "tag": "[hushed, awed]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s12.wav",
+  "text": "Ты родился фермером. Ты умер королём.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s13.wav",
+  "text": "Ты первым отправился на запад. Твои сыновья последуют за тобой.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s14.wav",
+  "text": "Скажи же. Ты сам написал свою судьбу, или боги?",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_0.wav",
+  "text": "Ты возвращаешься с добычей. Но ярл отбирает всё.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_1.wav",
+  "text": "Ведь люди теперь любят тебя. А это пугает ярла.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_2.wav",
+  "text": "Он велит пытать твоего брата Ролло. Пока ты на охоте, его люди громят твою ферму.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K1_0.wav",
+  "text": "Король Хорик посылает тебя к ярлу Боргу торговаться о землях.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K1_1.wav",
+  "text": "Дома Каттегат ждёт болезнь.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_0.wav",
+  "text": "Переговоры срываются.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_1.wav",
+  "text": "Борг обещает твоему брату собственное ярлство.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_2.wav",
+  "text": "Ролло устал жить в твоей тени.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K3_0.wav",
+  "text": "Собрание прощает твоего брата.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K3_1.wav",
+  "text": "В те же дни к твоей двери приходит кое-кто ещё.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_0.wav",
+  "text": "Проходит четыре года.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_1.wav",
+  "text": "Аслауг рожает тебе трёх сыновей. Уббе, Хвитсерк, Сигурд.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_2.wav",
+  "text": "Пока ты в Англии, Борг сжигает Каттегат.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_3.wav",
+  "text": "Ты возвращаешь его. Кара Борга: кровавый орёл.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_4.wav",
+  "text": "В ночь возвращения Аслауг просит тебя подождать три ночи.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_5.wav",
+  "text": "Ты не ждёшь.",
+  "tag": "[cold]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_0.wav",
+  "text": "Хорик боится остаться в твоей тени.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_1.wav",
+  "text": "Он пытается переманить Флоки.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_2.wav",
+  "text": "Флоки рассказывает тебе всё.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_0.wav",
+  "text": "Ты возвращаешься в Англию королём.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_1.wav",
+  "text": "Король Эгберт даёт вам землю.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_2.wav",
+  "text": "Ательстан же разрывается между двумя богами.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v00.wav",
+  "text": "В пути ты встречаешь Аслауг.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v01.wav",
+  "text": "Через несколько месяцев она приходит в твой зал.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v02.wav",
+  "text": "Она носит твоего ребёнка.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v03.wav",
+  "text": "Можешь иметь двух жён, говоришь ты.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v04.wav",
+  "text": "Аслауг соглашается. Лагерта нет.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v05.wav",
+  "text": "Она опоясывается мечом и грузит сундуки на повозку.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v06.wav",
+  "text": "Бьорн решает остаться с тобой.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v07.wav",
+  "text": "Мать целует его и уезжает.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v08.wav",
+  "text": "Потом Бьорн бежит за повозкой.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v09.wav",
+  "text": "Ты его не останавливаешь.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v10.wav",
+  "text": "Просто велишь ему приглядеть за матерью.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v11.wav",
+  "text": "Ты строишь королевство.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v12.wav",
+  "text": "Но теряешь семью.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d0.wav",
+  "text": "Ты никому его не отдаёшь. Несёшь сам.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d1.wav",
+  "text": "К месту, где он молился каждое утро. К верховью водопада.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d2.wav",
+  "text": "Его крест в землю вбиваешь ты сам.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d3.wav",
+  "text": "Он был единственным, кто заставил тебя усомниться в богах.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d4.wav",
+  "text": "И убил его человек твоих же богов.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d5.wav",
+  "text": "Ты бреешь голову.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d6.wav",
+  "text": "Надеваешь на шею его крест.",
+  "tag": "[grieving, quiet]"
+ }
+]

@@ -1,0 +1,2790 @@
+[
+ {
+  "bolum": "prolog",
+  "cekim": "e5h",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "S+0.0",
+    "renk": "#8A1A10"
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 900,
+    "y": 760,
+    "olcek": 2.2
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.3",
+    "alan": [
+     600,
+     100,
+     1400,
+     600
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kanca karesi kontakt sayfasında yok; denetlenemedi. Yangın kıvılcımı/sesi ilk saniyede vurmalı."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p1a",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L0+1.0",
+    "kaynak": [
+     500,
+     250
+    ],
+    "hedef": [
+     1500,
+     180
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar yüzüne"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ragnar kahraman duruşunda, iyi. Gökte kuzgun yok; deniz serpintisi hareketi eklenmeli."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p1b",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     760,
+     700,
+     1160,
+     950
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "tahta doğru yavaş"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Sonra bir kral': Ragnar tahtta çok küçük ve uzak; kral/kahraman hissi yok. Alçak açı ya da tahta yakın plan."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p1c",
+  "evre": 2,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1000,
+     150,
+     1500,
+     500
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "buhurdan"
+   },
+   {
+    "tur": "shake",
+    "at": "L2+0.6",
+    "siddet": 0.4,
+    "sure": 0.4
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Paris 845 karesi: Ragnar'ın evresi 2 olmalı (EVRE tablosu prolog=1). Kapak kayma anı için hafif sarsıntı."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p1d",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L3+0.0",
+    "kaynak": [
+     1500,
+     300
+    ],
+    "hedef": [
+     300,
+     250
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "ufka"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Gün batımı güçlü. Kuzgunlar hareketlenmeli."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p2a",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     760,
+     700,
+     1100,
+     950
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Masal anı: ateş zaten var; çocuklar ocağa bakışla dinlerken kıvılcım."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p2b",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L5+0.3",
+    "kaynak": [
+     900,
+     300
+    ],
+    "hedef": [
+     1700,
+     100
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "flash",
+    "at": "L5+1.0",
+    "renk": "#DDEBFF"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     850,
+     1700,
+     1050
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Odin karesi çok başarılı; şimşek ve kuzgun uçuşu hikâyeyi güçlendirir. Ragnar'ın masalı vurgusu için kısa göz teması yok."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p2c",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     300,
+     300,
+     1500,
+     900
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Belki doğru, belki değil' için Ragnar yarım gülümsemesi."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p3a",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     700,
+     1900,
+     950
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar ve Bjorn'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Meclis karesi iyi (kalkan çemberi, bayraklar)."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p3b",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "L8+0.3",
+    "renk": "#F5C84A"
+   },
+   {
+    "tur": "embers",
+    "at": "L8+0.3",
+    "alan": [
+     760,
+     700,
+     1160,
+     950
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Halka devri güçlü; parıltı vurgusu eklenmeli."
+ },
+ {
+  "bolum": "prolog",
+  "cekim": "p3c",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L9+0.5",
+    "kaynak": [
+     1700,
+     300
+    ],
+    "hedef": [
+     500,
+     200
+    ],
+    "adet": 1
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "gökyüzüne"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Bjorn etiketi 'BJORN', anlatım 'Biyorn' (TTS yazımı); bilinçli mi netleştir."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e5h",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "S+0.0",
+    "renk": "#8A1A10"
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 900,
+    "y": 760,
+    "olcek": 2.2
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.3",
+    "alan": [
+     600,
+     100,
+     1400,
+     600
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Prolog e5h ile aynı kare; tekrar kullanım doğrula."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f1",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     700,
+     300,
+     1300,
+     520
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "L0+1.5",
+    "kaynak": [
+     700,
+     200
+    ],
+    "hedef": [
+     1400,
+     150
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ragnar kadrajın ~%10'u, sıradan çiftçi; yükseliş kahramanı için alçak açı ya da yakın plan. 'Yıl 793' etiketi iyi."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e1",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     700,
+     700,
+     1100,
+     950
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Jarl salonu; Ragnar kadrajda yarı kesik. Düşünce balonu 'BATI?' iyi."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f2",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 190,
+    "y": 260,
+    "olcek": 0.8
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   },
+   {
+    "tur": "push",
+    "at": "L2+0.0",
+    "yon": "kırmızı oklara"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Harita karesi zengin; oklar animasyonla çizilsin."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f3",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "dust",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     700,
+     1920,
+     1000
+    ]
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     800,
+     350,
+     1100,
+     500
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Fakir köy' iyi; keçi iskelet gibi, çizgi film olmasın."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e1b",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kontakt sayfasında ayrı kare yok (e1 takma adı olabilir): Jarl'ın gülüp batıyı yasaklaması görünmüyor. Jarl kahkaha/el sallama jesti."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f4",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "L5+1.2",
+    "renk": "#DDEBFF"
+   },
+   {
+    "tur": "shake",
+    "at": "S+0.0",
+    "siddet": 0.2,
+    "sure": 2.0
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Açık deniz, yalnız küçük gemi: 'harita yok, pusula yok' mesajı net."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f5",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     700,
+     250,
+     1300,
+     700
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Güneş tahtası/taşı tanıtımı iyi."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e2",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "L7+0.5",
+    "renk": "#FFFFFF"
+   },
+   {
+    "tur": "embers",
+    "at": "L7+0.5",
+    "alan": [
+     800,
+     200,
+     1400,
+     700
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Süreklilik: güneş taşı bu karede çıkıyor, açık denizde (f4, e4, f7) kullanıldığı hiçbir karede yok."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e3",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1510,
+    "y": 780,
+    "olcek": 0.6
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1400,
+     500,
+     1650,
+     800
+    ]
+   },
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Floki gemisi: 'nehre de girer' yeteneği görselleşmiyor."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f6",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 450,
+    "y": 300,
+    "olcek": 1.0
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     380,
+     120,
+     560,
+     300
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Gece kaçışı iyi; 'jarl'dan gizli' için sessiz atış gerek yok."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e4",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "L11+0.9",
+    "renk": "#DDEBFF"
+   },
+   {
+    "tur": "shake",
+    "at": "L11+0.9",
+    "siddet": 0.5,
+    "sure": 2.2
+   }
+  ],
+  "oyunculuk": "Floki başını geriye atıp kahkaha atar; Ragnar elleri birleşik dua eder.",
+  "sorun": "Güçlü kare. Gece/gün: f6 gece, e4 fırtına, f7 gündüz: zaman geçişi için ara kare yok."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f7",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     600,
+     1300,
+     800
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "manastıra"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "İngiltere ejderha başı güçlü."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f8",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "embers",
+    "at": "L13+0.5",
+    "alan": [
+     850,
+     300,
+     1250,
+     700
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "haça"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Altar iyi, 'silah yok' keşişi görünmüyor."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e5r",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 780,
+    "y": 780,
+    "olcek": 2.0
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     900,
+     150,
+     1400,
+     500
+    ]
+   },
+   {
+    "tur": "spear",
+    "at": "S+0.5",
+    "kaynak": [
+     300,
+     800
+    ],
+    "hedef": [
+     900,
+     800
+    ],
+    "adet": 1
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Baskın hissi zayıf: keşişler sakin diz çökmüş, Vikingler duruyor. Saldırı hareketi yok."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e6",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   }
+  ],
+  "oyunculuk": "'Onu öldürmüyorsun': Ragnar baltayı indirir, bakışı yumuşar; Atelstan kıpırdamaz.",
+  "sorun": "Atelstan'ın haçı burada tanıtılmalı: yakın plan haç."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f9",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 820,
+    "y": 920,
+    "olcek": 1.5
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     700,
+     1100,
+     950
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Jarl'ı düelloya çağırma: Ragnar kol halkasını havaya kaldırıyor, iyi."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e7",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "çembere"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kalkan çemberi iyi."
+ },
+ {
+  "bolum": "I",
+  "cekim": "f10",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "S+0.0",
+    "renk": "#FFFFFF"
+   },
+   {
+    "tur": "shake",
+    "at": "S+0.0",
+    "siddet": 0.7,
+    "sure": 0.5
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Jarl düşüyor': Jarl diz çökmüş ayakta; düşme/ölüm hareketi yok."
+ },
+ {
+  "bolum": "I",
+  "cekim": "e8",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1270,
+    "y": 900,
+    "olcek": 1.4
+   },
+   {
+    "tur": "embers",
+    "at": "L20+0.0",
+    "alan": [
+     1050,
+     600,
+     1700,
+     900
+    ]
+   },
+   {
+    "tur": "flash",
+    "at": "L20+0.3",
+    "renk": "#F5C84A"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Halkla paylaşmak': yalnızca 3 adam ve sandık var, halk yok. Kalabalık ve altın dağıtımı."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     300,
+     1500,
+     700
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Gyda'ya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Veba görsel olarak okunmuyor: Gyda'da hastalık belirtisi yok."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "smoke",
+    "at": "L3+0.3",
+    "alan": [
+     1560,
+     380,
+     1640,
+     460
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "yakın"
+   }
+  ],
+  "oyunculuk": "'Ve mum sönüyor': Ragnar'ın gözü kapanır, başı eğilir, gözyaşı iner.",
+  "sorun": "Duygusal tepe; mum söndüğünde alev ve ışık gerçekten sönmeli."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d3",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 700,
+    "y": 860,
+    "olcek": 1.8
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     300,
+     500,
+     1300,
+     900
+    ]
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     100,
+     1400,
+     350
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Yakma töreni güçlü. Ragnar'ın yüzü yarım kadrajda."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d4",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "dust",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     850,
+     1700,
+     1050
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Rollo karşı saf iyi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d5",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Rollo'ya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Silah yere bırakılıyor, 'kaldıramıyor' tam okunmuyor."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d6",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 960,
+    "y": 860,
+    "olcek": 1.2
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     700,
+     600,
+     1300,
+     900
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Horik ve Ragnar kadeh/kol: karşılıklı yalan için bakış asimetrisi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d7",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 780,
+    "y": 860,
+    "olcek": 1.2
+   },
+   {
+    "tur": "flash",
+    "at": "L11+0.8",
+    "renk": "#FFFFFF"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Daha iyi yalan söylüyorsun': Ragnar öfkeli, Horik kılıç havada; ton uyumsuz. Ragnar tek yan gülümseme."
+ },
+ {
+  "bolum": "II",
+  "cekim": "d8",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 960,
+    "y": 920,
+    "olcek": 1.6
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   },
+   {
+    "tur": "flash",
+    "at": "L12+1.2",
+    "renk": "#F5C84A"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Artık bir kralsın': Ragnar tahtta çok küçük, taç yok. Yükselişin doruğu zayıf kalıyor."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 560,
+    "y": 880,
+    "olcek": 1.4
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     300,
+     600,
+     800,
+     900
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Arkada düz siyah siluetler (vasat). 'Yolculukta tanışma' karesi yok."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     1150,
+     500,
+     1500,
+     800
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "L4+0.0",
+    "yon": "Lagertha'ya"
+   }
+  ],
+  "oyunculuk": "Lagertha gözlerini kısar, çenesi sertleşir; Aslaug karnına elini koyar.",
+  "sorun": "Üçlü kadraj iyi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_3",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     400,
+     500,
+     700,
+     650
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "arabaya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Lagertha ayrılışı: eşya arabası iyi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_4",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "yüzlere"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Lagertha ve Bjorn kucaklaşması iyi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_5",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ragnar'ın yüzü evre 2 için yaşlı görünüyor."
+ },
+ {
+  "bolum": "II",
+  "cekim": "veda_6",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0",
+    "alan": [
+     1500,
+     150,
+     1850,
+     500
+    ]
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1380,
+    "y": 730,
+    "olcek": 0.9
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kapı ışığı iyi."
+ },
+ {
+  "bolum": "II",
+  "cekim": "ivar_1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 850,
+    "y": 850,
+    "olcek": 1.0
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     600,
+     1100,
+     900
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Bebeğin 'eğri bacakları' görünmüyor (kundak). Bacak ekleme kare."
+ },
+ {
+  "bolum": "II",
+  "cekim": "ivar_2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1500,
+     300,
+     1800,
+     700
+    ]
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Gece: bebeği koynundan alma anı yok."
+ },
+ {
+  "bolum": "II",
+  "cekim": "ivar_3",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "L42+0.0",
+    "renk": "#CFE4FF"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "bıçağa"
+   },
+   {
+    "tur": "shake",
+    "at": "L42+0.0",
+    "siddet": 0.3,
+    "sure": 0.3
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Bıçak ince ve ipten sarkan şey gibi okunuyor; anlaşılır bıçak olmalı."
+ },
+ {
+  "bolum": "II",
+  "cekim": "ivar_4",
+  "evre": 2,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "L43+0.3",
+    "renk": "#FFE9B0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "ele"
+   }
+  ],
+  "oyunculuk": "'Yapamıyorsun': Ragnar yüzü gevşer, gözyaşı iner.",
+  "sorun": "Yüzde derin alın kırışıkları; evre 2'ye göre fazla yaşlı."
+ },
+ {
+  "bolum": "II",
+  "cekim": "ivar_5",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     500,
+     1900,
+     800
+    ]
+   },
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Aslaug'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kemiksiz Ivar payoff karesi yok; n16-n18 satırları çelişiyor."
+ },
+ {
+  "bolum": "III",
+  "cekim": "a1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 800,
+    "y": 780,
+    "olcek": 1.0
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     600,
+     1100,
+     900
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Geceler boyu sohbet için pencere karanlık, zaman uyumlu."
+ },
+ {
+  "bolum": "III",
+  "cekim": "a2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "L3+0.3",
+    "renk": "#E6F4FF"
+   },
+   {
+    "tur": "dust",
+    "at": "L3+0.3",
+    "alan": [
+     900,
+     0,
+     1300,
+     400
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "suya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Işık huzmesi iyi; Atelstan'ın haçı elinden bırakması görünmüyor."
+ },
+ {
+  "bolum": "III",
+  "cekim": "b1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1010,
+    "y": 800,
+    "olcek": 1.0
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "shake",
+    "at": "L5+0.8",
+    "siddet": 0.3,
+    "sure": 0.5
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Floki yalnızca siluet: öfke ve ihanet duygusu yüzsüz."
+ },
+ {
+  "bolum": "III",
+  "cekim": "b2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Atelstan'a"
+   }
+  ],
+  "oyunculuk": "'Atelstan kaçmıyor': gözleri kapalı, hafif tebessüm, haçı kavrar.",
+  "sorun": "Güçlü kare."
+ },
+ {
+  "bolum": "III",
+  "cekim": "b3",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "shake",
+    "at": "L7+0.0",
+    "siddet": 0.9,
+    "sure": 0.4
+   },
+   {
+    "tur": "flash",
+    "at": "L7+0.0",
+    "renk": "#FFFFFF"
+   },
+   {
+    "tur": "flash",
+    "at": "L7+0.3",
+    "renk": "#8A1A10"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Düz bej fon: 'düz renk alan yok' kuralını ihlal ediyor; ölüm vuruşu gösterilmiyor."
+ },
+ {
+  "bolum": "III",
+  "cekim": "b4",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     1000,
+     700,
+     1400,
+     950
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "'Döndüğünde': Ragnar nefesi kesilir, haça bakar, diz çöker.",
+  "sorun": "'Dostun yerde yatıyor' ama Atelstan yok, yerde yalnız haç. Ceset/ayak kadraj kenarında olmalı."
+ },
+ {
+  "bolum": "III",
+  "cekim": "c1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "snow",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "ravens",
+    "at": "L9+0.5",
+    "kaynak": [
+     1400,
+     150
+    ],
+    "hedef": [
+     300,
+     250
+    ],
+    "adet": 1
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "mezara"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Kısa bir ara' ve CTA mezar karesine bindiriliyor; ton çakışması."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p15b",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "S+0.3",
+    "kaynak": [
+     500,
+     230
+    ],
+    "hedef": [
+     1500,
+     180
+    ],
+    "adet": 3
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     650,
+     1500,
+     800
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "şehre"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Paris etiketli kare iyi. Plan PA'da r00 (Atelstan Paris) ve r11 (Rollo prensesle evleniyor) satırları yok; r11 görselsiz."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p15c",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "arrows",
+    "at": "S+0.3",
+    "kaynak": [
+     300,
+     800
+    ],
+    "hedef": [
+     1050,
+     300
+    ],
+    "adet": 10
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1270,
+    "y": 560,
+    "olcek": 1.2
+   },
+   {
+    "tur": "shake",
+    "at": "S+0.4",
+    "siddet": 0.5,
+    "sure": 0.6
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Surlar yutuyor' iyi."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p15d",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "arrows",
+    "at": "S+0.0",
+    "kaynak": [
+     1300,
+     150
+    ],
+    "hedef": [
+     1000,
+     500
+    ],
+    "adet": 3
+   },
+   {
+    "tur": "shake",
+    "at": "L3+0.5",
+    "siddet": 0.8,
+    "sure": 0.4
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Düşüş karesi güçlü."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p15e",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0",
+    "alan": [
+     1000,
+     200,
+     1800,
+     700
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Ateşler içinde' görsel zayıf; bandaj ve ter yok."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p16a",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "X işaretine"
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   }
+  ],
+  "oyunculuk": "Ragnar haritaya sinsi bir bakış atar.",
+  "sorun": "Plan haritası iyi."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p16b1",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "L5+0.8",
+    "renk": "#FFF8DC"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1500,
+     100,
+     1700,
+     400
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Vaftiz karesi iyi."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p16b2",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1000,
+     100,
+     1400,
+     400
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "tabuta"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Tabut başında silahlı adamlar görünüyor ('silahsız' çelişiyor); ten çok canlı."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p16c",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 560,
+    "y": 540,
+    "olcek": 0.6
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "kapıya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Altı adam tabutu taşıyor; sayı belirsiz."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p1c",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1000,
+     100,
+     1500,
+     450
+    ]
+   },
+   {
+    "tur": "shake",
+    "at": "L7+0.1",
+    "siddet": 0.5,
+    "sure": 0.4
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "buhurdan"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Prolog p1c yeniden kullanım; evre 2 ve etiket 'PARİS 845' tutarlı."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p16e",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 130,
+    "y": 800,
+    "olcek": 1.5
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1780,
+    "y": 860,
+    "olcek": 1.5
+   },
+   {
+    "tur": "shake",
+    "at": "L8+0.2",
+    "siddet": 0.8,
+    "sure": 0.8
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Paris düşüyor iyi."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p17",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar yüzüne"
+   },
+   {
+    "tur": "ravens",
+    "at": "S+0.5",
+    "kaynak": [
+     1500,
+     100
+    ],
+    "hedef": [
+     200,
+     200
+    ],
+    "adet": 1
+   },
+   {
+    "tur": "shake",
+    "at": "L9+0.8",
+    "siddet": 0.2,
+    "sure": 0.5
+   }
+  ],
+  "oyunculuk": "'Biliyorum': Ragnar gözlerini kısar, Floki bakışı kaçırır.",
+  "sorun": "Floki yüzünde şüphe/korku eksik."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p18a",
+  "evre": 3,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     100,
+     200,
+     700,
+     700
+    ]
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Evre 3 bekleniyor ama genç ve koyu saçlı; ilaç/bağımlılık okunmuyor."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p18c",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "S+0.0",
+    "kaynak": [
+     150,
+     200
+    ],
+    "hedef": [
+     1700,
+     150
+    ],
+    "adet": 3
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Rollo'ya"
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     600,
+     1700,
+     800
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Rollo ve Frank bayrakları iyi; Ragnar küçük."
+ },
+ {
+  "bolum": "IV",
+  "cekim": "p18d",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 790,
+    "y": 860,
+    "olcek": 1.6
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1290,
+    "y": 860,
+    "olcek": 1.4
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     300,
+     1700,
+     800
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Yanan gemiler güçlü."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k19a",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     1100,
+     300,
+     1700,
+     500
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "L0+1.0",
+    "kaynak": [
+     900,
+     200
+    ],
+    "hedef": [
+     200,
+     150
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Habersizce' ama kalabalık kapıda karşılıyor; çelişki."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k19b",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 960,
+    "y": 800,
+    "olcek": 1.2
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     500,
+     1400,
+     900
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Oğul sıralaması model kartıyla tutarlı."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k19c",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     500,
+     200,
+     1200,
+     700
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "flash",
+    "at": "L2+0.3",
+    "renk": "#F5C84A"
+   }
+  ],
+  "oyunculuk": "'Kimse istemiyor': oğullar bakışlarını kaçırır.",
+  "sorun": "Taç net ve güçlü."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k19d",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     700,
+     200,
+     1200,
+     700
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "İvar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kucak açma iyi."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k20a",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     700,
+     1920,
+     900
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "L4+1.5",
+    "kaynak": [
+     1120,
+     500
+    ],
+    "hedef": [
+     1600,
+     300
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "yukarı"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ragnar çok küçük; ilmik/ip yok, niyet okunmuyor."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k20b",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "ravens",
+    "at": "L5+1.0",
+    "kaynak": [
+     1000,
+     140
+    ],
+    "hedef": [
+     1500,
+     60
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "shake",
+    "at": "L5+1.0",
+    "siddet": 0.4,
+    "sure": 0.3
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ragnar yerde, ip dalda; neden-sonuç belirsiz."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k21a",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     700,
+     1920,
+     900
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "S+0.0",
+    "kaynak": [
+     1500,
+     200
+    ],
+    "hedef": [
+     600,
+     250
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "İvar'a"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "İskelede Ragnar küçük ve broşsuz görünüyor; 'adam arıyorsun' kalabalık yok."
+ },
+ {
+  "bolum": "V",
+  "cekim": "k21b",
+  "evre": 3,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "L7+0.5",
+    "renk": "#DDEBFF"
+   },
+   {
+    "tur": "shake",
+    "at": "L7+0.3",
+    "siddet": 0.7,
+    "sure": 2.0
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Fırtına filonu yutuyor': filo, dalga yok; sakin gün batımı."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k22a",
+  "evre": 4,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "pencere"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "kapıya"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Evre 4 beklenirken sakal hâlâ koyu kahverengi."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k22b",
+  "evre": 4,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 530,
+    "y": 560,
+    "olcek": 1.0
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     400,
+     400,
+     800,
+     600
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "'Yaşlı ve yorgun': Ragnar'ın saç ve sakalı hâlâ koyu."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k22c",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ekbert kadeh dökmesi ile 'son iyilik' bağlantısı zayıf."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k23a",
+  "evre": 4,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "S+0.5",
+    "kaynak": [
+     100,
+     150
+    ],
+    "hedef": [
+     900,
+     100
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "ikiliye"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Evre 4 kırlaşma yok."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k23b",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "flash",
+    "at": "S+0.0",
+    "renk": "#8A1A10"
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ocak"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "yüze"
+   }
+  ],
+  "oyunculuk": "İvar gözlerini kısar, ağzı yamuk gülümser.",
+  "sorun": "Duygu güçlü."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k24",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "dust",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "flash",
+    "at": "L5+1.0",
+    "renk": "#FFE9B0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Alfred'e"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Atelstan'ın haçı Alfred'e takılırken yakın plan yok; kesişte haçı yere düşüren Ragnar'ın nasıl aldığı gösterilmiyor."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k25a",
+  "evre": 4,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "rain",
+    "at": "S+0.0"
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "fener"
+   },
+   {
+    "tur": "shake",
+    "at": "S+0.0",
+    "siddet": 0.3,
+    "sure": 2.0
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kafes karesi; Ragnar silik, evre farkı belirsiz."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k25b",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     200,
+     700,
+     1700,
+     950
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "S+0.0",
+    "kaynak": [
+     600,
+     100
+    ],
+    "hedef": [
+     1500,
+     200
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "mum"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Kâhin yüzsüz; ok."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k26a",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 440,
+    "y": 420,
+    "olcek": 0.6
+   },
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 1470,
+    "y": 430,
+    "olcek": 0.6
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Ella taht karesi iyi."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k26b",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "fire",
+    "at": "S+0.0",
+    "x": 120,
+    "y": 560,
+    "olcek": 1.3
+   },
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     600,
+     700,
+     1300,
+     1000
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Çukurda yılan yok; Ragnar çukurda görünmüyor."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k26c",
+  "evre": 4,
+  "evre_uyumsuz": true,
+  "fx": [
+   {
+    "tur": "dust",
+    "at": "S+0.0",
+    "alan": [
+     400,
+     300,
+     1500,
+     800
+    ]
+   },
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "ışık huzmesi"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "yüze"
+   }
+  ],
+  "oyunculuk": "'Gelecekler': gülümser, gözleri parlar.",
+  "sorun": "Yüz yaşlı değil; saç/sakal koyu, evre 4 ağarmış olmalı."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k26d",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L11+0.3",
+    "kaynak": [
+     700,
+     350
+    ],
+    "hedef": [
+     1500,
+     150
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "flash",
+    "at": "S+0.5",
+    "renk": "#FFF2D0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "gökyüzüne"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "İki kuzgun güçlü ve çukur halkası net."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "f1",
+  "evre": 1,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "Ragnar'a"
+   },
+   {
+    "tur": "ravens",
+    "at": "S+0.0",
+    "kaynak": [
+     700,
+     200
+    ],
+    "hedef": [
+     1400,
+     150
+    ],
+    "adet": 2
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Bati f1 yeniden kullanımı: 'Bir çiftçi olarak doğdun'; anı tonuna alın (sepya)."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "p1b",
+  "evre": 2,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "light_flicker",
+    "at": "S+0.0",
+    "kaynak": "meşale"
+   },
+   {
+    "tur": "embers",
+    "at": "S+0.0",
+    "alan": [
+     760,
+     700,
+     1160,
+     950
+    ]
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Prolog p1b yeniden kullanımı: 'kral olarak öldün'. Ragnar uzak; aynı kısalık sorunu."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k27b",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "smoke",
+    "at": "S+0.0",
+    "alan": [
+     0,
+     750,
+     1920,
+     900
+    ]
+   },
+   {
+    "tur": "ravens",
+    "at": "S+0.5",
+    "kaynak": [
+     1400,
+     120
+    ],
+    "hedef": [
+     400,
+     200
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "gemiye"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Oğullar gemisi iyi; Ragnar'ın boş yeri yok."
+ },
+ {
+  "bolum": "VI",
+  "cekim": "k27c",
+  "evre": 4,
+  "evre_uyumsuz": false,
+  "fx": [
+   {
+    "tur": "ravens",
+    "at": "L14+0.5",
+    "kaynak": [
+     700,
+     230
+    ],
+    "hedef": [
+     1500,
+     150
+    ],
+    "adet": 2
+   },
+   {
+    "tur": "flash",
+    "at": "L14+3.0",
+    "renk": "#FFD9A0"
+   },
+   {
+    "tur": "push",
+    "at": "S+0.0",
+    "yon": "ufka"
+   }
+  ],
+  "oyunculuk": "",
+  "sorun": "Boş manzara; Ragnar'ın silueti yok, sonu zayıf bırakıyor."
+ }
+]

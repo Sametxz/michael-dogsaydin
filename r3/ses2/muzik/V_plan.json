@@ -1,0 +1,93 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Return",
+   "positive_local_styles": [
+    "desolate",
+    "cold wind-like drone",
+    "lonely"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6640,
+   "lines": []
+  },
+  {
+   "section_name": "No heirs",
+   "positive_local_styles": [
+    "bitter",
+    "sparse"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 9680,
+   "lines": []
+  },
+  {
+   "section_name": "The tree",
+   "positive_local_styles": [
+    "despair",
+    "very sparse",
+    "low sustained"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7320,
+   "lines": []
+  },
+  {
+   "section_name": "Ravens",
+   "positive_local_styles": [
+    "fate",
+    "eerie",
+    "gods watching"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6800,
+   "lines": []
+  },
+  {
+   "section_name": "Last voyage",
+   "positive_local_styles": [
+    "grim resolve"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5640,
+   "lines": []
+  },
+  {
+   "section_name": "Storm",
+   "positive_local_styles": [
+    "chaos",
+    "pounding drums",
+    "dark"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6053,
+   "lines": []
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Farmer",
+   "positive_local_styles": [
+    "pastoral",
+    "fjord morning",
+    "solo lyre melody",
+    "calm"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7860,
+   "lines": []
+  },
+  {
+   "section_name": "Jarl",
+   "positive_local_styles": [
+    "stern",
+    "low drone",
+    "restrained"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 10320,
+   "lines": []
+  },
+  {
+   "section_name": "Poor villages",
+   "positive_local_styles": [
+    "light wry tone",
+    "plucked lyre"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 12660,
+   "lines": []
+  },
+  {
+   "section_name": "Open sea",
+   "positive_local_styles": [
+    "uncertain",
+    "wind-like drone",
+    "searching"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4860,
+   "lines": []
+  },
+  {
+   "section_name": "Sun stone",
+   "positive_local_styles": [
+    "wonder",
+    "shimmering",
+    "discovery"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 11640,
+   "lines": []
+  },
+  {
+   "section_name": "Floki's ship",
+   "positive_local_styles": [
+    "craft",
+    "rhythmic woodwork pulse",
+    "playful"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 15740,
+   "lines": []
+  },
+  {
+   "section_name": "Storm",
+   "positive_local_styles": [
+    "dramatic",
+    "pounding drums",
+    "tension",
+    "low strings"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7020,
+   "lines": []
+  },
+  {
+   "section_name": "Land sighted",
+   "positive_local_styles": [
+    "awe",
+    "release",
+    "wide"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6340,
+   "lines": []
+  },
+  {
+   "section_name": "Monastery",
+   "positive_local_styles": [
+    "eerie calm",
+    "hollow drones"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7100,
+   "lines": []
+  },
+  {
+   "section_name": "Athelstan",
+   "positive_local_styles": [
+    "quiet",
+    "curious",
+    "soft lyre",
+    "rain mood"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 12627,
+   "lines": []
+  },
+  {
+   "section_name": "Jarl's greed",
+   "positive_local_styles": [
+    "tension",
+    "dark low drone",
+    "slow menace"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 15260,
+   "lines": []
+  },
+  {
+   "section_name": "Challenge",
+   "positive_local_styles": [
+    "rising tension",
+    "drum heartbeat",
+    "duel"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 12350,
+   "lines": []
+  },
+  {
+   "section_name": "New Jarl",
+   "positive_local_styles": [
+    "triumphant",
+    "proud",
+    "horn-like drones",
+    "warm resolution"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 7890,
+   "lines": []
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "positive_global_styles": [
+  "instrumental",
+  "cinematic underscore",
+  "Nordic folk",
+  "Viking era",
+  "tagelharpa",
+  "kraviklyre lyre",
+  "frame drum",
+  "deep low drones",
+  "sparse arrangement",
+  "warm low end",
+  "leaves space for narration",
+  "slow tempo"
+ ],
+ "negative_global_styles": [
+  "vocals",
+  "lyrics",
+  "singing",
+  "choir words",
+  "electronic",
+  "synth pop",
+  "modern drum kit",
+  "electric guitar",
+  "rap",
+  "busy melody"
+ ],
+ "sections": [
+  {
+   "section_name": "Paris",
+   "positive_local_styles": [
+    "anticipation",
+    "curious"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6233,
+   "lines": []
+  },
+  {
+   "section_name": "Walls",
+   "positive_local_styles": [
+    "epic",
+    "massive",
+    "war drums",
+    "siege"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 8500,
+   "lines": []
+  },
+  {
+   "section_name": "Wounded",
+   "positive_local_styles": [
+    "pain",
+    "slowing",
+    "low"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5980,
+   "lines": []
+  },
+  {
+   "section_name": "Ruse",
+   "positive_local_styles": [
+    "cunning",
+    "sly plucked lyre",
+    "playful tension"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 4080,
+   "lines": []
+  },
+  {
+   "section_name": "False death",
+   "positive_local_styles": [
+    "solemn fake funeral",
+    "hollow"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 18120,
+   "lines": []
+  },
+  {
+   "section_name": "I know",
+   "positive_local_styles": [
+    "cold",
+    "quiet",
+    "betrayal known"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6440,
+   "lines": []
+  },
+  {
+   "section_name": "Drug",
+   "positive_local_styles": [
+    "decay",
+    "woozy drone",
+    "unsettling"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 5747,
+   "lines": []
+  },
+  {
+   "section_name": "Rollo",
+   "positive_local_styles": [
+    "bitter",
+    "brooding"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 6467,
+   "lines": []
+  },
+  {
+   "section_name": "Return",
+   "positive_local_styles": [
+    "dark",
+    "heavy",
+    "defeat looming"
+   ],
+   "negative_local_styles": [],
+   "duration_ms": 10033,
+   "lines": []
+  }
+ ]
+}

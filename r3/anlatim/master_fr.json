@@ -1,0 +1,817 @@
+[
+ {
+  "out": "/home/claude/r3/bati/ses/a00.wav",
+  "text": "Année sept cent quatre-vingt-treize. Tu es fermier au bord du fjord de Kattegat. Ton nom est Ragnar.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a01.wav",
+  "text": "Ici, c'est le jarl Haraldson qui commande. Un jarl, c'est le maître de la région.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a02.wav",
+  "text": "Chaque été, il envoie ses hommes piller à l'est.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a03.wav",
+  "text": "Qu'y a-t-il à l'est ? Des villages pauvres. Et des villages encore plus pauvres.",
+  "tag": "[dry, amused]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a04.wav",
+  "text": "Toi, tu crois à des terres riches à l'ouest. Le jarl rit et interdit l'ouest.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a05.wav",
+  "text": "Mais l'ouest, c'est la haute mer. Ni carte, ni boussole.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a06.wav",
+  "text": "Auprès d'un voyageur, tu obtiens deux outils. La planche solaire et la pierre de soleil.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a07.wav",
+  "text": "La pierre montre le soleil même derrière les nuages. Tu ne te perdras plus.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a08.wav",
+  "text": "Il manque un navire. Ton meilleur ami, Floki, le construit.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a09.wav",
+  "text": "Un peu fou, mais génial. Son navire défie l'océan et remonte aussi les fleuves.",
+  "tag": "[amused]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a10.wav",
+  "text": "À l'insu du jarl, tu prends la mer avec une poignée d'hommes.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a11.wav",
+  "text": "Dans la tempête, Floki éclate de rire. Toi, tu pries.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a12.wav",
+  "text": "Des jours plus tard, la terre apparaît. L'Angleterre. Devant toi, un monastère : Lindisfarne.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a13.wav",
+  "text": "Les moines ont beaucoup d'or et aucune arme. Ce raid ouvrira l'âge des Vikings.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a14.wav",
+  "text": "Un moine parle ta langue. Il s'appelle Athelstan.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a15.wav",
+  "text": "Tu ne le tues pas. Tu l'emmènes comme esclave. Cet homme ébranlera un jour ta foi.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a16.wav",
+  "text": "Ça suffit. Tu défies le jarl en duel. Un cercle de boucliers se forme.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a17.wav",
+  "text": "Un seul en sortira.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a18.wav",
+  "text": "Le jarl tombe.",
+  "tag": "[firm]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a19.wav",
+  "text": "Le nouveau jarl de Kattegat, c'est toi.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bati/ses/a20.wav",
+  "text": "Ta première décision : partager le butin avec le peuple.",
+  "tag": "[storytelling, dry wit]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b00.wav",
+  "text": "La peste frappe Kattegat.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b01.wav",
+  "text": "Elle emporte d'abord les enfants.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b02.wav",
+  "text": "Tu tiens la main de ta fille Gyda.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b03.wav",
+  "text": "Et la bougie s'éteint.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b04.wav",
+  "text": "Sa mère allume le bûcher.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b05.wav",
+  "text": "Toi, tu ne peux que regarder.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b06.wav",
+  "text": "Ton frère Rollo est dans l'autre camp, aux côtés du jarl Borg.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b07.wav",
+  "text": "Il ne peut pas lever son arme contre toi.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b08.wav",
+  "text": "Et toi, tu ne peux pas le tuer.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b09.wav",
+  "text": "Le roi Horik te fait confiance. Et toi, à lui.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b10.wav",
+  "text": "Vous mentez tous les deux.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b11.wav",
+  "text": "Mais tu mens mieux.",
+  "tag": "[somber]"
+ },
+ {
+  "out": "/home/claude/r3/bedel/ses/b12.wav",
+  "text": "Te voilà roi.",
+  "tag": "[proud]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n00.wav",
+  "text": "Aslaug te donne un autre fils.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n01.wav",
+  "text": "Vous l'appelez Ivar.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n02.wav",
+  "text": "Mais le bébé a les jambes tordues, les os fragiles comme du verre.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n03.wav",
+  "text": "Aslaug le serre fort. Toi, tu détournes les yeux.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n04.wav",
+  "text": "Dans ce monde, le faible ne survit pas. Tu le sais mieux que quiconque.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n05.wav",
+  "text": "Cette nuit-là, tandis que tous dorment, tu prends ton fils des bras de sa mère.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n06.wav",
+  "text": "La berge du fleuve est glaciale.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n07.wav",
+  "text": "Tu lèves la lame.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n08.wav",
+  "text": "Un seul geste. C'est tout.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n09.wav",
+  "text": "Puis une minuscule main trouve ton doigt.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n10.wav",
+  "text": "Et le serre fort.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n11.wav",
+  "text": "Tu n'y arrives pas.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n12.wav",
+  "text": "Tu le laisses là, dans la brume.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n13.wav",
+  "text": "Mais une mère retrouve toujours son enfant.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n14.wav",
+  "text": "Et cet enfant sera un jour Ivar le Désossé.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n15.wav",
+  "text": "Le bébé que son père n'a pas pu frapper fera trembler le monde entier.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n16.wav",
+  "text": "Tu l'emmènes dans la forêt.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n17.wav",
+  "text": "Une vie grande comme ton doigt.",
+  "tag": "[tender, sad]"
+ },
+ {
+  "out": "/home/claude/r3/ivar2/ses/n18.wav",
+  "text": "Tu n'y arrives pas.",
+  "tag": "[soft, broken]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v00.wav",
+  "text": "Des années plus tard, tu reviens à Kattegat sans prévenir.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v01.wav",
+  "text": "Tes fils sont des hommes maintenant.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v02.wav",
+  "text": "« Qui veut être roi ? », demandes-tu. Personne.",
+  "tag": "[quiet, heavy]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v03.wav",
+  "text": "Seul Ivar t'ouvre les bras.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v04.wav",
+  "text": "Un jour, tu te tiens sous un arbre immense. Tu ne veux plus continuer.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v05.wav",
+  "text": "Mais les corbeaux rongent la corde. Les dieux ne te lâchent pas.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v06.wav",
+  "text": "Tu cherches des hommes pour un dernier voyage. Seul Ivar vient.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kayip/ses/v07.wav",
+  "text": "La tempête engloutit ta flotte. Vous êtes les seuls survivants.",
+  "tag": "[weary, sad]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k00.wav",
+  "text": "Athelstan est maintenant ton meilleur ami.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k01.wav",
+  "text": "Des nuits entières, vous parlez des dieux.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k02.wav",
+  "text": "Tu t'interroges sur son Dieu, lui sur les tiens.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k03.wav",
+  "text": "Un matin, il voit une lumière dans l'eau.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k04.wav",
+  "text": "Et il revient à sa foi d'origine.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k05.wav",
+  "text": "Floki y voit une trahison.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k06.wav",
+  "text": "Athelstan ne fuit pas. Il termine sa prière.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k07.wav",
+  "text": "Et Floki le tue.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k08.wav",
+  "text": "À ton retour, ton ami gît à terre.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k09.wav",
+  "text": "Une courte pause.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/kesis/ses/k10.wav",
+  "text": "Quel personnage doit naître ensuite ? Dis-le en commentaire.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p0.wav",
+  "text": "Tu ne peux pas franchir les remparts.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p1.wav",
+  "text": "Alors tu décides de mourir.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p2.wav",
+  "text": "Tous viennent dire adieu à ton cercueil.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p3.wav",
+  "text": "Tu entends tout.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p4.wav",
+  "text": "Six hommes sans armes te portent en ville.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p5.wav",
+  "text": "Les armes sont dans le cercueil.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p6.wav",
+  "text": "À l'église, tu te lèves.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p7.wav",
+  "text": "Les prêtres ne l'avaient pas prévu au programme.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p8.wav",
+  "text": "Les portes s'ouvrent.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/p9.wav",
+  "text": "Et tu t'effondres dans les bras de ton fils.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r00.wav",
+  "text": "Athelstan t'avait parlé d'une ville. Paris.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r01.wav",
+  "text": "Une île au milieu du fleuve. Autour, d'infranchissables murailles de pierre.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r02.wav",
+  "text": "Les remparts engloutissent votre premier assaut.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r03.wav",
+  "text": "Tu tombes du rempart. Blessé, brûlant de fièvre.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r04.wav",
+  "text": "Si la porte ne s'ouvre pas, fais-toi porter à l'intérieur.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r05.wav",
+  "text": "Tu te fais baptiser. Puis tu meurs. Ou presque.",
+  "tag": "[sly]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r06.wav",
+  "text": "Tes hommes portent ton cercueil en ville pour des obsèques chrétiennes.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r07.wav",
+  "text": "Dans la cathédrale, le couvercle glisse. Et tu te lèves.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r08.wav",
+  "text": "Les portes s'ouvrent. Paris tombe.",
+  "tag": "[triumphant]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r09.wav",
+  "text": "Au retour, tu dis un seul mot à Floki. Je sais.",
+  "tag": "[cold, whispering]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r10.wav",
+  "text": "Mais la victoire te dévore aussi. Un remède venu d'Orient.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r11.wav",
+  "text": "Rollo reste à Paris. Il épouse une princesse franque.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r12.wav",
+  "text": "Des années plus tard, tu reviens à Paris. Cette fois, ton frère est sur les remparts.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/paris/ses/r13.wav",
+  "text": "Et il te bat.",
+  "tag": "[tense, storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p00.wav",
+  "text": "Né Ragnar Lothbrok, tu serais le premier Viking à voguer vers l'ouest.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p01.wav",
+  "text": "Puis un roi.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p02.wav",
+  "text": "Puis tu prendrais Paris, en te levant de ton propre cercueil.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p03.wav",
+  "text": "Et tout naît d'une seule question. Qu'y a-t-il à l'ouest ?",
+  "tag": "[curious, intrigued]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p04.wav",
+  "text": "La nuit, près du foyer, tu racontes des histoires à tes enfants.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p05.wav",
+  "text": "Tu dis que ta lignée remonte à Odin, dieu de la guerre et de la sagesse.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p06.wav",
+  "text": "Peut-être vrai, peut-être pas. Mais tu y crois.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p07.wav",
+  "text": "Ton fils Bjorn a douze ans. Aujourd'hui, tu l'emmènes à l'assemblée.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p08.wav",
+  "text": "Des mains du jarl, il reçoit son premier bracelet.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/prolog/ses/p09.wav",
+  "text": "Le voilà Viking lui aussi. Et tu promets de lui montrer l'ouest.",
+  "tag": "[epic, measured]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s00.wav",
+  "text": "Avec Ivar, tu te tiens à la porte de ton vieil ami, le roi Ecbert.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s01.wav",
+  "text": "Deux vieux rois. Tous deux âgés, tous deux las.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s02.wav",
+  "text": "Tu lui demandes une dernière faveur. Qu'il te livre au roi Aelle.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s03.wav",
+  "text": "Tu renvoies Ivar chez lui. Tu lui souffles une mission à l'oreille.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s04.wav",
+  "text": "Leur vengeance frappera Ecbert, pas Aelle.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s05.wav",
+  "text": "En partant, tu passes la croix d'Athelstan au cou du petit Alfred. Elle était à son père.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s06.wav",
+  "text": "Puis on t'enferme dans une cage.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s07.wav",
+  "text": "Sur la route, tu croises le Devin. Tu lui dis que tu ne crois plus aux dieux.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s08.wav",
+  "text": "Le roi Aelle attend ton repentir. Tu ne le donnes pas.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s09.wav",
+  "text": "Ils te jettent dans une fosse remplie de serpents.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s10.wav",
+  "text": "Tes dernières paroles sont pour tes fils. Ils viendront, dis-tu.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s11.wav",
+  "text": "Et dans le ciel, deux corbeaux.",
+  "tag": "[hushed, awed]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s12.wav",
+  "text": "Né fermier. Mort roi.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s13.wav",
+  "text": "Tu es allé à l'ouest le premier. Tes fils te suivront.",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/son/ses/s14.wav",
+  "text": "Dis-moi. As-tu écrit ton destin, ou bien les dieux ?",
+  "tag": "[solemn]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_0.wav",
+  "text": "Tu reviens avec le butin. Mais le jarl confisque tout.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_1.wav",
+  "text": "Car le peuple t'aime maintenant. Et cela effraie le jarl.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K0_2.wav",
+  "text": "Il fait torturer ton frère Rollo. Pendant que tu chasses, ses hommes attaquent ta ferme.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K1_0.wav",
+  "text": "Le roi Horik t'envoie négocier des terres avec le jarl Borg.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K1_1.wav",
+  "text": "À ton retour, une maladie attend Kattegat.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_0.wav",
+  "text": "La négociation échoue.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_1.wav",
+  "text": "Borg promet à ton frère un jarlat bien à lui.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K2_2.wav",
+  "text": "Rollo est las de vivre dans ton ombre.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K3_0.wav",
+  "text": "L'assemblée pardonne à ton frère.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K3_1.wav",
+  "text": "Ces mêmes jours, quelqu'un d'autre se présente à ta porte.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_0.wav",
+  "text": "Quatre ans passent.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_1.wav",
+  "text": "Aslaug te donne trois fils. Ubbe, Hvitserk, Sigurd.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_2.wav",
+  "text": "Pendant que tu es en Angleterre, Borg incendie Kattegat.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_3.wav",
+  "text": "Tu le reprends. Le châtiment de Borg : l'aigle de sang.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_4.wav",
+  "text": "La nuit de ton retour, Aslaug te demande d'attendre trois nuits.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K4_5.wav",
+  "text": "Tu n'attends pas.",
+  "tag": "[cold]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_0.wav",
+  "text": "Horik craint de rester dans ton ombre.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_1.wav",
+  "text": "Il tente de rallier Floki à sa cause.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K5_2.wav",
+  "text": "Floki te raconte tout.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_0.wav",
+  "text": "Tu retournes en Angleterre en roi.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_1.wav",
+  "text": "Le roi Ecbert vous donne des terres.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/tahta/ses/K6_2.wav",
+  "text": "Athelstan, lui, reste écartelé entre deux dieux.",
+  "tag": "[storytelling]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v00.wav",
+  "text": "Lors d'un voyage, tu rencontres Aslaug.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v01.wav",
+  "text": "Quelques mois plus tard, elle arrive dans ta salle.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v02.wav",
+  "text": "Elle porte ton enfant.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v03.wav",
+  "text": "Tu peux avoir deux épouses, dis-tu.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v04.wav",
+  "text": "Aslaug accepte. Lagertha, non.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v05.wav",
+  "text": "Elle ceint son épée et charge ses coffres sur la charrette.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v06.wav",
+  "text": "Bjorn choisit de rester avec toi.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v07.wav",
+  "text": "Sa mère l'embrasse et s'en va.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v08.wav",
+  "text": "Puis Bjorn court derrière la charrette.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v09.wav",
+  "text": "Tu ne l'arrêtes pas.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v10.wav",
+  "text": "Tu lui dis seulement de veiller sur sa mère.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v11.wav",
+  "text": "Tu fondes un royaume.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/veda2/ses/v12.wav",
+  "text": "Mais tu perds une famille.",
+  "tag": "[melancholic]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d0.wav",
+  "text": "Tu ne le confies à personne. Tu le portes toi-même.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d1.wav",
+  "text": "Là où il priait chaque matin. En haut de la cascade.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d2.wav",
+  "text": "Tu plantes toi-même sa croix en terre.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d3.wav",
+  "text": "C'était le seul homme qui t'ait fait douter de tes dieux.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d4.wav",
+  "text": "Et c'est un homme de tes propres dieux qui l'a tué.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d5.wav",
+  "text": "Tu te rases le crâne.",
+  "tag": "[grieving, quiet]"
+ },
+ {
+  "out": "/home/claude/r3/yas_ses/d6.wav",
+  "text": "Tu passes sa croix à ton cou.",
+  "tag": "[grieving, quiet]"
+ }
+]

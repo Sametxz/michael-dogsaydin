@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.log
+*_log.txt
+.secrets/
+*.pth
+*.onnx
+# büyük medya (repoya girmez; onaylı kareler ve kontakt sayfaları PNG olarak girer)
+*.mp4
+*.wav
+*.mp3
+*.m4a
+# studyo motoru önbelleği ve demo ham çıktıları
+studyo/motor/.cache/
+studyo/motor/ornek/out/
+# projelerin büyük çıktıları
+projeler/*/ses/*.wav
+projeler/*/ses/*.mp3
+projeler/*/out/
+projeler/*/final/*.mp4
+projeler/*/kapak/*_2560.png
