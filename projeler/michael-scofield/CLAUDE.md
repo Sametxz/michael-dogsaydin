@@ -27,9 +27,10 @@ Born in Lore formatında, ikinci tekil şahısla anlatılan ~9 dakikalık Türk�
 ## Kullanıcı tercihleri
 (`studyo/docs/06_DERSLER.md §1` geçerli; bu projeye özgü yeni tercihler buraya eklenir)
 - Anlatıcı: George değil, yeni bir ElevenLabs sesi (örnek dinletilerek seçilecek). **Şimdilik yerel TTS** (XTTS, kredi harcamaz) kullanılır; her şey hazır olunca ses ElevenLabs'ten alınır (kullanıcı, 26.11.2026 15:53).
-- **Taslaklar düşük kalitede** (960 px ya da daha düşük, kaba şekil, kısa render) üretilir; **tam kalite yalnızca tamamlanmış, yayına hazır video** için yapılır. Amaç token ve kredi tasarrufu (kullanıcı, 26.11.2026 15:53).
+- **Taslaklar düşük çözünürlükte** (960 px ya da daha düşük) üretilir; **içerik ve çizim kalitesi her zaman tam çıtadadır** (kullanıcı düzeltmesi, 26.11.2026 16:07: "düşük kalite = çözünürlük, içerik kalitesi yüksek olsun"). Tam çözünürlük yalnızca tamamlanmış, yayına hazır video için yapılır. Amaç token ve kredi tasarrufu.
 - **Bütün karar aşamalarında kullanıcıya sorulur** (karar verici ajan kullanılmaz).
 - Anlatım sıkıcı olmamalı: sürekli akan, geçişli, dinamik; neredeyse her cümle sahnede karşılık bulur.
+- **Ragnar stiline bağlı kalınmaz** (kullanıcı, 26.11.2026 16:08): görsel dil konuya (hapishane, plan, kaçış) ve yeni akışa göre seçilir. Öncelik: daha dinamik ve hareketli sahneler, her cümle ekranda yaşanır, akış yüksek, **ekranda tutuculuk (izleyiciyi tutma) artırılır**.
 
 ## Teknik
 `studyo/docs/07_TEKNIK_HAT.md`. Motor `studyo/motor/`, karakter sistemi `r3/art3.py`, ses `tts/el.py` + `r3/ses2/`, yayın `r3/final/`, kapak `r3/kapak/`. Kod göreli yol kullanır:
