@@ -8,8 +8,8 @@
 | F0 Başlangıç | ✅ | Michael Scofield · S1–S4 + The Final Break · ~9 dk · yeni ElevenLabs sesi (seçilecek) |
 | F1 Araştırma | ✅ | `lore_bible.md` (57 olay) |
 | F2 Omurga | ✅ | `omurga.md` v1 onaylı |
-| F3 Model ve mekân | ⏳ | Stil B+A ✅ · turna v4 ✅ · Michael ✅ · Lincoln v1, Sara (ajan) onay bekliyor · mekânlar prolog içinde kaba |
-| F4 Prolog | örgü ✅ · blok animatik v1 onay bekliyor (`out/prolog_blok_960.mp4`, `prolog.py`) | |
+| F3 Model ve mekân | ⏳ | Stil B+A ✅ · turna v4 ✅ · Michael ✅ · Lincoln v1 ✅ · Sara (ajan) ✅ · mekânlar prolog içinde kaba |
+| F4 Prolog | örgü ✅ · blok ✅ · ham kareler (son kalite mekânlar) sürüyor | |
 | F4 Bölüm I–VI | — | |
 | F5 Ses | — | |
 | F6 Master | — | |
