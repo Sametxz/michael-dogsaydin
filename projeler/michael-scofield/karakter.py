@@ -21,7 +21,7 @@ LINCOLN = dict(_tip="yan", skin="#D49A78", skin_sh="#B07A5E", skin_dk="#93604A",
                hair="#2A221C", brow="#221B16", iris="#7E98A6", iris_d="#2E3E48", en=1.17, goz_k=0.8, kas_k=1.45, sakal=0.6, boy=1.07, yas_cizgi=True,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True, numara=None)
 SARA = dict(_tip="yan", female=True, skin="#EDBB9A", skin_sh="#D19A7C", skin_dk="#B47E64", skin_hl="#FFE2C8",
-            hair="#8A3524", brow="#5E2418", iris="#7FA47E", iris_d="#334A33", en=0.95, goz_k=1.08, kas_k=0.85, sakal=0.0, boy=0.95,
+            hair="#8A3524", brow="#5E2418", iris="#86B07F", iris_d="#334A33", en=0.95, goz_k=1.14, goz_h=0.86, kapak_ac=0.12, kas_k=0.8, sakal=0.0, boy=0.95,
             dudak="#C46A5C", shirt="#F2F0EA", shirt_d="#CFCBC0", under="#5E7A8A", pants="#3A4250", shoe="#2A2420", buzz=False)
 
 # ifade: (kaş_iç, kaş_dış, üst_kapak, alt_kapak, ağız, ekstra)
