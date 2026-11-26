@@ -30,3 +30,9 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Öz değerlendirme: 1. tur kafa yumurta gibi, kol yok, harita kafanın arkasında → 2. tur Michael sol üçte bir, harita sağ duvarda, deltoid ve kol kıvrımı, saç dokusu → 3. tur akış yayları öne alındı, sırttan başlatıldı.
 - Kararlar: Stil → **B + A hibrit**. Tutuculuk → **geri sayım sayacı, kinetik kilit kelimeler, görsel açık döngüler** (ilerleme çubuğu seçilmedi).
 - Ders: Kullanıcı "düşük kalite" derken çözünürlüğü kastediyordu → belirsiz kalite talimatlarında çözünürlük ile içerik ayrımı en baştan sorulur ya da varsayılan "içerik tam, çözünürlük düşük" alınır. Stil kararı tek bir ortak an üzerinden sunulunca hızlı çıktı.
+
+## Tur 4 · 26.11.2026 16:25–16:50 · F3 Michael model kartı v1
+- Sunulan: `kartlar/model_michael_v1.png` — yetişkin tam figür (mavi gömlek, 94941, sıvalı kollar, önkol dövmesi), 3 görünüş, 6 ifade (odak, kararlı, yas, korku, şefkat, plan görüşü), önkol dövmesi kapalı/ışıklı, kâğıt turna (+ kanat çırpma pozu), 11 yaş figür ve baş.
+- Teknik: Ragnar'ın `head3` fonksiyonu her erkek karaktere Ragnar'ın yarasını ekliyordu (R3 sızıntı riski) → projeye özel eklemli `karakter.py` yazıldı (kafa, kol, figür, dövme ve turna tek kaynak).
+- Öz değerlendirme: 1. tur nokta gözler, turna uçağa benziyor, diken saçlı çocuk, numara kolun altında → 2. tur büyük gözler, yeni turna, yuvarlak tutamlı saç, numara sol göğüste → 3. tur turna kanatları genişletildi, sarkan eller parmak aşağı, etiket çakışması giderildi.
+- Ders: Ödünç alınan karakter fonksiyonları başka karakterin kimlik öğelerini varsayılan olarak taşıyabilir → yeni projede kimlik bayrakları varsayılan "kapalı" olan yeni modül yazılır.
