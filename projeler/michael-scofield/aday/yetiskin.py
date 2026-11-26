@@ -16,7 +16,7 @@ _ESKI_KAFA = K.kafa
 INK = "#15110E"; PLAN = "#7FE6FF"
 # sıcak, sağlıklı ten; gölge tonu griye değil sıcak kahveye kayar (2 ton cel)
 MICHAEL_Y = dict(K.MICHAEL, skin="#E2AB86", skin_sh="#C4876A", skin_dk="#A86A52", skin_hl="#FFD9B8",
-                 hair="#1F1A16", brow="#1F1A16", iris="#8FCFC4", iris_d="#2C5754")
+                 hair="#191512", brow="#191512", iris="#8FCFC4", iris_d="#2C5754")
 BOYUN_KISALT = 22   # figürde boyun ~%10 kısa: kafa, boyna göre bu kadar (kafa birimi) aşağı oturur
 
 # ifade: kaş_iç (yukarı +), kaş_dış, üst_kapak (0 açık..1 kapalı), alt_kapak, ağız, ekstra
@@ -126,7 +126,7 @@ def kafa(spec=None, view="3q", ifade="odak", look=None):
     o = []; late = []
     if view == "front":
         face = ("M-60,-40 C-64,-96 -32,-112 0,-112 C32,-112 64,-96 60,-40 C62,-16 62,4 59,24 "
-                "C57,42 54,56 47,68 C42,78 32,86 20,88 L-20,88 C-32,86 -42,78 -47,68 C-54,56 -57,42 -59,24 "
+                "C57,42 54,54 50,64 L38,80 C32,85 26,88 18,89 L-18,89 C-26,88 -32,85 -38,80 L-50,64 C-54,54 -57,42 -59,24 "
                 "C-62,4 -62,-16 -60,-40 Z")
         ears = [(-60, -4, -1), (60, -4, 1)]
         eyes = [(-25, -8, 17, False), (25, -8, 17, False)]
@@ -137,7 +137,7 @@ def kafa(spec=None, view="3q", ifade="odak", look=None):
         sakal = "M-58,26 C-54,50 -46,70 -30,82 L-20,88 L20,88 L30,82 C46,70 54,50 58,26 C54,52 44,64 30,70 C18,64 8,64 0,64 C-8,64 -18,64 -30,70 C-44,64 -54,52 -58,26 Z"
     elif view == "3q":
         face = ("M-60,-40 C-64,-98 -20,-114 14,-112 C52,-110 76,-86 76,-42 L74,-24 C80,-14 80,-2 74,6 "
-                "C74,22 70,38 64,52 C58,66 52,76 44,84 L40,89 L6,91 C-6,89 -20,79 -34,64 "
+                "C74,22 70,38 65,52 C61,62 56,70 50,77 L40,89 L8,91 C-4,89 -16,81 -26,72 L-34,62 "
                 "C-46,50 -58,28 -60,-40 Z")
         ears = [(-54, -2, -1)]
         eyes = [(6, -8, 17.5, False), (56, -9, 11.5, True)]
@@ -157,9 +157,11 @@ def kafa(spec=None, view="3q", ifade="odak", look=None):
                "C4,-74 -2,-68 -4,-56 L-2,-22 L-10,-20 C-14,-12 -26,-10 -40,-10 C-50,-10 -58,-8 -63,-6 Z")
         golge = "M-62,16 C-40,44 -14,64 10,80 L-80,120 Z"
         sakal = "M-4,40 C10,60 28,76 50,86 L70,84 C72,74 70,62 68,56 C60,58 52,58 46,60 C30,56 12,50 -4,40 Z"
-    cid = _uid("f"); bid = _uid("b")
+    cid = _uid("f"); bid = _uid("b"); sid = _uid("s")
     o.append(f'<defs><clipPath id="{cid}"><path d="{face}"/></clipPath>'
-             f'<filter id="{bid}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>')
+             f'<filter id="{bid}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2"/></filter>'
+             f'<filter id="{sid}" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4.5"/></filter></defs>')
+    yalt = 78 if view != "side" else 74
     kul = []
     for ex, ey, s in ears:
         kul.append(f'<path d="M{ex+s*4},{ey-22} C{ex+s*19},{ey-25} {ex+s*21},{ey+4} {ex+s*13},{ey+21} C{ex+s*9},{ey+28} {ex+s*2},{ey+27} {ex},{ey+19} Z" '
@@ -170,8 +172,11 @@ def kafa(spec=None, view="3q", ifade="odak", look=None):
     # 2 tonlu cel gölge + sıcak ışık; sakal gölgesi yumuşak düz ton
     g = [f'<path d="{golge}" fill="{sh}"/>',
          f'<path d="M-90,{84 if view!="side" else 80} C-20,104 40,104 120,64 L120,140 L-90,140 Z" fill="{sh}"/>',
-         f'<path d="{sakal}" fill="{hair}" opacity="0.13" filter="url(#{bid})"/>',
+         f'<path d="{sakal}" fill="{hair}" opacity="0.28" filter="url(#{sid})"/>', f'<path d="M-90,{yalt} C-20,{yalt+26} 40,{yalt+26} 120,{yalt-14} L120,140 L-90,140 Z" fill="{hair}" opacity="0.14" filter="url(#{sid})"/>',
          f'<ellipse cx="-30" cy="-30" rx="40" ry="60" fill="{hl}" opacity="0.18" filter="url(#{bid})"/>']
+    elm = {"front": [(-42, 36), (42, 36)], "3q": [(-24, 36), (60, 32)], "side": [(30, 32)]}[view]
+    for ex_, ey_ in elm:   # çok hafif elmacık gölgesi (yumuşak, çizgi değil)
+        g.append(f'<ellipse cx="{ex_}" cy="{ey_}" rx="17" ry="5" fill="{dk}" opacity="0.2" transform="rotate(-24 {ex_} {ey_})" filter="url(#{sid})"/>')
     if view == "3q":
         g.append(f'<path d="M-60,-30 C-50,-10 -48,10 -52,30 L-66,30 Z" fill="{sh}" opacity="0.6"/>')
     for ex, ey, ew, uz in eyes:   # hafif göz çukuru
@@ -180,11 +185,11 @@ def kafa(spec=None, view="3q", ifade="odak", look=None):
     # saç: temiz şekil + ince doku
     hid = _uid("h")
     o.append(f'<defs><clipPath id="{hid}"><path d="{cap}"/></clipPath></defs>')
-    o.append(f'<g clip-path="url(#{cid})"><path d="{cap}" fill="{hair}" opacity="0.92" filter="url(#{bid})"/></g>')
+    o.append(f'<g clip-path="url(#{cid})"><path d="{cap}" fill="{hair}" opacity="0.98" filter="url(#{bid})"/></g>')
     hh = []
-    for k in range(9):   # ince yön dokusu: tepe ışığına paralel kısa çizgiler
-        y = -108 + k * 9
-        hh.append(f'<path d="M-50,{y} C-10,{y-10} 30,{y-8} 70,{y+4}" stroke="{shade(hair,2.0)}" stroke-width="1" fill="none" opacity="0.22" stroke-dasharray="2 5"/>')
+    for k in range(5):   # ince, düzgün yön dokusu
+        y = -106 + k * 10
+        hh.append(f'<path d="M-50,{y} C-10,{y-10} 30,{y-8} 70,{y+4}" stroke="{shade(hair,2.2)}" stroke-width="0.8" fill="none" opacity="0.06"/>')
     hh.append(f'<path d="M-44,-100 C-14,-114 26,-112 54,-98" stroke="{shade(hair,3.4)}" stroke-width="8" fill="none" opacity="0.22" filter="url(#{bid})"/>')
     hh.append(f'<path d="M36,-120 C70,-90 80,-60 70,-20 L120,-20 L120,-120 Z" fill="#000" opacity="0.22"/>')
     o.append(f'<g clip-path="url(#{cid})"><g clip-path="url(#{hid})">{"".join(hh)}</g></g>')
@@ -251,14 +256,14 @@ def kart(surum="v4"):
         x = 390 + (i % 3) * 140; y = 330 + (i // 3) * 190
         o.append(g(x, y, 0.62, kafa(MICHAEL_Y, "3q", e)))
         o.append(et(x, y + 92, ad, 13, PLAN if e == "plan" else "#D8DEE4"))
-    # önce (v3, kaydedilmiş görüntü) / sonra
+    # önce (v4, kaydedilmiş görüntü) / sonra
     o.append(f'<rect x="820" y="60" width="440" height="420" rx="10" fill="#0F1418" opacity="0.5"/>')
-    v3 = P / "yetiskin_v3_3q.png"
+    v3 = P / "yetiskin_v4_3q.png"
     if v3.exists():
         b64 = base64.b64encode(v3.read_bytes()).decode()
-        o.append(f'<image x="{930-126}" y="{250-136}" width="252" height="273" xlink:href="data:image/png;base64,{b64}"/>')
+        o.append(f'<image x="820" y="114" width="218" height="273" xlink:href="data:image/png;base64,{b64}"/>')
     o.append(g(1150, 250, 1.05, kafa(MICHAEL_Y, "3q", "odak")))
-    o.append(et(930, 400, "ÖNCE (v3)", 15, "#E8A890"))
+    o.append(et(930, 400, "ÖNCE (v4)", 15, "#E8A890"))
     o.append(et(1150, 400, f"SONRA ({surum})", 15, "#9FE0B0"))
     o.append(et(1040, 510, "küçük ölçek (~70 px kafa): odak · kararlı · yas · korku · şefkat · plan", 12))
     for i, e in enumerate(("odak", "kararli", "yas", "korku", "sefkat", "plan")):

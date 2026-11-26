@@ -56,3 +56,10 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - A-Y (yetişkin) v3 → D denetimi: tanınırlık 2/3, çocuk 1,5/3, süreklilik 1/3. Kullanıcı (16:34): "tip benzemiş ama yüz sempatik, çekici durmuyor" → A-Y v4 (yüz %8 kısa, köşeli çene, çizgi gürültüsü yok, catchlight'lı canlı gözler, sıcak 2 ton ten, odak'ta hafif sıcaklık), A-Ç v3 (yetişkinin renk/göz/kaş/burun şablonu ortak, dağınık perçem, tek parça kol).
 - D yeniden denetim: tanınırlık Y 2/3, Ç 2/3; çekicilik Y 2/3, Ç 2,5/3; süreklilik 2,5/3; R1–R13 yok; karar ikisi de "küçük düzeltmeyle uygun". Kalan: sakal gölgesi (imza) hafifçe geri, çocuk sağ kol birleşimi, yetişkinde çene köşesi + hafif elmacık, saç dokusu biraz koyu.
 - Ders: Tanınırlık ile çekicilik ayrı eksenlerdir; tip özellikleri (çizgi, sakal noktası, sert gölge) eklendikçe çekicilik düşebilir → iki ekseni ayrı puanla, imza öğeyi en az görsel gürültüyle ver.
+
+## Tur 8 · 26.11.2026 17:20–17:45 · Michael kilit ve entegrasyon
+- Kararlar: yüzler → **son rötuşlarla kilitle**; sakal → **yumuşak, hafif ton (noktasız)**.
+- Son rötuş: yetişkin v5 (noktasız yumuşak sakal tonu, çene köşesine hafif açı, çok hafif elmacık gölgesi, koyu ve ince saç dokusu); çocuk v3.1 (kol-omuz tek kontur, önden saç yanları kavisli).
+- Entegrasyon: `karakter.kafa` artık yönlendirici → `_tip="michael"` yetişkin `aday/yetiskin.py`, çocuk `aday/cocuk.py`; diğer karakterler `kafa_temel`. `figur2` çocuk Michael'ı `cocuk.figur`'a yollar, yetişkinde boyun kısaltma ofseti uygular. `MICHAEL_COCUK` sadeleştirildi (renkler tek kaynak). Kartlar: `kartlar/model_michael_v2.png` (kilitli), `aday/sureklilik.png`.
+- Hatalar: (1) `yetiskin` modülü hem `aday.yetiskin` hem `yetiskin` adıyla iki kez yüklendi → iki ayrı kimlik sayacı → SVG `id` çakışması → uzak göz beyaz leke. Çözüm: tek modül adı. (2) Eski çocuk tanımındaki renkler yeni tanımın üstüne yazıldı (kahverengi saç) → tanım sadeleştirildi.
+- Ders: Sayaçla kimlik üreten modül tek adla içe aktarılmalı; her birleşik SVG'de tekrarlayan `id` taraması yapılır (`re.findall(r'id="..."')`). Onaylı tasarım tek kaynaktan okunur, eski tanım kalıntıları silinir.

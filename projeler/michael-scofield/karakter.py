@@ -14,10 +14,9 @@ INK = "#15110E"
 PLAN = "#7FE6FF"
 
 # ── karakter özellikleri (yalnız genel öğeler; oyuncu benzerliği yok)
-MICHAEL = dict(skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
+MICHAEL = dict(_tip="michael", skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True)
-MICHAEL_COCUK = dict(MICHAEL, child=True, keskin=False, goz_k=1.0, jaw=1.0, face_len=1.08, hair="#3A302A", shirt="#B8563E", shirt_d="#93412F", pants="#3C4A5C",
-                     stripes="#E9D9B8", buzz=False)
+MICHAEL_COCUK = dict(_tip="michael", child=True)   # renk/kıyafet aday/cocuk.py MICHAEL_COCUK_V2'den gelir
 LINCOLN = dict(skin="#C99C7C", hair="#3A322C", iris="#6F7F88", brow="#2A2420", jaw=1.22, face_len=1.0,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True)
 SARA = dict(skin="#E8BFA2", hair="#7A2E22", iris="#6A8A6E", brow="#5A241A", jaw=0.9, face_len=1.02, female=True,
@@ -274,6 +273,9 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     govde: gövde eğimi (öne +); bas: baş eğimi; kol_on/kol_arka: (omuz, dirsek) dikeyden, öne +;
     bacak_on/bacak_arka: (kalça, diz bükümü); el_on/el_arka: relax|open|fist|grip|point.
     el_on_ek: yakın elin içine çizilecek SVG ('HX','HY' yer tutucu)."""
+    if spec.get("_tip") == "michael" and spec.get("child"):
+        import cocuk as _C
+        return _C.figur(_C.MICHAEL_COCUK_V2, ifade, poz, plan)
     p = dict(POZ_DUR); p.update(poz or {})
     child = spec.get("child"); s = 0.76 if child else 1.0; br = 1.18 if spec.get("broad") else 1.0
     sk = spec["skin"]; sh = spec["shirt"]; sd = spec["shirt_d"]
@@ -341,7 +343,7 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     # boyun + baş
     hx, hy = _uc(*neck, 180 + p["govde"] * 0.3 + p["bas"] * 0.3, 70 * s)
     o.append(_seg(neck, (neck[0] + (hx - neck[0]) * 0.5, neck[1] + (hy - neck[1]) * 0.5), 44 * s, shade(sk, 0.84)))
-    o.append(f'<g transform="translate({hx:.1f},{hy:.1f}) rotate({p["govde"]*0.4 + p["bas"]:.1f}) scale({0.62*s*(1.05 if child else 1):.3f})">{kafa(spec, "3q", ifade)}</g>')
+    o.append(f'<g transform="translate({hx:.1f},{hy:.1f}) rotate({p["govde"]*0.4 + p["bas"]:.1f}) scale({0.62*s*(1.05 if child else 1):.3f})"><g transform="translate(0,{_boyun_ofset(spec)})">{kafa(spec, "3q", ifade)}</g></g>')
     o.append(kol(sh_on, *p["kol_on"], 42 * s * br, sh, sk, p["el_on"], el_on_ek))
     return "".join(o)
 
@@ -363,3 +365,26 @@ POZLAR = {
     "uzat_2":     dict(govde=6, kol_on=(40, 40), el_on="open"),
     "uzat_3":     dict(govde=10, kol_on=(76, 6), el_on="open", bas=4),
 }
+
+
+# ───────────────────── Michael yüzleri (onaylı: yetişkin v4+, 11 yaş v3+) ─────────────────────
+# Kaynak: aday/yetiskin.py ve aday/cocuk.py (iki tasarım ajanı + denetçi, kullanıcı onayı 26.11.2026).
+# kafa() bir yönlendiricidir: Michael tanımlarını kendi modüllerine, diğer karakterleri kafa_temel'e yollar.
+kafa_temel = kafa
+if str(P / "aday") not in sys.path: sys.path.insert(0, str(P / "aday"))   # tek modül adı: yetiskin, cocuk (çift yükleme = kimlik çakışması)
+
+def kafa(spec, view="3q", ifade="odak", look=None):
+    if spec.get("_tip") == "michael":
+        if spec.get("child"):
+            import cocuk as _C
+            return _C.kafa(spec, view, ifade, look)
+        import yetiskin as _Y
+        _Y._ESKI_KAFA = kafa_temel
+        return _Y.kafa(spec, view, ifade, look)
+    return kafa_temel(spec, view, ifade, look)
+
+def _boyun_ofset(spec):
+    if spec.get("_tip") == "michael" and not spec.get("child"):
+        import yetiskin as _Y
+        return getattr(_Y, "BOYUN_KISALT", 0)
+    return 0
