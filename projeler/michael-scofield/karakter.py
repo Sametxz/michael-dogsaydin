@@ -268,6 +268,7 @@ def _seg(a, b, w, c):
     return (f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{INK}" stroke-width="{w+9:.1f}" stroke-linecap="round"/>'
             f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{c}" stroke-width="{w:.1f}" stroke-linecap="round"/>')
 
+_VID = [0]
 POZ_DUR = dict(govde=3, bas=0, kol_on=(8, -6), kol_arka=(-6, 10), bacak_on=(4, 0), bacak_arka=(-6, 6), el_on="relax", el_arka="relax")
 
 def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_ek=""):
@@ -329,7 +330,7 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     torso = (f"M{-W1:.0f},{-TOR+10*s:.0f} Q{-W1-8:.0f},{-TOR*0.6:.0f} {-W2:.0f},{-TOR*0.2:.0f} L{-W2-4:.0f},{20*s:.0f} "
              f"Q0,{34*s:.0f} {W2+6:.0f},{18*s:.0f} L{W2+2:.0f},{-TOR*0.2:.0f} Q{W1+10:.0f},{-TOR*0.6:.0f} {W1:.0f},{-TOR+10*s:.0f} "
              f"Q0,{-TOR-16*s:.0f} {-W1:.0f},{-TOR+10*s:.0f} Z")
-    tid = f"v{abs(hash((sh, s, br, p['govde']))) % 10**7}"
+    _VID[0] += 1; tid = f"v{_VID[0]}"
     inner = [f'<rect x="{W2-6:.0f}" y="{-TOR-40:.0f}" width="80" height="{TOR+90:.0f}" fill="{sd}"/>',
              f'<path d="M{-W1+10:.0f},{-TOR+30:.0f} Q{-W2+10:.0f},{-TOR*0.4:.0f} {-W2+6:.0f},0" stroke="#FFFFFF" stroke-width="9" fill="none" opacity="0.16"/>']
     if spec.get("stripes"):
