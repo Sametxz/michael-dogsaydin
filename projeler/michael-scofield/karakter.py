@@ -412,6 +412,9 @@ def kafa(spec, view="3q", ifade="odak", look=None):
         import yetiskin as _Y
         _Y._ESKI_KAFA = kafa_temel
         return _Y.kafa(spec, view, ifade, look)
+    if spec.get("_tip") == "yan" and spec.get("female"):
+        import sara as _SA                     # onaylı aday: aday/sara.py (ajan turu 26.11.2026)
+        return _SA.kafa(spec, view, ifade, look)
     if spec.get("_tip") == "yan":
         import yuzler as _YZ
         return _YZ.kafa(spec, view, ifade, look)

@@ -19,7 +19,12 @@ def zamanlar(wav, bas=0.0, dil="tr", model="small"):
         global _model
         from faster_whisper import WhisperModel
         if _model is None: _model = WhisperModel(model, device="cpu", compute_type="int8")
-        segs, _ = _model.transcribe(wav, language=dil, word_timestamps=True, beam_size=5)
+        import numpy as np, soundfile as sf
+        from scipy.signal import resample_poly
+        y, sr = sf.read(wav, dtype="float32")
+        if y.ndim > 1: y = y.mean(axis=1)
+        if sr != 16000: y = resample_poly(y, 16000, sr).astype("float32")   # av/ffmpeg sürüm bağımlılığı olmadan
+        segs, _ = _model.transcribe(y, language=dil, word_timestamps=True, beam_size=5)
         ws = [(w.word.strip(), round(w.start, 3), round(w.end, 3)) for s in segs for w in s.words]
         json.dump(ws, open(onb, "w"), ensure_ascii=False)
     return [(w, a + bas, b + bas) for w, a, b in ws]
