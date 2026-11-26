@@ -120,3 +120,14 @@ Dışarıda kalanlar: T-Bag'in hikâyesi ve eli, Westmoreland'in parası ve Utah
 - Geçişlerin ≥ %60'ı anlamsal (hedef %75); siyaha kararma yalnızca VI sonunda.
 - Her bölüm bir motifle açılır ve kapanır (tablo §3).
 - Hafif bölümler (I sonu, II, III) hızlı; trajik anlar (V kutu, VI kapı) yavaş ama ölü süresiz.
+
+## 8. Görsel dil ve ekranda tutuculuk (kullanıcı kararı, 26.11.2026)
+**Stil: B + A hibrit.**
+- Dünya **sinematik 2D**: dolu renk, kalın mürekkep konturu, yönlü tek anahtar ışık, kenar ışığı, dokulu yüzeyler (beton, metal), letterbox. Duygu renk ve ışıkla taşınır.
+- **Plan görüşü (imza efekt, A)**: Michael bir şeyi "gördüğünde" (düşük örtük ketlenme) sahnenin bir bölümü camgöbeği mavi plan çizgilerine döner. Ayrıntılar numaralı ışık noktalarıyla yanar, rota kesik çizgiyle çizilir. Bu efekt aynı zamanda **geçiş aracıdır**: sahne çizgiye çözülür, çizgiler yeni sahneyi kurar (plan çözülmesi geçişi).
+- Plan rengi `#7FE6FF`; dünya paleti bölüm duygusuna göre (§5).
+
+**Tutuculuk araçları:**
+1. **Geri sayım sayacı:** Fox River boyunca köşede akan "İDAMA X GÜN" sayacı (S1); Final Break'te "DOĞUMA X HAFTA". Sayaç kelimeye kilitli olarak düşer, kritik anlarda büyüyüp ekranın ortasına gelir.
+2. **Kinetik kilit kelimeler:** Bölüm başına 3–5 vurucu kelime ekranda büyük, hareketli yazıyla belirir ("94941", "KAÇIŞ", "SONA", "SCYLLA", "BURADAYIM"). Yazı sahnedeki bir yüzeye oturur (duvara kazınır, damga olur, plana çizilir); serbest altyazı gibi durmaz.
+3. **Görsel açık döngüler:** Her bölümün son 2 saniyesinde bir sonraki bölümün nesnesi kısa görünür ve soru bırakır (I sonu: duvara asılan idam haberi; III sonu: Mahone'un masasına konan dövme fotoğrafı; IV sonu: çölde kapanan kapı; V sonu: kumda iki çift ayak izi).

@@ -31,6 +31,7 @@ Born in Lore formatında, ikinci tekil şahısla anlatılan ~9 dakikalık Türk�
 - **Bütün karar aşamalarında kullanıcıya sorulur** (karar verici ajan kullanılmaz).
 - Anlatım sıkıcı olmamalı: sürekli akan, geçişli, dinamik; neredeyse her cümle sahnede karşılık bulur.
 - **Ragnar stiline bağlı kalınmaz** (kullanıcı, 26.11.2026 16:08): görsel dil konuya (hapishane, plan, kaçış) ve yeni akışa göre seçilir. Öncelik: daha dinamik ve hareketli sahneler, her cümle ekranda yaşanır, akış yüksek, **ekranda tutuculuk (izleyiciyi tutma) artırılır**.
+- **Görsel dil: B + A hibrit** (16:20): sinematik 2D dünya + Michael'ın 'plan görüşü' (camgöbeği plan çizgileri; aynı zamanda geçiş aracı). Tutuculuk: geri sayım sayacı, kinetik kilit kelimeler, görsel açık döngüler (`omurga.md §8`). Stil testi: `stil/stil_kontakt.png`.
 
 ## Teknik
 `studyo/docs/07_TEKNIK_HAT.md`. Motor `studyo/motor/`, karakter sistemi `r3/art3.py`, ses `tts/el.py` + `r3/ses2/`, yayın `r3/final/`, kapak `r3/kapak/`. Kod göreli yol kullanır:

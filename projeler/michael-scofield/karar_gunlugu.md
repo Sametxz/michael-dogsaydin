@@ -23,3 +23,10 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
   - Sara'nın kutusu (S3E3) → **kapalı kutu + sembol** (yağmur, titreyen eller, solan renk).
   - Michael'ın ölümü → **kıvılcım + sönen ışık**, sandalye kıvılcımıyla eşleşme; Sara kapıdan geçer.
 - Ders: Kullanıcı dört önerinin dördünü de kabul etti → omurgada imge yankısı ve duygu eğrisi baştan net verilince karar hızlanıyor → F3 ve örgülerde de her soruyu bir imgeye bağlayarak sun.
+
+## Tur 3 · 26.11.2026 16:07–16:25 · F3 stil testi
+- Kullanıcı: "düşük kalite = çözünürlük; içerik kalitesi yüksek olsun" (16:07). "Ragnar tarzına bağlı kalma; konuya ve yeni akışa odaklan; daha dinamik, her cümle ekranda, akış yüksek, ekranda tutuculuk artırılmalı" (16:08).
+- Sunulan: `stil/stil_kontakt.png` — aynı an (sırttaki planın duvara akışı) üç stilde: A mavi plan, B sinematik 2D, C noir. Özgün dövme ilk kez çizildi (kapı kemeri, iki turna, sütunlar; gizli plan çizgileri).
+- Öz değerlendirme: 1. tur kafa yumurta gibi, kol yok, harita kafanın arkasında → 2. tur Michael sol üçte bir, harita sağ duvarda, deltoid ve kol kıvrımı, saç dokusu → 3. tur akış yayları öne alındı, sırttan başlatıldı.
+- Kararlar: Stil → **B + A hibrit**. Tutuculuk → **geri sayım sayacı, kinetik kilit kelimeler, görsel açık döngüler** (ilerleme çubuğu seçilmedi).
+- Ders: Kullanıcı "düşük kalite" derken çözünürlüğü kastediyordu → belirsiz kalite talimatlarında çözünürlük ile içerik ayrımı en baştan sorulur ya da varsayılan "içerik tam, çözünürlük düşük" alınır. Stil kararı tek bir ortak an üzerinden sunulunca hızlı çıktı.
