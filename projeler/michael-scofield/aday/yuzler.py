@@ -53,15 +53,16 @@ def _kadin_sac(view, hair, arka):
         dalga = {"front": "M-86,0 C-96,40 -84,70 -96,104 M-70,30 C-78,70 -68,100 -76,140 M86,0 C96,40 84,70 96,104 M70,30 C78,70 68,100 76,140",
                  "3q": "M-82,0 C-94,40 -84,70 -96,106 M-64,30 C-72,70 -62,104 -70,144",
                  "side": "M-84,-10 C-96,40 -86,74 -98,110 M-62,20 C-72,64 -60,100 -66,146"}[view]
-        return (f'<path d="{d}" fill="{hd}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round"/>'
+        uzak = ('<path d="M58,-70 C98,-10 96,70 84,128 C74,146 58,130 64,100 C70,60 70,0 50,-60 Z" '
+                f'fill="{shade(hd,0.85)}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round"/>') if view == "3q" else ""
+        return (uzak + f'<path d="{d}" fill="{hd}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round"/>'
                 f'<path d="{dalga}" stroke="{shade(hd,0.72)}" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round"/>'
                 f'<path d="M-90,-10 C-98,30 -90,60 -98,90" stroke="{hl}" stroke-width="5" fill="none" opacity="0.35" stroke-linecap="round"/>')
     d = {"front": "M-66,-20 C-74,-100 -30,-124 6,-122 C46,-120 72,-98 66,-24 C60,-66 42,-86 16,-92 C0,-74 -28,-62 -58,-56 C-62,-40 -64,-28 -66,-20 Z",
          "3q": "M-62,-16 C-72,-106 -14,-126 22,-122 C62,-118 84,-90 78,-30 C70,-68 54,-88 30,-94 C12,-74 -18,-62 -46,-58 C-54,-44 -58,-28 -62,-16 Z",
          "side": "M-72,10 C-84,-90 -30,-128 14,-122 C50,-116 68,-94 64,-62 C50,-82 30,-90 12,-88 C2,-80 -4,-70 -6,-56 C-8,-40 -14,-20 -24,-6 C-34,4 -54,10 -72,10 Z"}[view]
-    side_lock = {"front": "M58,-40 C74,10 70,70 58,110 C52,100 54,40 50,-20 Z",
-                 "3q": "M70,-40 C88,10 84,74 70,112 C62,100 66,40 62,-24 Z",
-                 "side": ""}[view]
+    side_lock = {"front": "M66,-34 C84,10 80,72 68,116 C62,104 66,44 62,-16 Z",
+                 "3q": "", "side": ""}[view]
     o = [f'<path d="{d}" fill="{hair}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round"/>']
     if side_lock: o.append(f'<path d="{side_lock}" fill="{hair}" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>')
     o.append(f'<path d="M-30,-104 C0,-118 34,-112 56,-94" stroke="{hl}" stroke-width="7" fill="none" opacity="0.45" stroke-linecap="round"/>'

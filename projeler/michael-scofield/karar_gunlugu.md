@@ -66,3 +66,10 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Kullanıcı (Tur 9 sorusu): "Sara daha sıcak, çekici ve yan profilini iyileştir"; sıra → **prolog örgüsü + blok animatik** (mekânlar ondan önce).
 - Sara v2: kadın profili (yumuşak alın, küçük kalkık burun, dolgun dudak, yuvarlak çene), yanda saç kafatasını sarar, perçem yukarı, gözler büyük ve açık (goz_k 1.14, goz_h 0.86, kapak_ac 0.12), hacimli dalgalı saç + parlama, sıcak yanak tonu, belirgin dudak, kalın kirpik; varsayılan görünüşler "şefkat". `kartlar/model_yan_v2.png`.
 - Ders: Aynı yüz sistemini kadın karaktere taşırken profil (side) ayrı çizilmeli; genişlik ölçeği yetmez.
+
+## Tur 10 · 26.11.2026 18:10–18:35 · F4a prolog örgüsü v1 + Sara v3
+- Sunulan: `dokum/prolog.json` (5 çekim, ~21 sn + 3 sn başlık, anlamsal geçiş 4/4, dokum_kontrol GEÇTİ) ve `orgu/prolog_v1.md`.
+- Kullanıcı: örgü sorusuna cevap yerine "Sara'nın vücudu hâlâ kadın vücudu gibi olmamış; yüzü yarım, yüzü tam yap; çekici, sevecen durmalı". Ses sorusu yanıtsız → varsayım: blok animatikte yerel XTTS.
+- Sara v3: yüzü örten saç tutamları kaldırıldı/dışarı alındı (3/4'te uzak saç yüzün arkasında), `figur2` kadın bedeni (omuz ×0.8, bel 40, kalça 60, önlük kalçanın altına iner, kol ×0.78, bacak ×0.7, alçak topuklu sivri ayakkabı), açık önlük + bele oturan bluz.
+- Prolog örgüsü onayı bekliyor.
+- Ders: Kadın karakterde yalnız yüzü değiştirmek yetmez; omuz-bel-kalça oranı ve kıyafet kesimi silüeti belirler. Saç tutamı yüzün iç konturunu kesmemeli (yarım yüz algısı).
