@@ -17,10 +17,12 @@ PLAN = "#7FE6FF"
 MICHAEL = dict(_tip="michael", skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True)
 MICHAEL_COCUK = dict(_tip="michael", child=True)   # renk/kıyafet aday/cocuk.py MICHAEL_COCUK_V2'den gelir
-LINCOLN = dict(skin="#C99C7C", hair="#3A322C", iris="#6F7F88", brow="#2A2420", jaw=1.22, face_len=1.0,
-               shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True)
-SARA = dict(skin="#E8BFA2", hair="#7A2E22", iris="#6A8A6E", brow="#5A241A", jaw=0.9, face_len=1.02, female=True,
-            shirt="#F2F0EA", shirt_d="#CFCBC0", under="#5E7A8A", pants="#3A4250", shoe="#2A2420", buzz=False)
+LINCOLN = dict(_tip="yan", skin="#D49A78", skin_sh="#B07A5E", skin_dk="#93604A", skin_hl="#F7CCA8",
+               hair="#2A221C", brow="#221B16", iris="#7E98A6", iris_d="#2E3E48", en=1.17, goz_k=0.8, kas_k=1.45, sakal=0.6, boy=1.07, yas_cizgi=True,
+               shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True, numara=None)
+SARA = dict(_tip="yan", female=True, skin="#EDBB9A", skin_sh="#D19A7C", skin_dk="#B47E64", skin_hl="#FFE2C8",
+            hair="#8A3524", brow="#5E2418", iris="#7FA47E", iris_d="#334A33", en=0.95, goz_k=1.08, kas_k=0.85, sakal=0.0, boy=0.95,
+            dudak="#C46A5C", shirt="#F2F0EA", shirt_d="#CFCBC0", under="#5E7A8A", pants="#3A4250", shoe="#2A2420", buzz=False)
 
 # ifade: (kaş_iç, kaş_dış, üst_kapak, alt_kapak, ağız, ekstra)
 IFADE = {
@@ -273,6 +275,8 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     govde: gövde eğimi (öne +); bas: baş eğimi; kol_on/kol_arka: (omuz, dirsek) dikeyden, öne +;
     bacak_on/bacak_arka: (kalça, diz bükümü); el_on/el_arka: relax|open|fist|grip|point.
     el_on_ek: yakın elin içine çizilecek SVG ('HX','HY' yer tutucu)."""
+    if spec.get("boy", 1.0) != 1.0 and not spec.get("_boyda"):
+        return f'<g transform="scale({spec["boy"]})">' + figur2(dict(spec, _boyda=True), ifade, poz, plan, numara_goster, el_on_ek) + '</g>'
     if spec.get("_tip") == "michael" and spec.get("child"):
         import cocuk as _C
         return _C.figur(_C.MICHAEL_COCUK_V2, ifade, poz, plan)
@@ -303,7 +307,7 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     def kol(sp, oa, da, w, renk, ten, el, ek=""):
         ex, ey = _uc(*sp, oa, UA); wx, wy = _uc(ex, ey, oa + da, FA)
         out = _seg((ex, ey), (wx, wy), w * 0.8, ten)
-        if not child and not spec.get("female"):
+        if not child and not spec.get("female") and spec.get("_tip") == "michael":
             out += f'<g transform="translate({ex:.1f},{ey:.1f}) rotate({-(oa+da):.1f})">{dovme_onkol(w*0.8, FA, plan)}</g>'
         out += _seg(sp, (ex, ey), w, renk)
         if not child:
@@ -330,13 +334,21 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
              f'<path d="M{-W1+10:.0f},{-TOR+30:.0f} Q{-W2+10:.0f},{-TOR*0.4:.0f} {-W2+6:.0f},0" stroke="#FFFFFF" stroke-width="9" fill="none" opacity="0.16"/>']
     if spec.get("stripes"):
         for k in range(9): inner.append(f'<rect x="-200" y="{-TOR+20*s+k*28*s:.0f}" width="400" height="{10*s:.0f}" fill="{spec["stripes"]}" opacity="0.9"/>')
+    elif spec.get("female"):
+        inner.append(f'<path d="M-4,{-TOR-8:.0f} L14,{-TOR+62*s:.0f} L32,{-TOR-8:.0f} Z" fill="{spec["under"]}" stroke="{INK}" stroke-width="3"/>'
+                     f'<path d="M-16,{-TOR-4:.0f} L4,{-TOR+70*s:.0f} L-6,{-TOR+150*s:.0f} M44,{-TOR-4:.0f} L24,{-TOR+70*s:.0f} L34,{-TOR+150*s:.0f}" fill="none" stroke="{INK}" stroke-width="3"/>'
+                     f'<path d="M2,{-TOR+2:.0f} C-30,{-TOR+60:.0f} -26,{-TOR+120:.0f} -4,{-TOR+132:.0f} M28,{-TOR+2:.0f} C46,{-TOR+50:.0f} 44,{-TOR+100:.0f} 30,{-TOR+118:.0f}" stroke="#2E3338" stroke-width="5" fill="none" stroke-linecap="round"/>'
+                     f'<circle cx="-4" cy="{-TOR+138:.0f}" r="9" fill="#C8CDD2" stroke="{INK}" stroke-width="3"/>'
+                     f'<rect x="{-W1+18:.0f}" y="{-TOR+60*s:.0f}" width="26" height="34" rx="3" fill="#E9EEF2" stroke="{INK}" stroke-width="2.5"/>'
+                     f'<rect x="{-W1+22:.0f}" y="{-TOR+66*s:.0f}" width="18" height="10" fill="#7A9AB0"/>'
+                     f'<rect x="{W2-40:.0f}" y="{-TOR*0.32:.0f}" width="34" height="28" rx="3" fill="none" stroke="{INK}" stroke-width="2.5"/>')
     elif not spec.get("female"):
         inner.append(f'<path d="M-6,{-TOR-6:.0f} L14,{-TOR+44*s:.0f} L34,{-TOR-6:.0f}" fill="{spec["under"]}" stroke="{INK}" stroke-width="3"/>'
                      f'<path d="M-14,{-TOR-2:.0f} L2,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f} M42,{-TOR-2:.0f} L26,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f}" fill="{shade(sh,1.08)}" stroke="{INK}" stroke-width="3"/>'
                      + "".join(f'<circle cx="16" cy="{-TOR+58*s+k*42*s:.0f}" r="3.5" fill="#E8E4DA" stroke="{INK}" stroke-width="1.5"/>' for k in range(4))
                      + f'<rect x="{-W1+16:.0f}" y="{-TOR+52*s:.0f}" width="40" height="34" rx="3" fill="none" stroke="{INK}" stroke-width="2.6"/>')
-        if numara_goster:
-            inner.append(f'<text x="{-W1+14:.0f}" y="{-TOR+44*s:.0f}" font-family="DejaVu Sans Mono" font-weight="bold" font-size="14" fill="#F0ECE2">94941</text>')
+        if numara_goster and spec.get("numara", "94941"):
+            inner.append(f'<text x="{-W1+14:.0f}" y="{-TOR+44*s:.0f}" font-family="DejaVu Sans Mono" font-weight="bold" font-size="14" fill="#F0ECE2">{spec.get("numara", "94941")}</text>')
     o.append(f'<g transform="translate({hip[0]:.1f},{hip[1]:.1f}) rotate({p["govde"]})">'
              f'<defs><clipPath id="{tid}"><path d="{torso}"/></clipPath></defs><path d="{torso}" fill="{sh}"/>'
              f'<g clip-path="url(#{tid})">{"".join(inner)}</g><path d="{torso}" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/></g>')
@@ -381,10 +393,13 @@ def kafa(spec, view="3q", ifade="odak", look=None):
         import yetiskin as _Y
         _Y._ESKI_KAFA = kafa_temel
         return _Y.kafa(spec, view, ifade, look)
+    if spec.get("_tip") == "yan":
+        import yuzler as _YZ
+        return _YZ.kafa(spec, view, ifade, look)
     return kafa_temel(spec, view, ifade, look)
 
 def _boyun_ofset(spec):
-    if spec.get("_tip") == "michael" and not spec.get("child"):
+    if spec.get("_tip") in ("michael", "yan") and not spec.get("child"):
         import yetiskin as _Y
         return getattr(_Y, "BOYUN_KISALT", 0)
     return 0
