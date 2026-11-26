@@ -212,18 +212,153 @@ def figur(spec, ifade="odak", kol_sol=None, kol_sag=None, eller=("relax", "relax
     o.append(f'<g transform="rotate(180 {ka[2][0]:.1f} {ka[2][1]+8:.1f})">' + hand3(ka[2][0], ka[2][1] + 8, 20 * s, sk, eller[1], -1) + '</g>' if eller[1] == "relax" else hand3(ka[2][0], ka[2][1], 20 * s, sk, eller[1], 1))
     return "".join(o)
 
-def turna(s=1.0, isik=0.0, kanat=0.0):
-    """Kâğıt turna TEK KAYNAK. Merkez (0,0) gövde ortası. kanat: -1..1 kanat çırpma (animasyon)."""
-    p0, p1, p2 = "#F6F2E8", "#DCD5C6", "#B9B09E"
-    ky = -86 - 30 * kanat
-    return (f'<g transform="scale({s})">'
-            f'<ellipse cx="0" cy="44" rx="78" ry="9" fill="#000" opacity="0.2"/>'
-            f'<path d="M-26,-6 L-36,{ky*0.95:.0f} L16,-12 Z" fill="{p2}" stroke="{INK}" stroke-width="3.2" stroke-linejoin="round"/>'      # uzak kanat
-            f'<path d="M-46,4 L0,-14 L46,4 L0,30 Z" fill="{p1}" stroke="{INK}" stroke-width="3.2" stroke-linejoin="round"/>'              # gövde elması
-            f'<path d="M-46,4 L0,-14 L0,30 Z" fill="{p0}" stroke="{INK}" stroke-width="3.2" stroke-linejoin="round"/>'
-            f'<path d="M-30,6 L-82,-48 L-74,-50 L-22,-2 Z" fill="{p0}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'          # kuyruk
-            f'<path d="M30,6 L76,-56 L92,-52 L84,-46 L80,-48 L24,-2 Z" fill="{p1}" stroke="{INK}" stroke-width="3" stroke-linejoin="round"/>'  # boyun + baş
-            f'<path d="M-20,-4 L44,{ky:.0f} L26,-6 Z" fill="{p0}" stroke="{INK}" stroke-width="3.2" stroke-linejoin="round"/>'              # yakın kanat
-            f'<path d="M-18,-6 L44,{ky:.0f}" stroke="#FFF7D8" stroke-width="{2+5*isik:.1f}" opacity="{0.25+0.65*isik:.2f}"/>'
-            f'<path d="M0,-14 L0,30" stroke="{p2}" stroke-width="2" opacity="0.8"/>'
-            f'</g>')
+def turna(s=1.0, isik=0.0, kanat=0.0, kagit="#F7F3EA", golge=True):
+    """Kâğıt turna TEK KAYNAK (v3.1, gerçekçi origami). Merkez (0,0) gövde ortası, sağa bakar.
+    Elmas gövde, ince yukarı boyun ve kuyruk sivrileri, aşağı katlı baş, V açısıyla kalkan iki geniş
+    üçgen kanat (her biri kat iziyle ışık/gölge yüzeyine bölünür), hafif kâğıt dokusu.
+    isik: 0..1 sabah ışığı; kanat: -1..1 kanat çırpma (V açılır/kapanır)."""
+    L = kagit; M = shade(kagit, 0.91); D = shade(kagit, 0.80); DD = shade(kagit, 0.68)
+    lw = 2.4 / max(s, 0.3) ** 0.6; crease = shade(kagit, 0.58)
+    def pg(pts, fill):
+        d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in pts) + " Z"
+        return f'<path d="{d}" fill="{fill}" stroke="{INK}" stroke-width="{lw:.2f}" stroke-linejoin="round"/>'
+    def ln(a, b, w=1.1, op=0.75):
+        return f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{crease}" stroke-width="{w/max(s,0.3)**0.5:.2f}" opacity="{op}"/>'
+    sp = 22 * kanat                                 # V açıklığı
+    fa = (-44 - sp, -112 + 46 * kanat)         # uzak kanat ucu
+    na = (54 + sp, -120 + 50 * kanat)          # yakın kanat ucu
+    o = [f'<g transform="scale({s})">'] + ([f'<ellipse cx="4" cy="48" rx="88" ry="9" fill="#000" opacity="0.22"/>'] if golge else [])
+    # uzak kanat: iki yüz
+    fm = (-4, -8)
+    o += [pg([(-38, 2), fa, fm], DD), pg([fm, fa, (30, -6)], D)]
+    # kuyruk
+    o += [pg([(-24, 0), (-106, -60), (-36, 12)], M), pg([(-24, 0), (-106, -60), (-14, -6)], L)]
+    # gövde elması (ışık sol üstten)
+    o += [pg([(-46, 6), (0, -12), (0, 36)], L), pg([(0, -12), (46, 6), (0, 36)], M),
+          pg([(-46, 6), (0, 36), (-10, 42)], D), pg([(0, 36), (46, 6), (10, 42)], DD)]
+    # boyun + baş
+    o += [pg([(24, 0), (98, -72), (36, 12)], D), pg([(24, 0), (98, -72), (14, -6)], M),
+          pg([(98, -72), (94, -64), (116, -54)], L), pg([(94, -64), (116, -54), (104, -52)], D)]
+    # yakın kanat: iki yüz (ışık + gölge), kat izi
+    nm = (8, -10)
+    o += [pg([(-30, 6), na, nm], M), pg([nm, na, (42, 2)], L), ln(nm, na)]
+    # kat izleri
+    o += [ln((0, -12), (0, 36)), ln((-14, -6), (-106, -60), 0.9, 0.5), ln((14, -6), (98, -72), 0.9, 0.5), ln(fm, fa, 0.9, 0.5)]
+    # kâğıt dokusu: çok ince lifler (yalnız büyük ölçekte)
+    if False:
+        r = random.Random(7)
+        for _ in range(26):
+            x, y = r.uniform(-30, 40), r.uniform(-90, 30)
+            o.append(f'<path d="M{x:.0f},{y:.0f} l{r.uniform(4,10):.0f},{r.uniform(-3,3):.0f}" stroke="{D}" stroke-width="0.6" opacity="0.5"/>')
+    # kenar ışığı ve sabah ışığı
+    hl = "#FFF8DC"
+    o.append(f'<path d="M-30,6 L{na[0]:.0f},{na[1]:.0f} M24,0 L98,-72 M-24,0 L-106,-60 M-46,6 L0,-12" stroke="{hl}" stroke-width="{(1.2+1.6*isik)/max(s,0.3)**0.5:.2f}" opacity="{0.4+0.4*isik:.2f}" stroke-linecap="round"/>')
+    if isik > 0 and golge: o.append(f'<ellipse cx="10" cy="-40" rx="120" ry="90" fill="#FFE9B0" opacity="{0.10*isik:.2f}"/>')
+    o.append('</g>')
+    return "".join(o)
+
+# ───────────────────────── v2: iskeletli, pozlanabilir figür ─────────────────────────
+def _uc(x, y, a, L):
+    """(x,y) noktasından dikeyden a derece (sağa +) L uzunlukta aşağı doğru uç."""
+    r = math.radians(a); return x + L * math.sin(r), y + L * math.cos(r)
+
+def _seg(a, b, w, c):
+    return (f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{INK}" stroke-width="{w+9:.1f}" stroke-linecap="round"/>'
+            f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{c}" stroke-width="{w:.1f}" stroke-linecap="round"/>')
+
+POZ_DUR = dict(govde=3, bas=0, kol_on=(8, -6), kol_arka=(-6, 10), bacak_on=(4, 0), bacak_arka=(-6, 6), el_on="relax", el_arka="relax")
+
+def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_ek=""):
+    """Pozlanabilir 3/4 figür, sağa bakar, yer y=0. poz alanları (derece):
+    govde: gövde eğimi (öne +); bas: baş eğimi; kol_on/kol_arka: (omuz, dirsek) dikeyden, öne +;
+    bacak_on/bacak_arka: (kalça, diz bükümü); el_on/el_arka: relax|open|fist|grip|point.
+    el_on_ek: yakın elin içine çizilecek SVG ('HX','HY' yer tutucu)."""
+    p = dict(POZ_DUR); p.update(poz or {})
+    child = spec.get("child"); s = 0.76 if child else 1.0; br = 1.18 if spec.get("broad") else 1.0
+    sk = spec["skin"]; sh = spec["shirt"]; sd = spec["shirt_d"]
+    TH, SN = 118 * s, 112 * s            # uyluk, baldır
+    UA, FA = 112 * s, 104 * s            # üst kol, ön kol
+    TOR = 200 * s                        # pelvis→omuz
+    # pelvis yüksekliği: en alçak ayak yere değsin
+    def ayak_y(t, k):
+        kx, ky = _uc(0, 0, t, TH); ax, ay = _uc(kx, ky, t - k, SN); return ay
+    hip_y = -max(ayak_y(*p["bacak_on"]), ayak_y(*p["bacak_arka"])) - 26 * s
+    hip = (0, hip_y)
+    g = math.radians(p["govde"])
+    def tw(lx, ly):  # gövde yerelinden dünyaya (pelvis merkezli, yukarı -y)
+        return hip[0] + lx * math.cos(g) - ly * math.sin(g), hip[1] + lx * math.sin(g) + ly * math.cos(g)
+    sh_on, sh_ark = tw(64 * br * s, -TOR + 14 * s), tw(-60 * br * s, -TOR + 18 * s)
+    neck = tw(8 * s, -TOR - 10 * s)
+    o = [f'<ellipse cx="0" cy="4" rx="{110*br*s:.0f}" ry="16" fill="#000" opacity="0.25"/>']
+    def bacak(side, t, k, ton):
+        hx, hy = tw(side * 26 * br * s, 0)
+        kx, ky = _uc(hx, hy, t, TH); ax, ay = _uc(kx, ky, t - k, SN)
+        out = _seg((hx, hy), (kx, ky), 60 * s, ton) + _seg((kx, ky), (ax, ay), 54 * s, ton)
+        out += (f'<path d="M{ax-26*s:.0f},{ay-10:.0f} L{ax+30*s:.0f},{ay-10:.0f} Q{ax+54*s:.0f},{ay+2:.0f} {ax+50*s:.0f},{ay+22:.0f} L{ax-28*s:.0f},{ay+22:.0f} Z" '
+                f'fill="{spec["shoe"]}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round" transform="rotate({max(-25, min(25, (t-k)*0.5)):.0f} {ax:.0f} {ay:.0f})"/>')
+        return out
+    def kol(sp, oa, da, w, renk, ten, el, ek=""):
+        ex, ey = _uc(*sp, oa, UA); wx, wy = _uc(ex, ey, oa + da, FA)
+        out = _seg((ex, ey), (wx, wy), w * 0.8, ten)
+        if not child and not spec.get("female"):
+            out += f'<g transform="translate({ex:.1f},{ey:.1f}) rotate({-(oa+da):.1f})">{dovme_onkol(w*0.8, FA, plan)}</g>'
+        out += _seg(sp, (ex, ey), w, renk)
+        if not child:
+            out += (f'<ellipse cx="{ex:.1f}" cy="{ey:.1f}" rx="{w*0.62:.1f}" ry="{w*0.42:.1f}" fill="{shade(renk,0.85)}" stroke="{INK}" stroke-width="4" '
+                    f'transform="rotate({90-(oa+da):.1f} {ex:.1f} {ey:.1f})"/>')
+        hx, hy = _uc(wx, wy, oa + da, 14 * s)
+        if el == "relax":
+            out += f'<g transform="rotate({180-(oa+da):.1f} {hx:.1f} {hy:.1f})">{hand3(hx, hy, 20*s, ten, "open", -1)}</g>'
+        else:
+            out += f'<g transform="rotate({-(oa+da)*0.6:.1f} {hx:.1f} {hy:.1f})">{hand3(hx, hy, 20*s, ten, el, 1)}</g>'
+        if ek: out += ek.replace("HX", f"{hx:.1f}").replace("HY", f"{hy:.1f}")
+        return out
+    # arka katmanlar
+    o.append(bacak(-1, *p["bacak_arka"], shade(spec["pants"], 0.82)))
+    o.append(kol(sh_ark, *p["kol_arka"], 40 * s * br, sd, shade(sk, 0.88), p["el_arka"]))
+    o.append(bacak(1, *p["bacak_on"], spec["pants"]))
+    # gövde: V biçimli, yerel koordinatta çizilip döndürülür
+    W1, W2 = 72 * br * s, 50 * br * s
+    torso = (f"M{-W1:.0f},{-TOR+10*s:.0f} Q{-W1-8:.0f},{-TOR*0.6:.0f} {-W2:.0f},{-TOR*0.2:.0f} L{-W2-4:.0f},{20*s:.0f} "
+             f"Q0,{34*s:.0f} {W2+6:.0f},{18*s:.0f} L{W2+2:.0f},{-TOR*0.2:.0f} Q{W1+10:.0f},{-TOR*0.6:.0f} {W1:.0f},{-TOR+10*s:.0f} "
+             f"Q0,{-TOR-16*s:.0f} {-W1:.0f},{-TOR+10*s:.0f} Z")
+    tid = f"v{abs(hash((sh, s, br, p['govde']))) % 10**7}"
+    inner = [f'<rect x="{W2-6:.0f}" y="{-TOR-40:.0f}" width="80" height="{TOR+90:.0f}" fill="{sd}"/>',
+             f'<path d="M{-W1+10:.0f},{-TOR+30:.0f} Q{-W2+10:.0f},{-TOR*0.4:.0f} {-W2+6:.0f},0" stroke="#FFFFFF" stroke-width="9" fill="none" opacity="0.16"/>']
+    if spec.get("stripes"):
+        for k in range(9): inner.append(f'<rect x="-200" y="{-TOR+20*s+k*28*s:.0f}" width="400" height="{10*s:.0f}" fill="{spec["stripes"]}" opacity="0.9"/>')
+    elif not spec.get("female"):
+        inner.append(f'<path d="M-6,{-TOR-6:.0f} L14,{-TOR+44*s:.0f} L34,{-TOR-6:.0f}" fill="{spec["under"]}" stroke="{INK}" stroke-width="3"/>'
+                     f'<path d="M-14,{-TOR-2:.0f} L2,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f} M42,{-TOR-2:.0f} L26,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f}" fill="{shade(sh,1.08)}" stroke="{INK}" stroke-width="3"/>'
+                     + "".join(f'<circle cx="16" cy="{-TOR+58*s+k*42*s:.0f}" r="3.5" fill="#E8E4DA" stroke="{INK}" stroke-width="1.5"/>' for k in range(4))
+                     + f'<rect x="{-W1+16:.0f}" y="{-TOR+52*s:.0f}" width="40" height="34" rx="3" fill="none" stroke="{INK}" stroke-width="2.6"/>')
+        if numara_goster:
+            inner.append(f'<text x="{-W1+14:.0f}" y="{-TOR+44*s:.0f}" font-family="DejaVu Sans Mono" font-weight="bold" font-size="14" fill="#F0ECE2">94941</text>')
+    o.append(f'<g transform="translate({hip[0]:.1f},{hip[1]:.1f}) rotate({p["govde"]})">'
+             f'<defs><clipPath id="{tid}"><path d="{torso}"/></clipPath></defs><path d="{torso}" fill="{sh}"/>'
+             f'<g clip-path="url(#{tid})">{"".join(inner)}</g><path d="{torso}" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/></g>')
+    # boyun + baş
+    hx, hy = _uc(*neck, 180 + p["govde"] * 0.3 + p["bas"] * 0.3, 70 * s)
+    o.append(_seg(neck, (neck[0] + (hx - neck[0]) * 0.5, neck[1] + (hy - neck[1]) * 0.5), 44 * s, shade(sk, 0.84)))
+    o.append(f'<g transform="translate({hx:.1f},{hy:.1f}) rotate({p["govde"]*0.4 + p["bas"]:.1f}) scale({0.62*s*(1.05 if child else 1):.3f})">{kafa(spec, "3q", ifade)}</g>')
+    o.append(kol(sh_on, *p["kol_on"], 42 * s * br, sh, sk, p["el_on"], el_on_ek))
+    return "".join(o)
+
+POZLAR = {
+    "dur":        POZ_DUR,
+    "bak_1":      dict(bas=-4),
+    "bak_2":      dict(bas=6, govde=4),
+    "bak_3":      dict(bas=10, govde=6, kol_on=(14, -10)),
+    "dokun_1":    dict(govde=6, kol_on=(30, -20), el_on="relax"),
+    "dokun_2":    dict(govde=10, kol_on=(70, -30), el_on="open"),
+    "dokun_3":    dict(govde=14, kol_on=(100, -12), el_on="open", bacak_on=(14, 10)),
+    "yuru_1":     dict(govde=6, kol_on=(-18, 14), kol_arka=(22, 18), bacak_on=(22, 4), bacak_arka=(-18, 14)),
+    "yuru_2":     dict(govde=6, kol_on=(2, 10), kol_arka=(0, 10), bacak_on=(2, 0), bacak_arka=(-4, 30)),
+    "yuru_3":     dict(govde=6, kol_on=(22, 18), kol_arka=(-18, 14), bacak_on=(-18, 14), bacak_arka=(22, 4)),
+    "kos_1":      dict(govde=16, bas=-4, kol_on=(-36, 70), kol_arka=(40, 60), bacak_on=(40, 22), bacak_arka=(-38, 70), el_on="fist", el_arka="fist"),
+    "kos_2":      dict(govde=14, bas=-4, kol_on=(4, 76), kol_arka=(-4, 76), bacak_on=(4, 8), bacak_arka=(16, 96), el_on="fist", el_arka="fist"),
+    "kos_3":      dict(govde=16, bas=-4, kol_on=(40, 60), kol_arka=(-36, 70), bacak_on=(-38, 70), bacak_arka=(40, 22), el_on="fist", el_arka="fist"),
+    "uzat_1":     dict(govde=2, kol_on=(10, 60), el_on="grip"),
+    "uzat_2":     dict(govde=6, kol_on=(40, 40), el_on="open"),
+    "uzat_3":     dict(govde=10, kol_on=(76, 6), el_on="open", bas=4),
+}

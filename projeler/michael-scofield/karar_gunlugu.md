@@ -36,3 +36,10 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Teknik: Ragnar'ın `head3` fonksiyonu her erkek karaktere Ragnar'ın yarasını ekliyordu (R3 sızıntı riski) → projeye özel eklemli `karakter.py` yazıldı (kafa, kol, figür, dövme ve turna tek kaynak).
 - Öz değerlendirme: 1. tur nokta gözler, turna uçağa benziyor, diken saçlı çocuk, numara kolun altında → 2. tur büyük gözler, yeni turna, yuvarlak tutamlı saç, numara sol göğüste → 3. tur turna kanatları genişletildi, sarkan eller parmak aşağı, etiket çakışması giderildi.
 - Ders: Ödünç alınan karakter fonksiyonları başka karakterin kimlik öğelerini varsayılan olarak taşıyabilir → yeni projede kimlik bayrakları varsayılan "kapalı" olan yeni modül yazılır.
+
+## Tur 5 · 26.11.2026 16:50–17:15 · F3 beden dinamiği, eylem kartı, turna v3
+- Kararlar (Tur 4 sorusu): model kartı → **yön doğru, beden dinamikleşsin**; turna ve dövme → **uygun**. Kullanıcı ardından (16:18): **"turnayı iyileştir, daha belirgin ve gerçekçi olmalı."**
+- Yapılanlar: `karakter.py` → `figur2()` iskeletli, pozlanabilir figür (gövde eğimi, baş, omuz/dirsek, kalça/diz; pelvis yüksekliği ayağa göre otomatik). `POZLAR`: bak, dokun, yürü, koş, turna uzat (her biri 3 anahtar kare). `kartlar/eylem_michael_v1.png`.
+- Turna v3.1: elmas gövde, ince boyun ve kuyruk sivrileri, aşağı katlı baş, V açısıyla kalkan geniş üçgen kanatlar (kat iziyle ışık/gölge yüzeyi), sabit kontur kalınlığı, kanat çırpma parametresi, elde tutulurken gölge/hale kapalı. `kartlar/turna_v3.png` (+ R13 kırpması, 120/60/32 px okunurluk).
+- Öz değerlendirme: turna 1. tur kanatlar şerit gibi, taç görünümü, kirli doku → 2. tur geniş üçgen kanatlar, hafif doku → 3. tur liflerin taşması ve kalın sabah ışığı giderildi. Eylem kartı: koşu orta karesi çökük → yeniden kuruldu; elde turnanın gölgesi kaldırıldı.
+- Ders: Origami gibi gerçek nesnelerde siluet önce doğru kurulmalı (kanat = gövde sırtından çıkan geniş üçgen); doku ve ışık ancak siluet okunduktan sonra eklenir. Küçük boyut (32 px) kontrolü siluet hatasını hemen gösterir.
