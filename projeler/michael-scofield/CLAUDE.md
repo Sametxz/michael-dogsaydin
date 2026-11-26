@@ -20,13 +20,16 @@ Born in Lore formatında, ikinci tekil şahısla anlatılan ~9 dakikalık Türk�
 
 ## Değişmez sınırlar
 - Oyuncuya (Wentworth Miller) ya da diğer oyunculara benzeyen yüz çizilmez.
-- **Bu karaktere özgü kopya yasağı:** Dizideki gerçek dövme sanat eserinin (üst gövde ve kolları kaplayan, şeytan/melek figürlü, belirli kompozisyonlu "Fox River planı" dövmesi) birebir ya da tanınır kopyası çizilmez. Dövme hikâyenin merkezi olduğu için **özgün** bir tasarımla verilir: gizli plan çizgilerinin süslemeye gömüldüğü, kendi motiflerimizle kurulan bir desen. Dövme + kısa kazınmış saç + gri tulum üçlüsü, oyuncu yüzü olmadan kullanılabilir (genel öğeler). F3'te ayrıntılı sınır netleştirilecek.
+- **Bu karaktere özgü kopya yasağı:** Dizideki gerçek dövme sanat eserinin (üst gövde ve kolları kaplayan, şeytan/melek figürlü, belirli kompozisyonlu "Fox River planı" dövmesi) birebir ya da tanınır kopyası çizilmez. Dövme hikâyenin merkezi olduğu için **özgün** bir tasarımla verilir: gizli plan çizgilerinin süslemeye gömüldüğü, kendi motiflerimizle kurulan bir desen. Dövme + kısa kazınmış saç + mavi hapishane gömleği üçlüsü, oyuncu yüzü olmadan kullanılabilir (genel öğeler). F3'te ayrıntılı sınır netleştirilecek.
 - Dizinin müziği, logosu, ekran görüntüsü ve gerçek kişi fotoğrafı kullanılmaz. Kan ve vahşet gösterilmez (ör. parmak kesme, işkence sahneleri yalnızca ima, ışık ve sesle).
 - API anahtarları yalnızca `/home/claude/.secrets/` altında durur, asla repoya girmez.
 
 ## Kullanıcı tercihleri
 (`studyo/docs/06_DERSLER.md §1` geçerli; bu projeye özgü yeni tercihler buraya eklenir)
-- Anlatıcı: George değil, yeni bir ElevenLabs sesi (örnek dinletilerek seçilecek).
+- Anlatıcı: George değil, yeni bir ElevenLabs sesi (örnek dinletilerek seçilecek). **Şimdilik yerel TTS** (XTTS, kredi harcamaz) kullanılır; her şey hazır olunca ses ElevenLabs'ten alınır (kullanıcı, 26.11.2026 15:53).
+- **Taslaklar düşük kalitede** (960 px ya da daha düşük, kaba şekil, kısa render) üretilir; **tam kalite yalnızca tamamlanmış, yayına hazır video** için yapılır. Amaç token ve kredi tasarrufu (kullanıcı, 26.11.2026 15:53).
+- **Bütün karar aşamalarında kullanıcıya sorulur** (karar verici ajan kullanılmaz).
+- Anlatım sıkıcı olmamalı: sürekli akan, geçişli, dinamik; neredeyse her cümle sahnede karşılık bulur.
 
 ## Teknik
 `studyo/docs/07_TEKNIK_HAT.md`. Motor `studyo/motor/`, karakter sistemi `r3/art3.py`, ses `tts/el.py` + `r3/ses2/`, yayın `r3/final/`, kapak `r3/kapak/`. Kod göreli yol kullanır:

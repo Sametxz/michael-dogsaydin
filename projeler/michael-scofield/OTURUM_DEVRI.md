@@ -1,13 +1,13 @@
 # Oturum devri: Michael Scofield
 
-**Son güncelleme:** 26.11.2026 16:00
+**Son güncelleme:** 26.11.2026 16:40
 
 ## Durum
 | Aşama | Durum | Not |
 |---|---|---|
 | F0 Başlangıç | ✅ | Michael Scofield · S1–S4 + The Final Break · ~9 dk · yeni ElevenLabs sesi (seçilecek) |
-| F1 Araştırma | ⏳ | `lore_bible.md` |
-| F2 Omurga | — | tema, çapa, prolog + 6 bölüm, motifler, duygu eğrisi |
+| F1 Araştırma | ✅ | `lore_bible.md` (57 olay) |
+| F2 Omurga | ⏳ onay bekliyor | `omurga.md` v1 |
 | F3 Model ve mekân | — | eklemli karakterler |
 | F4 Prolog / Bölüm I–VI | — | |
 | F5 Ses | — | |
@@ -15,9 +15,10 @@
 | F7 Yayın | — | |
 
 ## Açık işler (sırayla)
-1. F1: `lore_bible.md` (WebSearch ile sezon/bölüm doğrulamalı olay tablosu + görsel kimlik kataloğu).
-2. F2: `omurga.md` + motif listesi + duygu eğrisi → kullanıcıya sunum (kapı).
-3. Anlatıcı: ElevenLabs anahtarı gelince 4–6 Türkçe aday sesle aynı deneme cümlesi üretilip dinletilecek.
+1. F2: kullanıcının omurga kararları → `omurga.md` v2.
+2. F3: model ve mekân kartları (düşük kalite taslak), özgün dövme tasarımı.
+3. Ses: şimdilik yerel XTTS (animatikte `XTTS=1 bash scripts/setup.sh`); ElevenLabs en sonda.
 
 ## Kullanıcıdan beklenen
-- ElevenLabs anahtarları (`/home/claude/.secrets/elevenlabs_key`, `elevenlabs_key2`) — ses denemesi için.
+- Omurga kararları (bölüm yapısı, kanca, hassas sahneler).
+- ElevenLabs anahtarları yalnızca son aşamada.
