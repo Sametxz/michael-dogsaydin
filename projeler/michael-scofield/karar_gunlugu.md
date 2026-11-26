@@ -17,3 +17,9 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - Sunulan: `lore_bible.md` (57 olay, S1–S4 + Final Break, ✅/⚠️ işaretli), `omurga.md` v1 (tema, çapa, 3 imge yankısı, motif-geçiş haritası, prolog + 6 bölüm, duygu eğrisi, kesim listesi).
 - Kontrol: Wikipedia S1E16 özeti cinayeti Michael'a yüklüyor (yanlış, Lincoln'e kurulan tuzak); depo sahnesinin yaşı 11+ olmalı (anne "öldükten" sonra koruyucu aile) → prolog düzeltildi.
 - Ders: İkincil özetler küçük ama kritik hatalar taşıyabilir → her olay en az iki kaynakla ya da bölüm özetiyle çapraz kontrol edilir; yaş ve sıra bilgisi kronolojiden türetilerek denetlenir.
+- Sorulan kararlar ve yanıtlar:
+  - Bölüm yapısı (V = Sona + Scylla, 1:35) → **bu yapı kalsın**.
+  - Prolog kancası ("On bir yaşındasın. Karanlıktasın…") → **uygun**.
+  - Sara'nın kutusu (S3E3) → **kapalı kutu + sembol** (yağmur, titreyen eller, solan renk).
+  - Michael'ın ölümü → **kıvılcım + sönen ışık**, sandalye kıvılcımıyla eşleşme; Sara kapıdan geçer.
+- Ders: Kullanıcı dört önerinin dördünü de kabul etti → omurgada imge yankısı ve duygu eğrisi baştan net verilince karar hızlanıyor → F3 ve örgülerde de her soruyu bir imgeye bağlayarak sun.

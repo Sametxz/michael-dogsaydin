@@ -1,6 +1,6 @@
 # Omurga (F2 taslağı v1): Michael Scofield Olarak Doğsaydın?
 
-Durum: **taslak, kullanıcı onayı bekliyor.** Olaylar `lore_bible.md` satır numaralarıyla (#) bağlıdır.
+Durum: **v1 kullanıcı tarafından onaylandı (26.11.2026).** Kararlar: 6 bölüm yapısı kalır; kanca onaylı; Sara kutusu kapalı kalır, sembolle anlatılır; Michael'ın ölümü kıvılcım + sönen ışıkla verilir. Olaylar `lore_bible.md` satır numaralarıyla (#) bağlıdır.
 
 ## 1. Tema ve çapa
 - **Tek cümlelik tema:** Herkesi kapalı odalardan çıkarmayı bilen adam, kendisi için kapı bırakmaz.
