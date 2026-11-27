@@ -14,14 +14,15 @@ INK = "#15110E"
 PLAN = "#7FE6FF"
 
 # ── karakter özellikleri (yalnız genel öğeler; oyuncu benzerliği yok)
-MICHAEL = dict(skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
+MICHAEL = dict(_tip="michael", skin="#D9A988", hair="#231D19", iris="#8DB0B4", brow="#231D19", jaw=0.9, face_len=1.2, keskin=True, goz_k=0.86,
                shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True)
-MICHAEL_COCUK = dict(MICHAEL, child=True, keskin=False, goz_k=1.0, jaw=1.0, face_len=1.08, hair="#3A302A", shirt="#B8563E", shirt_d="#93412F", pants="#3C4A5C",
-                     stripes="#E9D9B8", buzz=False)
-LINCOLN = dict(skin="#C99C7C", hair="#3A322C", iris="#6F7F88", brow="#2A2420", jaw=1.22, face_len=1.0,
-               shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True)
-SARA = dict(skin="#E8BFA2", hair="#7A2E22", iris="#6A8A6E", brow="#5A241A", jaw=0.9, face_len=1.02, female=True,
-            shirt="#F2F0EA", shirt_d="#CFCBC0", under="#5E7A8A", pants="#3A4250", shoe="#2A2420", buzz=False)
+MICHAEL_COCUK = dict(_tip="michael", child=True)   # renk/kıyafet aday/cocuk.py MICHAEL_COCUK_V2'den gelir
+LINCOLN = dict(_tip="yan", skin="#D49A78", skin_sh="#B07A5E", skin_dk="#93604A", skin_hl="#F7CCA8",
+               hair="#2A221C", brow="#221B16", iris="#7E98A6", iris_d="#2E3E48", en=1.17, goz_k=0.8, kas_k=1.45, sakal=0.6, boy=1.07, yas_cizgi=True,
+               shirt="#6F8FB0", shirt_d="#55728F", under="#ECE8DE", pants="#2E3A4A", shoe="#2A2420", buzz=True, broad=True, numara=None)
+SARA = dict(_tip="yan", female=True, skin="#EDBB9A", skin_sh="#D19A7C", skin_dk="#B47E64", skin_hl="#FFE2C8",
+            hair="#8A3524", brow="#5E2418", iris="#86B07F", iris_d="#334A33", en=0.95, goz_k=1.14, goz_h=0.86, kapak_ac=0.12, kas_k=0.8, sakal=0.0, boy=0.95,
+            dudak="#C46A5C", shirt="#F2F0EA", shirt_d="#CFCBC0", under="#5E7A8A", pants="#3A4250", shoe="#2A2420", buzz=False)
 
 # ifade: (kaş_iç, kaş_dış, üst_kapak, alt_kapak, ağız, ekstra)
 IFADE = {
@@ -267,6 +268,7 @@ def _seg(a, b, w, c):
     return (f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{INK}" stroke-width="{w+9:.1f}" stroke-linecap="round"/>'
             f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{c}" stroke-width="{w:.1f}" stroke-linecap="round"/>')
 
+_VID = [0]
 POZ_DUR = dict(govde=3, bas=0, kol_on=(8, -6), kol_arka=(-6, 10), bacak_on=(4, 0), bacak_arka=(-6, 6), el_on="relax", el_arka="relax")
 
 def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_ek=""):
@@ -274,6 +276,11 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     govde: gövde eğimi (öne +); bas: baş eğimi; kol_on/kol_arka: (omuz, dirsek) dikeyden, öne +;
     bacak_on/bacak_arka: (kalça, diz bükümü); el_on/el_arka: relax|open|fist|grip|point.
     el_on_ek: yakın elin içine çizilecek SVG ('HX','HY' yer tutucu)."""
+    if spec.get("boy", 1.0) != 1.0 and not spec.get("_boyda"):
+        return f'<g transform="scale({spec["boy"]})">' + figur2(dict(spec, _boyda=True), ifade, poz, plan, numara_goster, el_on_ek) + '</g>'
+    if spec.get("_tip") == "michael" and spec.get("child"):
+        import cocuk as _C
+        return _C.figur(_C.MICHAEL_COCUK_V2, ifade, poz, plan)
     p = dict(POZ_DUR); p.update(poz or {})
     child = spec.get("child"); s = 0.76 if child else 1.0; br = 1.18 if spec.get("broad") else 1.0
     sk = spec["skin"]; sh = spec["shirt"]; sd = spec["shirt_d"]
@@ -288,20 +295,26 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
     g = math.radians(p["govde"])
     def tw(lx, ly):  # gövde yerelinden dünyaya (pelvis merkezli, yukarı -y)
         return hip[0] + lx * math.cos(g) - ly * math.sin(g), hip[1] + lx * math.sin(g) + ly * math.cos(g)
-    sh_on, sh_ark = tw(64 * br * s, -TOR + 14 * s), tw(-60 * br * s, -TOR + 18 * s)
+    FEM = spec.get("female"); fo = 0.8 if FEM else 1.0      # omuz genişliği
+    fk = 0.78 if FEM else 1.0; fb = 0.7 if FEM else 1.0        # kol / bacak kalınlığı
+    sh_on, sh_ark = tw(64 * br * s * fo, -TOR + 14 * s), tw(-60 * br * s * fo, -TOR + 18 * s)
     neck = tw(8 * s, -TOR - 10 * s)
     o = [f'<ellipse cx="0" cy="4" rx="{110*br*s:.0f}" ry="16" fill="#000" opacity="0.25"/>']
     def bacak(side, t, k, ton):
-        hx, hy = tw(side * 26 * br * s, 0)
+        hx, hy = tw(side * 26 * br * s * (1.12 if FEM else 1.0), 0)
         kx, ky = _uc(hx, hy, t, TH); ax, ay = _uc(kx, ky, t - k, SN)
-        out = _seg((hx, hy), (kx, ky), 60 * s, ton) + _seg((kx, ky), (ax, ay), 54 * s, ton)
+        out = _seg((hx, hy), (kx, ky), 60 * s * fb, ton) + _seg((kx, ky), (ax, ay), 48 * s * fb, ton)
+        if FEM:  # kadın ayakkabısı: ince, sivri burunlu, alçak topuk
+            out += (f'<path d="M{ax-18*s:.0f},{ay-8:.0f} L{ax+22*s:.0f},{ay-8:.0f} Q{ax+46*s:.0f},{ay+6:.0f} {ax+44*s:.0f},{ay+18:.0f} L{ax-14*s:.0f},{ay+18:.0f} L{ax-20*s:.0f},{ay+22:.0f} L{ax-24*s:.0f},{ay+10:.0f} Z" '
+                    f'fill="{spec["shoe"]}" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>')
+            return out
         out += (f'<path d="M{ax-26*s:.0f},{ay-10:.0f} L{ax+30*s:.0f},{ay-10:.0f} Q{ax+54*s:.0f},{ay+2:.0f} {ax+50*s:.0f},{ay+22:.0f} L{ax-28*s:.0f},{ay+22:.0f} Z" '
                 f'fill="{spec["shoe"]}" stroke="{INK}" stroke-width="4.5" stroke-linejoin="round" transform="rotate({max(-25, min(25, (t-k)*0.5)):.0f} {ax:.0f} {ay:.0f})"/>')
         return out
     def kol(sp, oa, da, w, renk, ten, el, ek=""):
         ex, ey = _uc(*sp, oa, UA); wx, wy = _uc(ex, ey, oa + da, FA)
         out = _seg((ex, ey), (wx, wy), w * 0.8, ten)
-        if not child and not spec.get("female"):
+        if not child and not spec.get("female") and spec.get("_tip") == "michael":
             out += f'<g transform="translate({ex:.1f},{ey:.1f}) rotate({-(oa+da):.1f})">{dovme_onkol(w*0.8, FA, plan)}</g>'
         out += _seg(sp, (ex, ey), w, renk)
         if not child:
@@ -316,33 +329,53 @@ def figur2(spec, ifade="odak", poz=None, plan=False, numara_goster=True, el_on_e
         return out
     # arka katmanlar
     o.append(bacak(-1, *p["bacak_arka"], shade(spec["pants"], 0.82)))
-    o.append(kol(sh_ark, *p["kol_arka"], 40 * s * br, sd, shade(sk, 0.88), p["el_arka"]))
+    o.append(kol(sh_ark, *p["kol_arka"], 40 * s * br * fk, sd, shade(sk, 0.88), p["el_arka"]))
     o.append(bacak(1, *p["bacak_on"], spec["pants"]))
     # gövde: V biçimli, yerel koordinatta çizilip döndürülür
     W1, W2 = 72 * br * s, 50 * br * s
-    torso = (f"M{-W1:.0f},{-TOR+10*s:.0f} Q{-W1-8:.0f},{-TOR*0.6:.0f} {-W2:.0f},{-TOR*0.2:.0f} L{-W2-4:.0f},{20*s:.0f} "
+    if FEM:
+        W1 = 58 * s; Wb = 40 * s; Wk = 60 * s; ET = 86 * s     # omuz, bel, kalça, önlük eteği
+        W2 = Wb
+        torso = (f"M{-W1:.0f},{-TOR+12*s:.0f} Q{-W1-4:.0f},{-TOR*0.72:.0f} {-Wb-4:.0f},{-TOR*0.42:.0f} Q{-Wb:.0f},{-TOR*0.25:.0f} {-Wk:.0f},{-6*s:.0f} "
+                 f"L{-Wk-8:.0f},{ET:.0f} Q0,{ET+12*s:.0f} {Wk+10:.0f},{ET-4:.0f} L{Wk+2:.0f},{-6*s:.0f} Q{Wb+4:.0f},{-TOR*0.25:.0f} {Wb+6:.0f},{-TOR*0.42:.0f} "
+                 f"Q{W1+8:.0f},{-TOR*0.72:.0f} {W1:.0f},{-TOR+12*s:.0f} Q0,{-TOR-14*s:.0f} {-W1:.0f},{-TOR+12*s:.0f} Z")
+    else:
+      torso = (f"M{-W1:.0f},{-TOR+10*s:.0f} Q{-W1-8:.0f},{-TOR*0.6:.0f} {-W2:.0f},{-TOR*0.2:.0f} L{-W2-4:.0f},{20*s:.0f} "
              f"Q0,{34*s:.0f} {W2+6:.0f},{18*s:.0f} L{W2+2:.0f},{-TOR*0.2:.0f} Q{W1+10:.0f},{-TOR*0.6:.0f} {W1:.0f},{-TOR+10*s:.0f} "
              f"Q0,{-TOR-16*s:.0f} {-W1:.0f},{-TOR+10*s:.0f} Z")
-    tid = f"v{abs(hash((sh, s, br, p['govde']))) % 10**7}"
+    _VID[0] += 1; tid = f"v{_VID[0]}"
     inner = [f'<rect x="{W2-6:.0f}" y="{-TOR-40:.0f}" width="80" height="{TOR+90:.0f}" fill="{sd}"/>',
              f'<path d="M{-W1+10:.0f},{-TOR+30:.0f} Q{-W2+10:.0f},{-TOR*0.4:.0f} {-W2+6:.0f},0" stroke="#FFFFFF" stroke-width="9" fill="none" opacity="0.16"/>']
     if spec.get("stripes"):
         for k in range(9): inner.append(f'<rect x="-200" y="{-TOR+20*s+k*28*s:.0f}" width="400" height="{10*s:.0f}" fill="{spec["stripes"]}" opacity="0.9"/>')
+    elif spec.get("female"):
+        bl = spec["under"]
+        inner.append(f'<path d="M-22,{-TOR-6:.0f} Q-26,{-TOR*0.7:.0f} -20,{-TOR*0.45:.0f} Q-16,{-TOR*0.25:.0f} -26,{-4*s:.0f} L50,{-4*s:.0f} Q42,{-TOR*0.25:.0f} 46,{-TOR*0.45:.0f} Q52,{-TOR*0.7:.0f} 48,{-TOR-6:.0f} Z" fill="{bl}" stroke="{INK}" stroke-width="3"/>'
+                     f'<path d="M-4,{-TOR-6:.0f} L13,{-TOR+40*s:.0f} L30,{-TOR-6:.0f}" fill="{spec["skin"]}" stroke="{INK}" stroke-width="2.6"/>'
+                     f'<path d="M-14,{-TOR*0.62:.0f} Q2,{-TOR*0.56:.0f} 12,{-TOR*0.62:.0f} M18,{-TOR*0.62:.0f} Q30,{-TOR*0.56:.0f} 42,{-TOR*0.62:.0f}" stroke="{shade(bl,0.75)}" stroke-width="2.4" fill="none"/>'
+                     f'<path d="M-22,{-TOR*0.42:.0f} Q12,{-TOR*0.38:.0f} 48,{-TOR*0.42:.0f}" stroke="{shade(bl,0.7)}" stroke-width="3" fill="none"/>')
+        inner.append(f'<path d="M-4,{-TOR-8:.0f} L14,{-TOR+62*s:.0f} L32,{-TOR-8:.0f} Z" fill="none" stroke="none"/>'
+                     f'<path d="M-16,{-TOR-4:.0f} L4,{-TOR+70*s:.0f} L-6,{-TOR+150*s:.0f} M44,{-TOR-4:.0f} L24,{-TOR+70*s:.0f} L34,{-TOR+150*s:.0f}" fill="none" stroke="{INK}" stroke-width="3"/>'
+                     f'<path d="M2,{-TOR+2:.0f} C-30,{-TOR+60:.0f} -26,{-TOR+120:.0f} -4,{-TOR+132:.0f} M28,{-TOR+2:.0f} C46,{-TOR+50:.0f} 44,{-TOR+100:.0f} 30,{-TOR+118:.0f}" stroke="#2E3338" stroke-width="5" fill="none" stroke-linecap="round"/>'
+                     f'<circle cx="-4" cy="{-TOR+138:.0f}" r="9" fill="#C8CDD2" stroke="{INK}" stroke-width="3"/>'
+                     f'<rect x="{-W1+18:.0f}" y="{-TOR+60*s:.0f}" width="26" height="34" rx="3" fill="#E9EEF2" stroke="{INK}" stroke-width="2.5"/>'
+                     f'<rect x="{-W1+22:.0f}" y="{-TOR+66*s:.0f}" width="18" height="10" fill="#7A9AB0"/>'
+                     f'<rect x="{W2-40:.0f}" y="{-TOR*0.32:.0f}" width="34" height="28" rx="3" fill="none" stroke="{INK}" stroke-width="2.5"/>')
     elif not spec.get("female"):
         inner.append(f'<path d="M-6,{-TOR-6:.0f} L14,{-TOR+44*s:.0f} L34,{-TOR-6:.0f}" fill="{spec["under"]}" stroke="{INK}" stroke-width="3"/>'
                      f'<path d="M-14,{-TOR-2:.0f} L2,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f} M42,{-TOR-2:.0f} L26,{-TOR+32*s:.0f} L14,{-TOR+8*s:.0f}" fill="{shade(sh,1.08)}" stroke="{INK}" stroke-width="3"/>'
                      + "".join(f'<circle cx="16" cy="{-TOR+58*s+k*42*s:.0f}" r="3.5" fill="#E8E4DA" stroke="{INK}" stroke-width="1.5"/>' for k in range(4))
                      + f'<rect x="{-W1+16:.0f}" y="{-TOR+52*s:.0f}" width="40" height="34" rx="3" fill="none" stroke="{INK}" stroke-width="2.6"/>')
-        if numara_goster:
-            inner.append(f'<text x="{-W1+14:.0f}" y="{-TOR+44*s:.0f}" font-family="DejaVu Sans Mono" font-weight="bold" font-size="14" fill="#F0ECE2">94941</text>')
+        if numara_goster and spec.get("numara", "94941"):
+            inner.append(f'<text x="{-W1+14:.0f}" y="{-TOR+44*s:.0f}" font-family="DejaVu Sans Mono" font-weight="bold" font-size="14" fill="#F0ECE2">{spec.get("numara", "94941")}</text>')
     o.append(f'<g transform="translate({hip[0]:.1f},{hip[1]:.1f}) rotate({p["govde"]})">'
              f'<defs><clipPath id="{tid}"><path d="{torso}"/></clipPath></defs><path d="{torso}" fill="{sh}"/>'
              f'<g clip-path="url(#{tid})">{"".join(inner)}</g><path d="{torso}" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/></g>')
     # boyun + baş
     hx, hy = _uc(*neck, 180 + p["govde"] * 0.3 + p["bas"] * 0.3, 70 * s)
     o.append(_seg(neck, (neck[0] + (hx - neck[0]) * 0.5, neck[1] + (hy - neck[1]) * 0.5), 44 * s, shade(sk, 0.84)))
-    o.append(f'<g transform="translate({hx:.1f},{hy:.1f}) rotate({p["govde"]*0.4 + p["bas"]:.1f}) scale({0.62*s*(1.05 if child else 1):.3f})">{kafa(spec, "3q", ifade)}</g>')
-    o.append(kol(sh_on, *p["kol_on"], 42 * s * br, sh, sk, p["el_on"], el_on_ek))
+    o.append(f'<g transform="translate({hx:.1f},{hy:.1f}) rotate({p["govde"]*0.4 + p["bas"]:.1f}) scale({0.62*s*(1.05 if child else 1):.3f})"><g transform="translate(0,{_boyun_ofset(spec)})">{kafa(spec, "3q", ifade)}</g></g>')
+    o.append(kol(sh_on, *p["kol_on"], 42 * s * br * fk, sh, sk, p["el_on"], el_on_ek))
     return "".join(o)
 
 POZLAR = {

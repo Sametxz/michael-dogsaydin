@@ -1,5 +1,5 @@
 """F3 model kartı v1: Michael (yetişkin + 11 yaş), görünüşler, ifadeler, dövme ayrıntısı, turna.
-Çıktı: model_michael_v1.png (1280x720, taslak çözünürlüğü). Kullanım: python3 model_michael.py
+Çıktı: model_michael_v2.png (1280x720, taslak çözünürlüğü). Kullanım: python3 model_michael.py
 """
 import subprocess, sys
 from pathlib import Path
@@ -21,9 +21,9 @@ def kart():
          '<filter id="glow"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>',
          f'<rect width="{W}" height="{H}" fill="url(#bg)"/>',
          f'<ellipse cx="190" cy="420" rx="200" ry="320" fill="url(#spot)"/>',
-         etiket(24, 34, "MICHAEL · model kartı v1 (taslak çözünürlüğü)", 18, "#FFFFFF", "start")]
+         etiket(24, 34, "MICHAEL · model kartı v2 · kilitli (taslak çözünürlüğü)", 18, "#FFFFFF", "start")]
     # yetişkin tam figür
-    o.append(g(190, 690, 1.0, K.figur(K.MICHAEL, "odak", eller=("relax", "relax"))))
+    o.append(g(190, 690, 1.0, K.figur2(K.MICHAEL, "odak")))
     o.append(etiket(190, 712, "yetişkin · Fox River"))
     # görünüşler
     for x, v in ((440, "front"), (580, "3q"), (720, "side")):
@@ -45,13 +45,13 @@ def kart():
     o.append(g(880, 560, 0.7, K.turna(1.0, isik=0.0, kanat=0.8)))
     o.append(etiket(880, 600, "kanat çırpma pozu", 12))
     # çocuk
-    o.append(g(1150, 690, 1.0, K.figur(K.MICHAEL_COCUK, "korku", eller=("relax", "relax"))))
+    o.append(g(1150, 690, 1.0, K.figur2(K.MICHAEL_COCUK, "odak")))
     o.append(etiket(1150, 712, "11 yaş"))
     o.append(g(1150, 140, 0.5, K.kafa(K.MICHAEL_COCUK, "3q", "sefkat")))
     o.append('</svg>')
     return "".join(o)
 
 if __name__ == "__main__":
-    svg = P / "model_michael_v1.svg"; svg.write_text(kart())
-    subprocess.run(["rsvg-convert", "-w", str(W), "-o", str(P / "model_michael_v1.png"), str(svg)], check=True)
+    svg = P / "model_michael_v2.svg"; svg.write_text(kart())
+    subprocess.run(["rsvg-convert", "-w", str(W), "-o", str(P / "model_michael_v2.png"), str(svg)], check=True)
     svg.unlink(); print("tamam")
