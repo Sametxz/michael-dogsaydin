@@ -38,3 +38,11 @@ Her kurul turu sonunda 1–3 genellenebilir ders eklenir. Kalıcı olanlar `stud
   3. **Karakter Ayırt Ediciliği (Michael vs. Lincoln) & Detaylı Dövme:** Aynı karede yer alan karakterlerin yüz/çene/omuz siluetleri ilk bakışta ayrışmalı (Michael daha ince keskin çeneli, Lincoln daha geniş çeneli/yapılı). Dövme çizgileri asla kaba düz çubuklar olmamalı; kilitli **A-Sırt v1** kalitesinde ince gotik kemer, ikiz turna ve mimari telkari içermelidir.
   4. **Kutu Taşması Sıfır Tolerans:** Hiçbir HUD/damga/etiket metni kendi kutusunun dışına tek piksel bile taşamaz.
   5. **İki Kol Kontrolü:** Kadrajda gövdesi görünen her karakterin iki kolu da anatomik olarak doğru ve eksiksiz görünür (eksik kol kesinlikle yasak).
+
+## R19-CANLI-DÜNYA — Göster-Anlatma, Hareketli Karakterler & Çoklu Vuruş (27.11.2026)
+- **Sorun:** Tek bir statik resmin üstünde sadece 1 küçük nesneyi oynatıp kamera zoom'u yapmak hâlâ slayt gösterisi ve tekdüzelik hissi veriyor; hikâye yalnızca yazılardan okunmamalı, ekrandaki hareketli karakter ve canlı dünyadan doğrudan anlaşılmalı.
+- **Zorunlu Kural (Act IV v2 ve Act V–VI'nın tamamında otonom standart):**
+  1. **Donuk Manken Yasak:** Kadrajdaki karakterler canlı nefes alma, eğilme, yürüme/koşma adımı, kol/el hareketi (bandaj sarma, iğne çakma, kapıdan içeri yürüme) ve ışık tepkisi taşır.
+  2. **Her 1,2–1,5 Saniyede Bir Görsel Vuruş (Multi-Beat):** Hiçbir sahne 4–5 saniye tek statik tablo olarak kalmaz; her çekim en az **2–3 ardışık görsel olay** içerir (ör. lamba yanar → kırmızı ipler canlı gerilir → el raptiye çakar; otoyol şeritleri akar + silecekler çalışır + sirenler çakar + kimlikler savrulur; siluet gölgeyle silinir → cep saati düşüp seker → camı çatlar; Michael yürüyerek Sona'ya girer → kapılar toz patlamasıyla çarparak kapanır).
+  3. **Görsel Anlatım (Show, Don't Tell):** Ses ve altyazı kapalıyken bile ekrandaki fiziksel eylemlerden, ışık değişimlerinden ve karakter davranışlarından hikâye tek başına anlaşılmalıdır.
+  4. **Dinamik Kamera Koreografisi:** Tekdüze `1.01→1.05` kayma yerine eylemi takip eden 2 aşamalı kamera hareketleri (pan → punch-in, düşen nesneyi dikey takip, çarpma geri tepmesi) uygulanır.

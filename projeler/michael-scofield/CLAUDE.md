@@ -52,3 +52,7 @@ sys.path[:0] = [str(REPO / "studyo/motor"), str(REPO / "r3"), str(REPO / "r2")]
 - **Slayt gösterisi yasak:** Her sahnede ana eylem (sökülen cıvata + kayan tuvalet, kalkan şalter + ışık değişimi, kabloda kayan figürler + dönen projektör/alarm, havalanan uçak + koşan karakterler) yalnızca kamera pan'ı ile değil, **ayrı katmanlı fiziksel sahne içi hareketle** canlandırılır.
 - **R4-ANATOMİ & Ayırt Edicilik:** Collar-Over-Neck (yaka daima boynun üstünde), kilitli F3 omuz oranları, kesintisiz iki kol, Michael'ın Lincoln'dan net ayrışan ince keskin yüz hattı, ince telkari dövme (düz çubuk yasak), sıfır kutu taşması.
 - **Görsel Kurul (G) ve A1+A2** bu kuralları kullanıcı uyarısına gerek kalmadan her bölümde otonom denetler.
+
+## R19-CANLI-DÜNYA — Dinamik Karakter & Göster-Anlatma Standardı (27.11.2026)
+- Her çekimde en az **2–3 ardışık görsel eylem vuruşu** (1,2–1,5 sn ritim), **canlı hareket eden karakterler** (yürüme, eğilme, nefes, el/kol hareketi), **yaşayan çevre** (akan yol şeritleri, çalışan silecekler, dalga yansımaları, tarayan projektörler, lamba/siren ışık değişimleri) ve **2 aşamalı kamera koreografisi** zorunludur.
+- Hikâye yalnızca okunan metinlerle değil, ekrandaki fiziksel olaylarla ses kapalıyken bile anlaşılmalıdır.

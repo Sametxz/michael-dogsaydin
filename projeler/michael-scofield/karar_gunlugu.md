@@ -215,3 +215,9 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
 - **Çapraz Denetim & Anlık Düzeltme:** Kurul ve A1+A2 `4.02`, `4.03b`, `4.07`, `4.08b` sağ-alt HUD kutularının alt altyazı bandıyla çakıştığını yakaladı → `plan` katmanları yukarı çekilip yeniden render edildi → **Görsel Kurul (`ACT IV F4b EN KURUL ONAYLI`)** + **A1+A2 (`ACT IV F4b EN A1+A2 ONAYLI`)**.
 - **GitHub:** Tüm Act IV F4b EN çıktıları (`bolum4_blok_en.py`, `bolum4_en_kontakt_960.png`, güncel V10 kartları ve günlükler) `origin/main`'e commit & push edildi.
 - **Bekleyen karar:** Act IV F4b EN kullanıcı onayı → kilitle ve **Act V ("Sona & Scylla")** F4a EN örgüsü + 3 paralel R18-HAREKET görsel ajan setlerine geçiş.
+
+### Tur 26 — R19-CANLI-DÜNYA Kalıcı Standardı & Act IV F4b v2 EN Dinamik Karakter Anlatımı (35.00 sn)
+- **Kalıcı Kural (`kurul/DERSLER.md` + `CLAUDE.md`):** `R19-CANLI-DÜNYA` (donuk manken yasak, her 1,2–1,5 sn'de bir görsel vuruş, ses kapalıyken bile ekrandan okunan hikâye, 2 aşamalı dinamik kamera koreografisi) eklendi.
+- **Act IV F4b v2 EN (`blok/bolum4_blok_en.py` · 35.00 sn):** Tüm 8 çekim çoklu görsel vuruş, canlı karakter hareketi (nefes alan/eğilen Michael & Sara, Sona'ya yürüyen Michael), yaşayan çevre (akan 3B yol şeritleri, çalışan silecek, tarayan polis projektörü, gölge dalgası, seken `06:14` saat, dumanla silinen imza) ve 2 aşamalı dinamik kamerayla yenilendi → **Görsel Kurul (`ACT IV F4b v2 EN KURUL ONAYLI`)** + **A1+A2 (`ACT IV F4b v2 EN A1+A2 ONAYLI`)**.
+- **GitHub:** `R19-CANLI-DÜNYA` kuralları ve Act IV F4b v2 EN çıktıları `origin/main`'e commit & push edildi.
+- **Bekleyen karar:** Act IV F4b v2 EN kullanıcı onayı → kilitle ve **Act V ("Sona & Scylla")** aşamasına geçiş.
