@@ -1,0 +1,14 @@
+# Act IV ("On the Run") — F4a EN Story & R18-HAREKET Shot Breakdown
+
+**Duration:** ~38.4s narration · **8 shots (`4.01–4.08`)** · **7/7 semantic transitions (100%)** · **Language:** 100% English · **R18-HAREKET:** Native live in-scene physical action in every single shot.
+
+| # | Narration (EN) | R18-HAREKET Live Action (Keyword → Physical Motion) | Transition → Next | Emotion | Dur |
+|---|---|---|---|---|---|
+| `4.01` | Now an FBI genius studies your tattoo. Someone else is reading the map. | «genius» → desk lamp clicks brighter over locked A-Sırt v1 photos · «tattoo» → red investigation strings snap across corkboard · «map» → Mahone's hand slams red pin on UTAH, cyan lines turn crimson | ZoomIcinden (`harita_igne`) → night highway | gerilim → korku | 4.8s |
+| `4.02` | New city, new name: Michael Crane. Every road ahead is a trap. | «name» → 3 fake ID cards (`MICHAEL CRANE`, `ALIAS`) physically fly & fan across rainy windshield (Gag 2) · «trap» → police headlights surge in mirror | Savurma → Sara's motel table | merak → gerilim | 4.6s |
+| `4.03` | Inside Sara's bag, a paper crane unfolds—hidden numbers point to a rendezvous. | «unfolds» → locked Turna v4 physically unfolds into creased cipher paper · «numbers» → cyan coordinates (`GILA · NM · 04:00`) ignite across folds | Maske (`sifre_kod`) → warm motel reunion | merak → umut | 4.8s |
+| `4.04` | You find Sara waiting in the dark. She bandages your hand—and chooses to stay. | «waiting» → warm amber motel light on Michael v3 & Sara v2 (2 complete arms!) · «bandages» → clean white bandage physically wraps Michael's wrist (zero blood) | OnPlanSil (curtain) → New Mexico dusk | huzur → umut | 4.8s |
+| `4.05` | Your father returns to save you from the shadows. Seconds later, only his watch remains. | «father» → two silhouettes in warm dusk · «watch» → cold shadow sweeps leaving empty chair; brass pocket watch physically drops & stops at `06:14` (zero violence) | Eslesme (`dusen_saat` → `gazete_muhur`) | umut → yas | 5.2s |
+| `4.06` | You prove the murder was faked. Then the presidential pardon vanishes from the page. | «faked» → `STEADMAN ALIVE!` newspaper spins & slams onto desk · «vanishes» → golden pardon signature physically erases under crimson `REVOKED` stamp | ZoomIcinden (`af_imza`) → Panama waters | umut → ofke | 4.8s |
+| `4.07` | You sail to Panama for freedom. Instead, the Company's trap closes around you. | «panama» → white sailboat `CHRISTINA ROSE` bobs & glides through harbor mist · «trap» → crimson Company CAD rings snap shut + police lights | Savurma → Sona iron gates | umut → korku | 4.8s |
+| `4.08` | To save Sara, you take the fall. Behind you, the gates of Sona slam shut. | «fall» → locked Michael v3 stands before scorching Sona arch · «shut» → two massive rusted iron gate doors physically swing & SLAM SHUT (`SONA · NO GUARDS INSIDE` Act V open loop) | Open Loop → Act V ("Sona & Scylla") | korku → yas | 5.0s |

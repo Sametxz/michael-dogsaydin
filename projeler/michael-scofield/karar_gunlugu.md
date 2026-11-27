@@ -198,3 +198,13 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
   - **V9 (`3.08–3.10`):** `3.08` `DOOR UNLOCKED · TONIGHT` sıfır kutu taşması + `kapi_isik`; `3.09` ayrılabilir `kacanlar / projektor_1 / projektor_2 / alarm`; `3.10` ayrılabilir `ucak / kosucular / fbi_kutu` + ıslak pist atmosferi.
 - **Act III F4b v2 EN (`blok/bolum3_blok_en.py` · 43.60 sn):** Tüm hareketli katmanlar fiziksel sahne içi eylemle canlandırıldı → **Görsel Kurul (`ACT III F4b v2 EN KURUL ONAYLI`)** & **A1+A2 (`ACT III F4b v2 EN A1+A2 ONAYLI`)**.
 - **GitHub Senkronizasyonu:** Kullanıcının yeni talimatıyla tüm değişiklikler, iş planları, kurallar, setler ve animatikler GitHub'a commit & push ediliyor.
+
+### Tur 24 — Act III Kilitlendi & Act IV ("On the Run") F4a EN + 3 Paralel R18-HAREKET Seti (V10·V11·V12)
+- **Act III F4b v2 EN:** Kullanıcı onayıyla kilitlendi.
+- **Act IV ("On the Run") F4a EN:** `dokum/bolum_4_en.json` + `orgu/bolum_4_en_orgu.md` (8 çekim `4.01–4.08`, ~38.4 sn, 7/7 anlamsal geçiş, `dokum_kontrol.py` GEÇTİ, A1+A2 `ACT IV F4a ONAYLI`).
+- **3 Paralel R18-HAREKET Görsel Sanatçısı (İlk Turda Sıfır Hata · 3/3 Kurul + A1+A2 Çift Onaylı):**
+  - **V10 (`4.01–4.03`):** `kartlar/b4_set_takip_turna.py` → `v1.png` + `r13.png` (Mahone FBI masası + A-Sırt v1 + `kirmizi_ip/harita_igne`, otoyol + uçan `kart_1/2/3` `MICHAEL CRANE`, Sara'nın çantasında açılan Turna v4 `turna_kapali/turna_acik`).
+  - **V11 (`4.04–4.06`):** `kartlar/b4_set_bulusma_manset.py` → `v1.png` + `r13.png` (Motel buluşması Michael v3 + Sara v2 2 tam kol + kansız `bandaj_sar`, şiddetsiz baba saati `06:14` `(480,310)`, `STEADMAN ALIVE!` + silinen `af_imza` + `PARDON REVOKED`).
+  - **V12 (`4.07–4.08`):** `kartlar/b4_set_panama_sona.py` → `v1.png` + `r13.png` (Panama `CHRISTINA ROSE` teknesi + `tuzak_halka`, Sona kavurucu çöl + kilitli Michael v3 + çarparak kapanan `kapi_sol/kapi_sag` + Act V `NO GUARDS INSIDE`).
+- **GitHub:** Act IV F4a + V10·V11·V12 setleri ve güncel günlükler `origin/main`'e commit & push edildi.
+- **Bekleyen karar:** Act IV setlerinin kullanıcı onayı → **Act IV F4b EN canlı-hareketli blok animatiği** (`blok/bolum4_blok_en.py`).

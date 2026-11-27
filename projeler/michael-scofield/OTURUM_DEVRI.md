@@ -1,6 +1,6 @@
 # Oturum devri: Michael Scofield
 
-**Son güncelleme:** 27.11.2026 03:01 (GitHub senkronizasyonu aktif)
+**Son güncelleme:** 27.11.2026 12:04 (GitHub senkronizasyonu aktif)
 
 ## Durum
 | Aşama | Durum | Not |
@@ -8,18 +8,18 @@
 | F0 Başlangıç | ✅ | Michael Scofield · S1–S4 + The Final Break · ~9 dk · yeni ElevenLabs sesi (seçilecek) |
 | F1 Araştırma | ✅ | `lore_bible.md` (57 olay) |
 | F2 Omurga | ✅ | `omurga.md` v1 onaylı |
-| F3 Model ve mekân | ✅ | Stil B+A · Turna v4 · Michael Yetişkin v3 (inceltilmiş yüz + gotik telkari önkol dövmesi) · 11 Yaş v3 · Lincoln v1 · Sara v2 · A-Sırt v1 · 3 Ana Mekân onaylı ve kilitli |
-| F4 Prolog / Act I–II | ✅ | Ham dil: EN · V-Prolog + R4-PARALAKS & R4-ANATOMİ düzeltmeli Act I & Act II · Birleşik `prolog_act1_act2_en_960.mp4` (75.4 sn) kullanıcı onaylı ve kilitli |
-| F4 Act III ("Fox River") | 🔄 | F4a EN + V7·V8·V9 canlı-hareketli 10 sahne seti + **F4b v2 EN (`bolum3_blok_en.py`, 43.60 sn MP4 + kontakt, R18-HAREKET gerçek sahne içi hareket, Kurul & A1+A2 çift onaylı)** kullanıcı onayında |
-| F4 Act IV–VI | — | Sırada: Act IV ("On the Run"), Act V ("Sona & Scylla"), Act VI ("The Final Door") — tümü R18-HAREKET + R4-ANATOMİ standartlarıyla |
+| F3 Model ve mekân | ✅ | Stil B+A · Turna v4 · Michael Yetişkin v3 · 11 Yaş v3 · Lincoln v1 · Sara v2 · A-Sırt v1 · 3 Ana Mekân onaylı ve kilitli |
+| F4 Prolog / Act I–III | ✅ | Ham dil: EN · Prolog–Act II birleşik (75.4 sn) + Act III F4b v2 EN canlı-hareketli (43.60 sn, R18-HAREKET) kullanıcı onaylı ve kilitli |
+| F4 Act IV ("On the Run") | 🔄 | F4a EN (`dokum/bolum_4_en.json`, 8 çekim, 7/7 anlamsal geçiş) + **V10·V11·V12 8 R18-HAREKET sahne seti (`4.01–4.08`) ilk turda Kurul 3/3 & A1+A2 çift onaylı** → F4b canlı animatiği (`bolum4_blok_en.py`) kullanıcı onayında |
+| F4 Act V–VI | — | Sırada: Act V ("Sona & Scylla"), Act VI ("The Final Door") |
 | F5 Ses | — | Şimdilik yerel XTTS; ElevenLabs en sonda |
 | F6 Master | — | 1080p, -16 LUFS |
 | F7 Yayın | — | 8 dil yerelleştirme |
 
 ## Açık işler (sırayla)
-1. Kullanıcı onayı: Act III ("Fox River") F4b v2 EN (43.60 sn canlı hareketli MP4 + kontakt) → kilitle ve Act IV ("On the Run") İngilizce örgüsü + 3 paralel görsel ajan setlerine geç.
-2. Act V ("Sona & Scylla") ve Act VI ("The Final Door") İngilizce örgü + paralel görsel setler + F4b canlı animatikler.
+1. Kullanıcı onayı: Act IV ("On the Run") set kartları (`V10 · V11 · V12`) → Act IV F4b EN canlı-hareketli blok animatiği (`bolum4_blok_en.py`).
+2. Act V ("Sona & Scylla") ve Act VI ("The Final Door") İngilizce örgü + paralel R18-HAREKET setler + F4b canlı animatikler.
 3. F5 Ses (yerel XTTS ön izleme, finalde ElevenLabs), F6 Master, F7 Yayın.
 
 ## Kullanıcıdan beklenen
-- Act III ("Fox River") F4b v2 EN blok animatiğinin onayı → Act IV ("On the Run") aşamasına geçiş.
+- Act IV ("On the Run") 8 sahne setinin onayı → Act IV F4b EN canlı blok animatiğine geçiş.

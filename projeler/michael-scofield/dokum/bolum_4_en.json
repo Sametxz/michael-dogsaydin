@@ -1,0 +1,216 @@
+{
+  "proje": "michael-scofield",
+  "not": "Act IV ('On the Run') — 100% English high-tempo F4a breakdown (#28–#34). R18-HAREKET native live action in every shot, 7/7 semantic transitions, zero violence.",
+  "bolumler": [
+    {
+      "ad": "IV · On the Run",
+      "cekimler": [
+        {
+          "id": "4.01",
+          "anlatim": "Now an FBI genius studies your tattoo. Someone else is reading the map.",
+          "sure_tahmini": 4.8,
+          "plan": "yakin",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "korku", "kelime": "map"},
+          "duygu_tasiyici": "Warm FBI desk lamp snapping on over locked A-Sırt v1 tattoo photos as red investigation strings connect Utah and Panama.",
+          "ogeler": [
+            {"ad": "fbi_lamba", "kelime": "genius", "giris": "parla", "eylem": "FBI desk lamp illuminates Mahone's corkboard of Michael's tattoo photos"},
+            {"ad": "kirmizi_ip", "kelime": "tattoo", "giris": "ciz", "eylem": "crimson investigation strings snap across tattoo photos and US highway map"},
+            {"ad": "harita_igne", "kelime": "map", "giris": "pop", "eylem": "Mahone's hand slams a red pin onto UTAH as cyan blueprint lines turn crimson"}
+          ],
+          "kamera": "tight push-in toward the red-pinned highway map 1.0 → 1.12",
+          "ikincil": ["drifting office dust in lamp cone", "flickering desk lamp"],
+          "katmanlar": ["dark FBI office 0.6", "corkboard, tattoo photos & map 1.0", "red pin & strings (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "harita_igne",
+            "bag": "Camera dives straight into the red highway pin onto the dark night highway."
+          },
+          "ses": {
+            "ambiyans": "quiet late-night FBI office hum",
+            "efekt": ["lamp click 'genius'", "pin thud 'map'"]
+          }
+        },
+        {
+          "id": "4.02",
+          "anlatim": "New city, new name: Michael Crane. Every road ahead is a trap.",
+          "sure_tahmini": 4.6,
+          "plan": "orta",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "trap"},
+          "duygu_tasiyici": "Dry-humor Gag 2: fake ID cards flying across a rainy night highway windshield as police headlights sweep behind.",
+          "ogeler": [
+            {"ad": "kimlik_kart", "kelime": "name", "giris": "dus", "eylem": "3 fake ID/passport cards (MICHAEL CRANE, UTAH) physically fly and fan across the windshield"},
+            {"ad": "siren_far", "kelime": "trap", "giris": "parla", "eylem": "red-blue police headlights surge in the rearview mirror; 'NEW NAME.' stamp snaps"}
+          ],
+          "kamera": "energetic road sway + push-in 1.0 → 1.10",
+          "ikincil": ["scrolling highway lane stripes", "raindrops on windshield", "swaying wipers"],
+          "katmanlar": ["night highway & rain 0.6", "dashboard & windshield 1.0", "flying alias cards (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Camera whips right from the flying alias cards straight onto Sara's motel table."
+          },
+          "ses": {
+            "ambiyans": "wet highway tires and windshield wipers",
+            "efekt": ["3 crisp card whooshes 'name'", "distant siren pass 'trap'"]
+          }
+        },
+        {
+          "id": "4.03",
+          "anlatim": "Inside Sara's bag, a paper crane unfolds. Hidden numbers mark a rendezvous.",
+          "sure_tahmini": 4.8,
+          "plan": "detay",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "umut", "kelime": "rendezvous"},
+          "duygu_tasiyici": "Locked Turna v4 physically unfolding on a warm wooden table to reveal glowing cyan cipher coordinates.",
+          "ogeler": [
+            {"ad": "turna_ac", "kelime": "unfolds", "giris": "eylem", "eylem": "locked Turna v4 physically unfolds into a creased cipher sheet"},
+            {"ad": "sifre_kod", "kelime": "numbers", "giris": "ciz", "eylem": "cyan dot-matrix coordinates (GILA · NM · 04:00) ignite across the fold lines"}
+          ],
+          "kamera": "gentle push-in over the unfolding crane 1.0 → 1.12",
+          "ikincil": ["warm table lamp dust motes", "subtle paper crease shimmer"],
+          "katmanlar": ["dim motel wall 0.6", "wooden table & leather bag 1.0", "unfolding crane & cyan cipher (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "maske",
+            "oge_a": "sifre_kod",
+            "bag": "The glowing cipher square expands as a mask directly into the warm motel reunion."
+          },
+          "ses": {
+            "ambiyans": "quiet motel room hum",
+            "efekt": ["crisp paper unfolding 'unfolds'", "soft cyan chime 'numbers'"]
+          }
+        },
+        {
+          "id": "4.04",
+          "anlatim": "You find Sara waiting in the dark. She bandages your hand—and chooses to stay.",
+          "sure_tahmini": 4.8,
+          "plan": "orta",
+          "duygu": "huzur",
+          "duygu_donusum": {"hedef": "umut", "kelime": "stay"},
+          "duygu_tasiyici": "Locked Michael v3 and Sara v2 (both arms complete, R4-ANATOMI) sharing warm amber lamp light as she wraps a clean bandage around his wrist.",
+          "ogeler": [
+            {"ad": "sara_bekle", "kelime": "waiting", "giris": "belir", "eylem": "warm amber motel lamp illuminates Michael v3 and Sara v2 across the table"},
+            {"ad": "bandaj_sar", "kelime": "bandages", "giris": "eylem", "eylem": "clean white bandage physically wraps around Michael's wrist (zero blood/gore)"}
+          ],
+          "kamera": "warm intimate push-in 1.0 → 1.08",
+          "ikincil": ["flickering neon MOTEL sign through rainy window", "warm lamp dust motes"],
+          "katmanlar": ["rainy neon window 0.6", "Michael v3 & Sara v2 (R4 locked) 1.0", "live bandage wrap 1.0"],
+          "gecis_sonraki": {
+            "tur": "on_plan_sil",
+            "bag": "A dark motel curtain wipes across the frame into the dusty New Mexico dusk."
+          },
+          "ses": {
+            "ambiyans": "soft rain on motel glass",
+            "efekt": ["gentle cloth wrap 'bandages'", "warm piano swell 'stay'"]
+          }
+        },
+        {
+          "id": "4.05",
+          "anlatim": "Your father returns to save you from the shadows. Seconds later, only his watch remains.",
+          "sure_tahmini": 5.2,
+          "plan": "yakin",
+          "duygu": "umut",
+          "duygu_donusum": {"hedef": "yas", "kelime": "watch"},
+          "duygu_tasiyici": "Two silhouettes standing together in golden dusk, then empty chair and a brass pocket watch physically dropping onto dusty earth (zero violence/gore).",
+          "vurucu": true,
+          "vfx": "cold shadow sweep + falling brass pocket watch + 50% grief desaturation",
+          "ogeler": [
+            {"ad": "baba_golge", "kelime": "father", "giris": "belir", "eylem": "father and Michael silhouettes stand together in warm New Mexico dusk"},
+            {"ad": "dusen_saat", "kelime": "watch", "giris": "dus", "eylem": "cold shadow sweeps across leaving empty chair; brass pocket watch physically drops and stops at 06:14"}
+          ],
+          "kamera": "slow downward tilt following the falling pocket watch 1.0 → 1.12",
+          "ikincil": ["drifting desert dust", "cracked watch crystal glint"],
+          "katmanlar": ["New Mexico dusk horizon 0.6", "empty wooden chair & table 1.0", "falling brass watch (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "eslesme",
+            "oge_a": "dusen_saat",
+            "oge_b": "gazete_muhur",
+            "bag": "The round brass pocket watch morphs directly into the circular seal of a spinning newspaper front page."
+          },
+          "ses": {
+            "ambiyans": "wind across desert dust",
+            "efekt": ["soft metallic watch drop 'watch'", "solemn cello note 'watch'"],
+            "muzik": "hush into mournful cello"
+          }
+        },
+        {
+          "id": "4.06",
+          "anlatim": "You prove the murder was faked. Then the presidential pardon vanishes from the page.",
+          "sure_tahmini": 4.8,
+          "plan": "detay",
+          "duygu": "umut",
+          "duygu_donusum": {"hedef": "ofke", "kelime": "vanishes"},
+          "duygu_tasiyici": "Spinning newspapers slamming onto the desk ('STEADMAN ALIVE!'), then the golden pardon signature physically fading away under a crimson 'REVOKED' stamp.",
+          "ogeler": [
+            {"ad": "gazete_muhur", "kelime": "faked", "giris": "dus", "eylem": "front-page newspaper 'STEADMAN ALIVE!' physically spins and slams onto desk"},
+            {"ad": "af_imza", "kelime": "vanishes", "giris": "eylem", "eylem": "golden presidential signature physically erases off the pardon paper; crimson 'REVOKED' slams"}
+          ],
+          "kamera": "tight push-in onto the vanishing signature 1.0 → 1.12 + stamp impact shake",
+          "ikincil": ["floating paper dust", "lamp reflection on glossy ink"],
+          "katmanlar": ["mahogany desk surface 0.6", "official pardon document 1.0", "spinning newspaper & fading ink (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "af_imza",
+            "bag": "Camera dives through the crimson ink blot straight into the misty waters of Panama."
+          },
+          "ses": {
+            "ambiyans": "tense newsroom hum",
+            "efekt": ["newspaper slap 'faked'", "heavy rubber stamp thud 'vanishes'"]
+          }
+        },
+        {
+          "id": "4.07",
+          "anlatim": "You sail to Panama for freedom. Instead, the Company's trap closes around you.",
+          "sure_tahmini": 4.8,
+          "plan": "genis",
+          "duygu": "umut",
+          "duygu_donusum": {"hedef": "korku", "kelime": "trap"},
+          "duygu_tasiyici": "The white sailboat 'Christina Rose' gliding across misty emerald Panama waters as crimson trap perimeter rings snap shut around the harbor.",
+          "ogeler": [
+            {"ad": "tekne_panama", "kelime": "panama", "giris": "kay_sag", "eylem": "white sailboat 'CHRISTINA ROSE' physically bobs and glides through Panama harbor mist"},
+            {"ad": "tuzak_halka", "kelime": "trap", "giris": "ciz", "eylem": "crimson Company CAD trap rings snap shut around the dock with flashing police lights"}
+          ],
+          "kamera": "smooth harbor tracking follow 1.0 → 1.10",
+          "ikincil": ["drifting sea mist", "shimmering harbor water ripples"],
+          "katmanlar": ["Panama skyline & dawn mist 0.6", "emerald harbor water & dock 1.0", "bobbing sailboat & trap rings (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Camera whips right from the closing Panama harbor straight to the scorching iron gates of Sona."
+          },
+          "ses": {
+            "ambiyans": "harbor waves and distant seagulls",
+            "efekt": ["boat creak 'panama'", "electronic trap lock-in & siren 'trap'"]
+          }
+        },
+        {
+          "id": "4.08",
+          "anlatim": "To save Sara, you take the fall. Behind you, the gates of Sona slam shut.",
+          "sure_tahmini": 5.0,
+          "plan": "genis",
+          "duygu": "korku",
+          "duygu_donusum": {"hedef": "yas", "kelime": "shut"},
+          "duygu_tasiyici": "Locked Michael v3 standing before the scorching rusted iron gates of Sona as two massive iron doors physically slam shut — Act V open loop: NO GUARDS INSIDE.",
+          "vurucu": true,
+          "vfx": "blistering desert heat shimmer + two heavy rusted iron gates physically slamming shut + dust shockwave",
+          "ogeler": [
+            {"ad": "michael_sona", "kelime": "fall", "giris": "belir", "eylem": "locked Michael v3 stands calm in dusty shirt before Sona's towering rusted arch"},
+            {"ad": "sona_kapi", "kelime": "shut", "giris": "eylem", "eylem": "massive rusted iron gate doors physically swing and SLAM SHUT; 'SONA · NO GUARDS INSIDE' locks"}
+          ],
+          "kamera": "low-angle power push-in toward the slamming iron gates 1.0 → 1.10 + slam recoil",
+          "ikincil": ["desert heat haze", "blowing yellow-grey dust clouds"],
+          "katmanlar": ["scorching Panamanian desert sky 0.6", "Sona concrete arch & Michael v3 (R4 locked) 1.0", "slamming iron gate doors (R18 live) 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "sona_kapi",
+            "bag": "Act V open loop: the narrow slit of scorching sunlight between Sona's closed iron doors leads directly into Act V."
+          },
+          "ses": {
+            "ambiyans": "hot desert wind and distant prison roar",
+            "efekt": ["massive iron gate clang 'shut'", "deep sub-bass boom 'shut'"],
+            "muzik": "ominous low brass swell"
+          }
+        }
+      ]
+    }
+  ]
+}
