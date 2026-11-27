@@ -208,3 +208,10 @@ Her tur sonunda bir kayıt eklenir. **Ders** satırı zorunludur. Tekrarlayan de
   - **V12 (`4.07–4.08`):** `kartlar/b4_set_panama_sona.py` → `v1.png` + `r13.png` (Panama `CHRISTINA ROSE` teknesi + `tuzak_halka`, Sona kavurucu çöl + kilitli Michael v3 + çarparak kapanan `kapi_sol/kapi_sag` + Act V `NO GUARDS INSIDE`).
 - **GitHub:** Act IV F4a + V10·V11·V12 setleri ve güncel günlükler `origin/main`'e commit & push edildi.
 - **Bekleyen karar:** Act IV setlerinin kullanıcı onayı → **Act IV F4b EN canlı-hareketli blok animatiği** (`blok/bolum4_blok_en.py`).
+
+### Tur 25 — Act IV ("On the Run") `4.01` 5 Parmaklı El Revizyonu & F4b EN Canlı-Hareketli Blok Animatiği (35.00 sn)
+- **V10 (`4.01`) Kullanıcı Revizyonu:** `harita_igne` FBI eli zarif, anatomik 5 parmaklı sinematik 2D insan eli olarak yeniden çizildi ve R13 #2'de doğrulandı.
+- **Act IV ("On the Run") F4b EN (`blok/bolum4_blok_en.py` · 35.00 sn):** 8 çekim (`4.01–4.08`), 7/7 anlamsal geçiş, tüm sahnelerde gerçek R18-HAREKET sahne içi eylem (`4.01` gerilen kırmızı ipler + hamle yapan FBI eli, `4.02` 3 uçan sahte kimlik, `4.03` açılan Turna v4 → `GILA NM` şifresi, `4.04` canlı sarılan kansız bandaj, `4.05` eriyen baba silueti + düşen `06:14` cep saati, `4.06` dönen `STEADMAN ALIVE!` + silinen af imzası + çarpan `PARDON REVOKED`, `4.07` dalgada sallanan `CHRISTINA ROSE` + kapanan Şirket tuzağı, `4.08` çarparak kapanan paslı Sona kapıları + 4px yarık).
+- **Çapraz Denetim & Anlık Düzeltme:** Kurul ve A1+A2 `4.02`, `4.03b`, `4.07`, `4.08b` sağ-alt HUD kutularının alt altyazı bandıyla çakıştığını yakaladı → `plan` katmanları yukarı çekilip yeniden render edildi → **Görsel Kurul (`ACT IV F4b EN KURUL ONAYLI`)** + **A1+A2 (`ACT IV F4b EN A1+A2 ONAYLI`)**.
+- **GitHub:** Tüm Act IV F4b EN çıktıları (`bolum4_blok_en.py`, `bolum4_en_kontakt_960.png`, güncel V10 kartları ve günlükler) `origin/main`'e commit & push edildi.
+- **Bekleyen karar:** Act IV F4b EN kullanıcı onayı → kilitle ve **Act V ("Sona & Scylla")** F4a EN örgüsü + 3 paralel R18-HAREKET görsel ajan setlerine geçiş.

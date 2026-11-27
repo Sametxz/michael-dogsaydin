@@ -437,7 +437,7 @@ def set_401_fbi_masasi(
         ip.append("</g>")
         parts.append("\n".join(ip))
 
-    # ── LAYER 3C: harita_igne (R4 SINGLE LAYER: stylized FBI hand pressing red pushpin onto UTAH + target ring) ──
+    # ── LAYER 3C: harita_igne (R4 SINGLE LAYER: anatomical 5-finger FBI hand pressing red pushpin onto UTAH) ──
     if _katman_aktif(katmanlar, "harita_igne"):
         igne: list[str] = ['<g id="s401-harita_igne">']
         # Red concentric target ring directly around UTAH pin (636, 166)
@@ -448,54 +448,106 @@ def set_401_fbi_masasi(
         igne.append(
             f'<circle cx="636" cy="166" r="13" fill="none" stroke="{RED_ALERT}" stroke-width="1.5" opacity="0.9"/>'
         )
-        # Red pushpin needle + glossy head planted at (636, 166)
-        igne.append('<line x1="636" y1="166" x2="646" y2="155" stroke="#C8CFD6" stroke-width="2.2" stroke-linecap="round"/>')
+
+        # Soft cast shadow beneath the hand, curled fingers & wrist on map (leaves UTAH/NM/PANAMA clear)
         igne.append(
-            f'<circle cx="648" cy="153" r="7.5" fill="{RED_ALERT}" stroke="#3D0810" stroke-width="1.6"/>'
-            '<circle cx="645.5" cy="150.5" r="2.2" fill="#FFB2BA"/>'
+            '<path d="M 652,162 C 674,174 714,182 752,166 L 960,96 L 960,34 L 768,100 '
+            'C 726,110 676,120 652,150 Z" fill="#140B06" opacity="0.22"/>'
         )
 
-        # Stylized FBI Agent Hand + Cuff + Suit Sleeve entering from UPPER-RIGHT (leaves UTAH, NEW MEXICO & PANAMA 100% visible!)
-        # Drop shadow under hand & arm
+        # 1. Steel needle + glossy red pushpin body planted at UTAH (636, 166)
+        igne.append('<line x1="636" y1="166" x2="646" y2="155" stroke="#C8CFD6" stroke-width="2.0" stroke-linecap="round"/>')
         igne.append(
-            '<path d="M 652,158 C 674,166 710,158 746,142 L 960,72 L 960,12 L 732,96 C 696,112 662,126 652,158 Z" '
-            'fill="#090605" opacity="0.28"/>'
+            f'<ellipse cx="647" cy="154" rx="6.8" ry="6.2" fill="#B51B2B" stroke="#3D0810" stroke-width="1.4"/>'
+            f'<circle cx="650" cy="151" r="6.2" fill="{RED_ALERT}" stroke="#3D0810" stroke-width="1.4"/>'
+            '<circle cx="648" cy="148.5" r="2.0" fill="#FFB8C0" opacity="0.9"/>'
         )
-        # Dark charcoal FBI suit sleeve entering from upper-right edge
+
+        # 2. Curled 5th (pinky), 4th (ring) & 3rd (middle) fingers tucked naturally behind palm (back-to-front)
+        # Pinky finger (smallest, deepest shadow)
         igne.append(
-            f'<path d="M 762,78 L 960,8 L 960,88 L 786,146 Z" '
-            f'fill="#1A2029" stroke="{INK}" stroke-width="2.2" stroke-linejoin="round"/>'
+            f'<path d="M 738,144 C 728,158 718,166 711,164 C 706,162 707,154 714,148 L 732,136 Z" '
+            f'fill="#A6755B" stroke="{INK_WARM}" stroke-width="1.4" stroke-linejoin="round"/>'
         )
-        # Sleeve highlight fold
+        # Ring finger (medium length, soft shadow)
         igne.append(
-            '<path d="M 776,94 L 952,32" fill="none" stroke="#364254" stroke-width="2.2" opacity="0.65"/>'
+            f'<path d="M 730,138 C 716,156 702,168 693,165 C 687,163 689,153 698,145 L 720,130 Z" '
+            f'fill="#B9876B" stroke="{INK_WARM}" stroke-width="1.5" stroke-linejoin="round"/>'
         )
-        # Crisp white dress shirt cuff + silver cufflink
         igne.append(
-            f'<path d="M 736,88 L 766,76 L 790,144 L 758,154 Z" '
-            f'fill="#ECE9E0" stroke="{INK}" stroke-width="1.8" stroke-linejoin="round"/>'
+            '<path d="M 702,152 Q 707,157 704,162" fill="none" stroke="#7A4F3A" stroke-width="1.0" stroke-linecap="round"/>'
         )
-        igne.append('<circle cx="766" cy="128" r="3.4" fill="#9AA8B8" stroke="#1E242C" stroke-width="1.1"/>')
-        # Sculpted hand back & wrist
+        # Middle finger (longest curled finger, resting cleanly below index & behind thumb)
         igne.append(
-            f'<path d="M 740,94 C 712,102 686,116 666,136 C 656,146 658,162 674,164 '
-            f'C 698,166 730,160 758,148 Z" '
-            f'fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="2.0" stroke-linejoin="round"/>'
+            f'<path d="M 720,130 C 702,148 686,162 677,159 C 671,156 674,146 684,138 L 710,122 Z" '
+            f'fill="#C89578" stroke="{INK_WARM}" stroke-width="1.5" stroke-linejoin="round"/>'
         )
-        # Index finger pressing down on top of the pushpin head (648, 153)
         igne.append(
-            f'<path d="M 684,126 C 668,132 652,140 647,148 C 644,153 650,159 658,157 '
-            f'L 686,144 Z" fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="1.9" stroke-linejoin="round"/>'
+            '<path d="M 688,144 Q 693,149 690,155" fill="none" stroke="#7A4F3A" stroke-width="1.0" stroke-linecap="round"/>'
         )
-        # Thumb pinching lower-right side of pushpin
+
+        # 3. Slender wrist + anatomical palm / back of hand + rounded thenar eminence (thumb base)
         igne.append(
-            f'<path d="M 688,160 C 670,164 654,163 650,156 C 648,151 654,146 664,148 '
-            f'L 692,149 Z" fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="1.9" stroke-linejoin="round"/>'
+            f'<path d="M 786,98 L 748,104 C 732,107 718,110 708,116 C 700,122 702,136 714,146 '
+            f'C 726,154 748,154 768,144 L 796,136 Z" '
+            f'fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="1.7" stroke-linejoin="round"/>'
         )
-        # Knuckle & curled finger creases
+        # Warm key-light highlight on back of hand & subtle metacarpal tendons
         igne.append(
-            f'<path d="M 696,134 Q 704,142 702,152 M 716,126 Q 724,135 722,145" fill="none" '
-            f'stroke="#7C513C" stroke-width="1.5" stroke-linecap="round"/>'
+            '<path d="M 776,105 Q 746,109 722,115" fill="none" stroke="#F5D7BE" stroke-width="2.4" opacity="0.55" stroke-linecap="round"/>'
+            '<path d="M 768,116 Q 746,120 726,124 M 772,126 Q 752,130 734,135" fill="none" '
+            'stroke="#91624B" stroke-width="1.0" opacity="0.42" stroke-linecap="round"/>'
+        )
+
+        # 4. Natural Thumb supporting pushpin from underneath/side with thenar eminence curve
+        igne.append(
+            f'<path d="M 744,145 C 724,154 700,160 680,161 C 666,161 654,160 651,155 '
+            f'C 649,151 654,147 662,148 C 674,149 686,146 702,139 C 714,134 728,132 742,135" '
+            f'fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>'
+        )
+        # Thumb underside shadow + IP joint crease + subtle nail rim
+        igne.append(
+            '<path d="M 656,158 Q 682,160 718,152" fill="none" stroke="#8C5D46" stroke-width="1.6" opacity="0.55" stroke-linecap="round"/>'
+            '<path d="M 681,150 Q 683,155 680,159" fill="none" stroke="#7A4F3A" stroke-width="1.0" stroke-linecap="round"/>'
+            '<path d="M 652,155 Q 655,151 660,151" fill="none" stroke="#F6DEC8" stroke-width="1.1" opacity="0.7" stroke-linecap="round"/>'
+        )
+
+        # 5. Graceful Index Finger curving naturally onto top of red pushpin (fingernail + 2 joint creases)
+        igne.append(
+            f'<path d="M 718,113 C 702,113 688,115 676,122 C 664,129 653,138 648,145 '
+            f'C 645,149 650,153 656,150 C 664,146 673,138 684,132 C 696,126 708,125 722,126" '
+            f'fill="url(#{p}_hand_skin)" stroke="{INK_WARM}" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>'
+        )
+        # Index finger warm top highlight
+        igne.append(
+            '<path d="M 710,116 C 696,116 684,119 672,126" fill="none" stroke="#F6D8BF" stroke-width="1.7" opacity="0.62" stroke-linecap="round"/>'
+        )
+        # Index finger 2 anatomical knuckle/joint creases (PIP & DIP)
+        igne.append(
+            '<path d="M 685,119 Q 689,123 687,127 M 667,129 Q 670,133 668,137" fill="none" '
+            'stroke="#7A4F3A" stroke-width="1.05" stroke-linecap="round"/>'
+        )
+        # Delicate fingernail on upper curve of index fingertip
+        igne.append(
+            '<path d="M 649,144 C 651,140 656,138 659,140 C 657,143 653,146 649,144 Z" '
+            'fill="#F6DFCE" stroke="#7A4F3A" stroke-width="0.9" stroke-linejoin="round"/>'
+        )
+
+        # 6. Slender white dress-shirt cuff + silver cufflink + tailored dark charcoal FBI suit sleeve
+        igne.append(
+            f'<path d="M 776,94 L 804,84 L 820,134 L 792,143 Z" '
+            f'fill="#ECE9E0" stroke="{INK}" stroke-width="1.6" stroke-linejoin="round"/>'
+        )
+        igne.append(
+            '<path d="M 782,135 L 814,125" fill="none" stroke="#C5C0B4" stroke-width="1.8" opacity="0.75"/>'
+            '<circle cx="801" cy="126" r="3.0" fill="#9AA8B8" stroke="#1E242C" stroke-width="1.0"/>'
+        )
+        igne.append(
+            f'<path d="M 800,80 L 960,24 L 960,92 L 818,138 Z" '
+            f'fill="#1A2029" stroke="{INK}" stroke-width="2.0" stroke-linejoin="round"/>'
+        )
+        igne.append(
+            '<path d="M 812,92 L 954,42" fill="none" stroke="#364254" stroke-width="2.0" opacity="0.65"/>'
         )
         igne.append("</g>")
         parts.append("\n".join(igne))
