@@ -363,3 +363,32 @@ POZLAR = {
     "uzat_2":     dict(govde=6, kol_on=(40, 40), el_on="open"),
     "uzat_3":     dict(govde=10, kol_on=(76, 6), el_on="open", bas=4),
 }
+
+# ───────────────────────── v3: onaylı & kilitli modeller (26.11.2026) ─────────────────────────
+# Stil B + A hibrit kilitli standart: dış kontur 2.1px (#1A1513), iç anatomi 1.1–1.4px,
+# buzzcut fade+stipple, tek keskin göz yansıması + üst kapak döküm gölgesi.
+from kartlar.ay_yetiskin import (
+    kafa_yetiskin as michael_kafa,
+    figur_yetiskin as michael_figur,
+    dovme_onkol_yetiskin as michael_dovme_onkol,
+)
+from kartlar.ac_cocuk import (
+    kafa_cocuk as michael_cocuk_kafa,
+    figur_cocuk as michael_cocuk_figur,
+)
+from kartlar.al_lincoln import (
+    kafa_lincoln as lincoln_kafa,
+    figur_lincoln as lincoln_figur,
+)
+from kartlar.as_sara import (
+    kafa_sara as sara_kafa,
+    figur_sara as sara_figur,
+)
+from kartlar.am_mekanlar import (
+    mekan_depo,
+    mekan_hucre,
+    mekan_revir,
+)
+from kartlar.as_sirt_dovme import (
+    sirt_dovme_svg as michael_sirt_dovme,
+)

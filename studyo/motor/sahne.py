@@ -16,7 +16,7 @@ Kullanım özeti (bkz. ornek/demo.py):
     ck.ekle(Oge("isik", ciz_isik, derinlik=1, giris=("parla", ck.k("pencerede"))))
     ck.kamera = Kamera(zoom=Iz([(0, 1.0), (4, 1.12, "io")]), x=Iz([(0, 960), (4, 1010)]))
 """
-import math, os, hashlib, subprocess, re
+import math, os, hashlib, subprocess, re, shutil
 import skia
 
 W, H, FPS = 1920, 1080, 30
@@ -73,7 +73,13 @@ def svg_sprite(body, w, h, ax=None, ay=None, ss=1.0, defs=""):
     png = f"{CACHE}/{key}.png"
     if not os.path.exists(png):
         svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{int(w * ss)}" height="{int(h * ss)}" viewBox="0 0 {w} {h}">{defs}{body}</svg>')
-        subprocess.run(["rsvg-convert", "-o", png + ".tmp"], input=svg.encode(), check=True); os.replace(png + ".tmp", png)
+        if shutil.which("rsvg-convert"):
+            subprocess.run(["rsvg-convert", "-o", png + ".tmp"], input=svg.encode(), check=True); os.replace(png + ".tmp", png)
+        else:
+            import resvg_py
+            with open(png + ".tmp", "wb") as f:
+                f.write(resvg_py.svg_to_bytes(svg))
+            os.replace(png + ".tmp", png)
     sp = Sprite(skia.Image.open(png).makeRasterImage(), w, h, w / 2 if ax is None else ax, h / 2 if ay is None else ay, ss)
     _mem[key] = sp; return sp
 

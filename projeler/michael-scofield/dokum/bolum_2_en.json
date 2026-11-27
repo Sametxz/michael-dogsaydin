@@ -1,0 +1,192 @@
+{
+  "proje": "michael-scofield",
+  "not": "Act II ('Wearing the Map') — 100% English high-tempo F4a breakdown (#9–#13). Live word-by-word reactive storytelling, 6/6 semantic transitions.",
+  "bolumler": [
+    {
+      "ad": "II · Wearing the Map",
+      "cekimler": [
+        {
+          "id": "2.01",
+          "anlatim": "Lincoln is framed for murder and sentenced to death. At first, you believe he's guilty.",
+          "sure_tahmini": 4.6,
+          "plan": "orta",
+          "duygu": "ofke",
+          "duygu_tasiyici": "Courtroom camera flashes, slamming wooden gavel, handcuffed Lincoln behind barrier, and Michael's cold angry stare.",
+          "ogeler": [
+            {"ad": "mahkeme_tokmak", "kelime": "sentenced", "giris": "dus", "eylem": "judge's wooden gavel slams down with shockwave and camera flash"},
+            {"ad": "lincoln_kelepce", "kelime": "lincoln", "giris": "belir", "eylem": "Lincoln sits handcuffed behind courtroom rail as reporters' flashes pop"},
+            {"ad": "michael_ofke", "kelime": "guilty", "giris": "pop", "eylem": "Michael's cold stare hardens; 'GUILTY?' kinetic stamp cuts across frame"}
+          ],
+          "kamera": "fast push-in from gavel to Michael's cold eyes 1.0 → 1.22 + gavel impact shake",
+          "ikincil": ["courtroom camera flashes", "floating dust in harsh overhead beam"],
+          "katmanlar": ["courtroom wood wall 0.3", "Lincoln at rail 0.7", "gavel & Michael 1.0", "foreground bench 1.3"],
+          "gecis_sonraki": {
+            "tur": "on_plan_sil",
+            "bag": "A falling brown envelope wipes across the courtroom into Michael's dim apartment desk."
+          },
+          "ses": {
+            "ambiyans": "courtroom murmur",
+            "efekt": ["heavy gavel slam 'sentenced'", "camera flash burst 'guilty'"]
+          }
+        },
+        {
+          "id": "2.02",
+          "anlatim": "Then you learn the truth. That ninety-thousand-dollar debt was taken out for you.",
+          "sure_tahmini": 5.0,
+          "plan": "yakin",
+          "duygu": "ofke",
+          "duygu_donusum": {"hedef": "yas", "kelime": "truth"},
+          "duygu_tasiyici": "Michael's expression shifting from anger to devastated guilt as Lincoln's $90,000 debt ledger burns into focus.",
+          "ogeler": [
+            {"ad": "mektup_gercek", "kelime": "truth", "giris": "kay_sol", "eylem": "Lincoln's folded letter opens; '$90,000 LOAN' red ink stamp lights up"},
+            {"ad": "michael_goz", "kelime": "you", "giris": "eylem", "eylem": "Michael's anger breaks into shock and guilt; cyan blueprint spark ignites in his eyes"}
+          ],
+          "kamera": "steady push-in onto Michael's eyes 1.0 → 1.26",
+          "ikincil": ["trembling paper edge", "warm apartment lamp flicker", "Michael breathing"],
+          "katmanlar": ["dim apartment wall 0.3", "Michael close-up 0.85", "letter & $90,000 ledger 1.05"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "michael_goz",
+            "bag": "Camera dives into Michael's cyan-lit iris, emerging on his massive apartment planning wall."
+          },
+          "ses": {
+            "ambiyans": "quiet night apartment, rain outside",
+            "efekt": ["paper unfold 'truth'", "low emotional bass drop 'you'"]
+          }
+        },
+        {
+          "id": "2.03",
+          "anlatim": "You make an impossible choice. You spend a year planning a prison break.",
+          "sure_tahmini": 4.8,
+          "plan": "genis",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "break"},
+          "duygu_tasiyici": "Apartment wall exploding with pinned Fox River blueprints, guard photos, red strings, and live cyan CAD route lines.",
+          "ogeler": [
+            {"ad": "plan_duvar", "kelime": "choice", "giris": "ciz", "eylem": "wall of Fox River blueprints and photos snaps into place rapidly"},
+            {"ad": "kirmizi_ip", "kelime": "year", "giris": "pop", "eylem": "red strings and cyan 01–04 nodes connect across the wall; '1 YEAR' stamp hits"},
+            {"ad": "kacis_rota", "kelime": "break", "giris": "parla", "eylem": "glowing cyan escape route traces from cell to infirmary wall"}
+          ],
+          "kamera": "energetic lateral pan across planning wall + push-in 1.0 → 1.20",
+          "ikincil": ["swaying overhead desk lamp", "pulsing cyan nodes", "drifting dust"],
+          "katmanlar": ["brick apartment wall 0.4", "blueprints & photos 0.8", "red strings & cyan CAD 1.05", "foreground desk lamp 1.3"],
+          "gecis_sonraki": {
+            "tur": "eslesme",
+            "oge_a": "plan_duvar",
+            "oge_b": "dovme_plan",
+            "bag": "The glowing blueprint lines on the wall lift off and align directly onto tattoo tracing paper over Michael's back."
+          },
+          "ses": {
+            "ambiyans": "ticking clock, night rain",
+            "efekt": ["rapid pushpin clicks 'year'", "electric CAD trace 'break'"]
+          }
+        },
+        {
+          "id": "2.04",
+          "anlatim": "Four months under the needle. Every corridor of Fox River hidden inside gothic ink.",
+          "sure_tahmini": 5.2,
+          "plan": "yakin",
+          "duygu": "gerilim",
+          "duygu_tasiyici": "Buzzing tattoo machine under moody parlor light as paper blueprint lines flow directly into Michael's sculpted back (A-Sırt v1).",
+          "vurucu": true,
+          "vfx": "live cyan blueprint lines flowing from tracing paper into sculpted back tattoo + needle spark",
+          "ogeler": [
+            {"ad": "dovme_igne", "kelime": "needle", "giris": "kay_sag", "eylem": "tattoo machine glides down Michael's spine; '4 MONTHS' kinetic stamp hits"},
+            {"ad": "dovme_plan", "kelime": "corridor", "giris": "ciz", "eylem": "blueprint corridors flow from paper onto skin and lock into 5-layer gothic crane ink"},
+            {"ad": "gotik_murekkep", "kelime": "ink", "giris": "parla", "eylem": "full back tattoo flashes cyan then settles into deep dark ink"}
+          ],
+          "kamera": "tight push-in along spine 1.0 → 1.24 + subtle needle vibration",
+          "ikincil": ["tattoo parlor neon flicker", "Michael breathing", "floating ink-cyan motes"],
+          "katmanlar": ["tattoo parlor wall 0.3", "Michael sculpted back (A-Sırt v1) 0.9", "glowing plan lines 1.08", "tattoo machine 1.25"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "dovme_plan",
+            "bag": "Camera dives through the gothic arch on his back, emerging on the marble bank lobby floor."
+          },
+          "ses": {
+            "ambiyans": "moody tattoo parlor hum",
+            "efekt": ["tattoo needle buzz 'needle'", "cyan blueprint lock chime 'ink'"],
+            "muzik": "driving rhythmic pulse peaks"
+          }
+        },
+        {
+          "id": "2.05",
+          "anlatim": "For the first time in your life, you rob a bank. Politely.",
+          "sure_tahmini": 4.4,
+          "plan": "genis",
+          "duygu": "merak",
+          "duygu_tasiyici": "Dry humor contrast: Michael in a tailored suit firing one calm warning shot at the ceiling (falling plaster, zero violence) and politely surrendering.",
+          "ogeler": [
+            {"ad": "banka_lobi", "kelime": "bank", "giris": "belir", "eylem": "marble bank lobby with Michael standing calmly in a dark suit"},
+            {"ad": "tavan_siva", "kelime": "rob", "giris": "dus", "eylem": "single muzzle flash overhead; ceiling plaster dust rains down (zero violence)"},
+            {"ad": "kibarca_damga", "kelime": "politely", "giris": "pop", "eylem": "Michael sets gun gently on counter; 'POLITELY' dry-humor stamp pops"}
+          ],
+          "kamera": "crisp whip-push from ceiling plaster down to Michael's calm hands 1.0 → 1.18",
+          "ikincil": ["falling ceiling dust", "flashing blue police light outside glass doors"],
+          "katmanlar": ["bank marble pillars 0.4", "teller counter & Michael 0.9", "falling plaster 1.1", "foreground velvet rope 1.35"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Camera whips right from the surrendered gun directly onto the judge's sentencing desk."
+          },
+          "ses": {
+            "ambiyans": "echoing bank hall, distant sirens",
+            "efekt": ["single ceiling shot + plaster crumble 'rob'", "gentle metal clink on marble 'politely'"]
+          }
+        },
+        {
+          "id": "2.06",
+          "anlatim": "You don't fight the charges. You ask for one thing: Fox River.",
+          "sure_tahmini": 4.4,
+          "plan": "detay",
+          "duygu": "gerilim",
+          "duygu_tasiyici": "Red FOX RIVER stamp slamming onto inmate folder #94941 over Michael's calm mugshot.",
+          "ogeler": [
+            {"ad": "dosya_94941", "kelime": "charges", "giris": "kay_sol", "eylem": "inmate file #94941 slides across desk showing Michael's mugshot"},
+            {"ad": "dosya_damga", "kelime": "river", "giris": "dus", "eylem": "heavy red ink stamp slams down: 'FOX RIVER · 5 YEARS'"}
+          ],
+          "kamera": "overhead snap push-in onto the red stamp 1.0 → 1.24 + impact shake",
+          "ikincil": ["desk lamp glow", "ink dust particles"],
+          "katmanlar": ["judge desk 0.5", "inmate file #94941 0.9", "red FOX RIVER stamp 1.1"],
+          "gecis_sonraki": {
+            "tur": "maske",
+            "oge_a": "dosya_damga",
+            "bag": "The red FOX RIVER stamp expands as a mask straight into the towering steel gates of Fox River."
+          },
+          "ses": {
+            "ambiyans": "quiet courtroom bench",
+            "efekt": ["folder slide 'charges'", "heavy ink stamp slam 'river'"]
+          }
+        },
+        {
+          "id": "2.07",
+          "anlatim": "The gates slam behind you. Now the countdown begins: thirty days to execution.",
+          "sure_tahmini": 4.8,
+          "plan": "genis",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "ofke", "kelime": "countdown"},
+          "duygu_tasiyici": "Towering Fox River iron gates slamming behind Michael (94941) as the crimson-cyan EXECUTION IN 30 DAYS retention countdown locks on screen.",
+          "vurucu": true,
+          "vfx": "steel gate impact shake + bold EXECUTION IN 30 DAYS digital countdown HUD lock-in",
+          "ogeler": [
+            {"ad": "fox_kapilar", "kelime": "gates", "giris": "kay_sag", "eylem": "massive Fox River iron gates slam shut behind Michael in blue prison shirt"},
+            {"ad": "sayac_30", "kelime": "countdown", "giris": "pop", "eylem": "'EXECUTION IN 30 DAYS' retention countdown HUD slams into top-right and pulses"},
+            {"ad": "plan_parlama", "kelime": "execution", "giris": "parla", "eylem": "cyan blueprint grid flashes over the towering prison walls behind Michael"}
+          ],
+          "kamera": "low-angle hero pull-back then snap push to countdown 1.0 → 1.20 + gate shake",
+          "ikincil": ["sweeping watchtower searchlight", "drifting prison yard mist", "countdown pulse"],
+          "katmanlar": ["storm sky & watchtowers 0.25", "Fox River stone walls 0.65", "Michael (94941) 0.95", "iron gates & countdown HUD 1.2"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "sayac_30",
+            "bag": "Camera dives into the 30-day countdown clock, launching directly into Act III (Fox River)."
+          },
+          "ses": {
+            "ambiyans": "prison yard wind, distant siren",
+            "efekt": ["massive steel gate slam 'gates'", "sharp digital countdown beep 'countdown'"],
+            "muzik": "Act II climax percussive hit"
+          }
+        }
+      ]
+    }
+  ]
+}

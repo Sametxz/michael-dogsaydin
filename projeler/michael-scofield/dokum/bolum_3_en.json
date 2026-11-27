@@ -1,0 +1,272 @@
+{
+  "proje": "michael-scofield",
+  "not": "Act III ('Fox River') — 100% English high-tempo F4a breakdown (#14–#27). Live word-by-word action, 9/9 semantic transitions, ticking EXECUTION countdown HUD.",
+  "bolumler": [
+    {
+      "ad": "III · Fox River",
+      "cekimler": [
+        {
+          "id": "3.01",
+          "anlatim": "At the visiting glass, you open your shirt. The blueprint glows: I'm getting you out.",
+          "sure_tahmini": 4.6,
+          "plan": "yakin",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "glows"},
+          "duygu_tasiyici": "Two brothers' hands meeting on scratched visiting glass as Michael's hidden blueprint glows cyan beneath his shirt.",
+          "ogeler": [
+            {"ad": "cam_el", "kelime": "glass", "giris": "belir", "eylem": "Michael and Lincoln press hands against the visiting glass; DAYS LEFT: 29 locks in"},
+            {"ad": "gomlek_plan", "kelime": "shirt", "giris": "eylem", "eylem": "Michael parts his blue prison shirt revealing intricate gothic ink"},
+            {"ad": "plan_isik", "kelime": "glows", "giris": "parla", "eylem": "cyan blueprint lines ignite across his chest and arms; 'GETTING YOU OUT' stamps in"}
+          ],
+          "kamera": "push-in through visiting glass toward Michael's glowing blueprint 1.0 → 1.22",
+          "ikincil": ["fluorescent hum flicker", "brothers breathing"],
+          "katmanlar": ["visiting room wall 0.4", "Lincoln & Michael (R4 locked) 1.0", "cyan blueprint glow 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "cam_el",
+            "bag": "Camera dives through the visiting glass reflection straight into the Fox River prison yard."
+          },
+          "ses": {
+            "ambiyans": "visiting room murmur, intercom hum",
+            "efekt": ["hand against glass 'glass'", "cyan blueprint hum 'glows'"]
+          }
+        },
+        {
+          "id": "3.02",
+          "anlatim": "You need a crew: a mob boss, a cellmate, and D.B. Cooper. Long story.",
+          "sure_tahmini": 5.0,
+          "plan": "orta",
+          "duygu": "merak",
+          "duygu_tasiyici": "Rapid-fire dossier cards slamming onto the yard table with dry-humor 'LONG STORY.' kinetic stamp.",
+          "ogeler": [
+            {"ad": "ekip_kart1", "kelime": "mob", "giris": "dus", "eylem": "ABRUZZI (MOB BOSS) dossier card slams down with red clip"},
+            {"ad": "ekip_kart2", "kelime": "cellmate", "giris": "dus", "eylem": "SUCRE (CELLMATE) card slams beside it"},
+            {"ad": "ekip_kart3", "kelime": "cooper", "giris": "dus", "eylem": "WESTMORELAND (D.B. COOPER?) card slams down"},
+            {"ad": "uzun_hikaye", "kelime": "story", "giris": "pop", "eylem": "'LONG STORY.' dry-humor kinetic stamp pops across the crew"}
+          ],
+          "kamera": "energetic whip-pan across slamming crew cards 1.0 → 1.16",
+          "ikincil": ["drifting yard dust", "card shadow settle"],
+          "katmanlar": ["Fox River yard wall 0.4", "concrete table & crew cards 1.0", "cyan crew links 1.0"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Camera whips right from the crew cards straight into the warm Fox River Infirmary."
+          },
+          "ses": {
+            "ambiyans": "prison yard chatter",
+            "efekt": ["3 rapid card slams 'mob', 'cellmate', 'cooper'", "dry record-scratch beat 'story'"]
+          }
+        },
+        {
+          "id": "3.03",
+          "anlatim": "You fake diabetes to visit the infirmary every day. That's where you meet Sara.",
+          "sure_tahmini": 4.8,
+          "plan": "orta",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "huzur", "kelime": "sara"},
+          "duygu_tasiyici": "Cold prison blue shifting to warm amber infirmary light around Dr. Sara Tancredi while cyan CAD highlights the exit window behind her.",
+          "ogeler": [
+            {"ad": "revir_masa", "kelime": "infirmary", "giris": "belir", "eylem": "warm amber infirmary with insulin vials and chart; DAYS LEFT: 21 ticks"},
+            {"ad": "sara_fig", "kelime": "sara", "giris": "eylem", "eylem": "Dr. Sara Tancredi (locked v2) looks up warmly with stethoscope"},
+            {"ad": "revir_pencere", "kelime": "day", "giris": "ciz", "eylem": "subtle cyan CAD outline highlights the unbarred infirmary window behind her"}
+          ],
+          "kamera": "warm push-in toward Sara and the infirmary window behind her 1.0 → 1.18",
+          "ikincil": ["warm dust motes in amber lamp", "Sara breathing"],
+          "katmanlar": ["infirmary far wall 0.5", "Sara v2 & exam table (R4 locked) 1.0", "cyan window CAD 1.0"],
+          "gecis_sonraki": {
+            "tur": "maske",
+            "oge_a": "revir_pencere",
+            "bag": "The infirmary window frame expands as a mask directly onto the cell wall behind Michael's sink."
+          },
+          "ses": {
+            "ambiyans": "calm infirmary hum",
+            "efekt": ["glass vial clink 'infirmary'", "soft warm piano chord 'sara'"]
+          }
+        },
+        {
+          "id": "3.04",
+          "anlatim": "One stolen bolt loosens the toilet. Behind your cell wall lies Fox River's hidden heart.",
+          "sure_tahmini": 4.8,
+          "plan": "detay",
+          "duygu": "gerilim",
+          "duygu_tasiyici": "Hex Allen bolt spinning loose as the steel sink pulls away, revealing a dark pipe corridor glowing in cyan CAD wireframe.",
+          "ogeler": [
+            {"ad": "allen_civata", "kelime": "bolt", "giris": "pop", "eylem": "Allen hex bolt spins rapidly with cyan torque arrows; DAYS LEFT: 14"},
+            {"ad": "duvar_delik", "kelime": "wall", "giris": "kay_sag", "eylem": "steel toilet/sink slides away revealing dark concrete opening"},
+            {"ad": "boru_kalp", "kelime": "heart", "giris": "ciz", "eylem": "subterranean pipe network inside the wall ignites in glowing cyan CAD"}
+          ],
+          "kamera": "tight push-in straight into the dark hole behind the sink 1.0 → 1.26",
+          "ikincil": ["dripping condensation", "fluorescent flicker"],
+          "katmanlar": ["dark pipe shaft 0.5", "cell sink & Allen bolt 1.0", "cyan pipe CAD 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "duvar_delik",
+            "bag": "Camera plunges through the cell wall opening straight into the overhead riot air ducts."
+          },
+          "ses": {
+            "ambiyans": "hollow metallic pipe echo",
+            "efekt": ["metal wrench clicks 'bolt'", "heavy concrete scrape 'wall'"]
+          }
+        },
+        {
+          "id": "3.05",
+          "anlatim": "A prison riot erupts. You crawl through the vents to save Sara.",
+          "sure_tahmini": 4.8,
+          "plan": "orta",
+          "duygu": "ofke",
+          "duygu_donusum": {"hedef": "korku", "kelime": "save"},
+          "duygu_tasiyici": "Blazing red-orange heat wave and rising thermometer as Michael reaches down from the overhead vent to pull Sara to safety.",
+          "ogeler": [
+            {"ad": "isyan_termo", "kelime": "riot", "giris": "parla", "eylem": "red-orange riot glow and rising thermometer; DAYS LEFT: 9 flashes"},
+            {"ad": "kanal_el", "kelime": "save", "giris": "yuksel", "eylem": "Michael reaches down from overhead air duct, lifting Sara v2 up out of chaos"}
+          ],
+          "kamera": "dynamic upward tilt into the vent shaft 1.0 → 1.20 + heat shake",
+          "ikincil": ["rising sparks & heat haze", "swinging duct light"],
+          "katmanlar": ["riot corridor glow 0.5", "overhead vent & Michael/Sara (R4 locked) 1.0", "sparks 1.0"],
+          "gecis_sonraki": {
+            "tur": "on_plan_sil",
+            "bag": "Heavy steel vent grate wipes across the frame into the freezing execution corridor."
+          },
+          "ses": {
+            "ambiyans": "distant prison alarm and muffled shouting",
+            "efekt": ["alarm klaxon 'riot'", "metallic duct slam 'save'"]
+          }
+        },
+        {
+          "id": "3.06",
+          "anlatim": "Execution night: your sabotage fails. Then the phone rings—a two-week stay.",
+          "sure_tahmini": 5.4,
+          "plan": "yakin",
+          "duygu": "korku",
+          "duygu_donusum": {"hedef": "umut", "kelime": "rings"},
+          "duygu_tasiyici": "DAYS LEFT: 00 flashes crimson, electric cable spark fizzles, Lincoln walks in cold shadow, then a red telephone rings stopping the hand on the switch (zero violence).",
+          "vurucu": true,
+          "vfx": "electric cable spark + red phone ring shockwave + countdown jumps 00 → +14 DAYS",
+          "ogeler": [
+            {"ad": "kivilcim", "kelime": "fails", "giris": "parla", "eylem": "electric cable spark dies out; DAYS LEFT: 00 flashes crimson"},
+            {"ad": "kirmizi_telefon", "kelime": "rings", "giris": "pop", "eylem": "red courtroom phone rings with shockwave; hand freezes above switch; +14 DAYS"}
+          ],
+          "kamera": "tight tension push-in onto switch & red phone 1.0 → 1.24 + shock recoil",
+          "ikincil": ["flickering cold corridor bulb", "trembling hand on switch"],
+          "katmanlar": ["cold execution corridor 0.5", "Lincoln shadow, switch & red phone (R4 locked) 1.0", "spark & ring rings 1.0"],
+          "gecis_sonraki": {
+            "tur": "eslesme",
+            "oge_a": "kivilcim",
+            "oge_b": "yanik_kor",
+            "bag": "The electric spark morphs directly into a glowing orange ember burning a hole in Michael's back tattoo."
+          },
+          "ses": {
+            "ambiyans": "dead silence (HUSH) before phone ring",
+            "efekt": ["electric buzz & fizzle 'fails'", "piercing red telephone ring 'rings'"],
+            "muzik": "total silence until phone ring breaks tension"
+          }
+        },
+        {
+          "id": "3.07",
+          "anlatim": "A scorched pipe burns away part of your tattoo. You rebuild the missing map.",
+          "sure_tahmini": 4.8,
+          "plan": "yakin",
+          "duygu": "korku",
+          "duygu_donusum": {"hedef": "merak", "kelime": "rebuild"},
+          "duygu_tasiyici": "Orange ember erasing a section of A-Sırt v1's back tattoo, then cyan blueprint lines rapidly redrawing the missing puzzle piece.",
+          "ogeler": [
+            {"ad": "yanik_kor", "kelime": "burns", "giris": "parla", "eylem": "glowing ember burns away a critical corridor on Michael's back tattoo"},
+            {"ad": "eksik_parca", "kelime": "rebuild", "giris": "ciz", "eylem": "cyan CAD puzzle piece snaps back into place; 'REBUILT · 3 DAYS LEFT'"}
+          ],
+          "kamera": "push-in onto the burning gap then snap-zoom into rebuilt cyan node 1.0 → 1.22",
+          "ikincil": ["rising steam wisp", "pulsing cyan redraw"],
+          "katmanlar": ["cell concrete wall 0.5", "A-Sırt v1 back tattoo 1.0", "ember & cyan rebuild 1.0"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "eksik_parca",
+            "bag": "Camera dives through the rebuilt cyan infirmary lock straight to Sara's brass key."
+          },
+          "ses": {
+            "ambiyans": "hissing steam pipe",
+            "efekt": ["sizzling burn 'burns'", "crisp cyan CAD lock-in 'rebuild'"]
+          }
+        },
+        {
+          "id": "3.08",
+          "anlatim": "Tonight is the night. You ask Sara for one favor: leave the door unlocked.",
+          "sure_tahmini": 4.8,
+          "plan": "orta",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "umut", "kelime": "unlocked"},
+          "duygu_tasiyici": "Image Echo 2: Sara holding brass key INF-04 in warm amber infirmary, leaving the door ajar with a golden beam of light.",
+          "ogeler": [
+            {"ad": "tonight_hud", "kelime": "tonight", "giris": "pop", "eylem": "'TONIGHT' countdown stamp locks in over warm infirmary"},
+            {"ad": "sara_anahtar", "kelime": "favor", "giris": "belir", "eylem": "Sara v2 holds brass INF-04 key in warm amber light"},
+            {"ad": "revir_kapisi", "kelime": "unlocked", "giris": "eylem", "eylem": "infirmary door stays ajar with golden light spilling through; 'DOOR UNLOCKED'"}
+          ],
+          "kamera": "push-in toward the ajar golden infirmary doorway 1.0 → 1.24",
+          "ikincil": ["warm amber dust motes", "subtle key glint"],
+          "katmanlar": ["infirmary corridor 0.5", "Sara v2 & ajar infirmary door (R4 locked) 1.0", "cyan lock open icon 1.0"],
+          "gecis_sonraki": {
+            "tur": "maske",
+            "oge_a": "revir_kapisi",
+            "bag": "The ajar infirmary doorway expands as a mask straight onto the night escape cable."
+          },
+          "ses": {
+            "ambiyans": "quiet night corridor",
+            "efekt": ["soft key click without locking 'unlocked'"]
+          }
+        },
+        {
+          "id": "3.09",
+          "anlatim": "You cross a steel cable under sweeping spotlights. You make it over the wall.",
+          "sure_tahmini": 5.0,
+          "plan": "genis",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "zafer", "kelime": "wall"},
+          "duygu_tasiyici": "Silhouettes crossing taut steel cable above Fox River yard as dual searchlights slash past and sirens erupt.",
+          "vurucu": true,
+          "vfx": "sweeping dual searchlights + taut cable vibration + 'ESCAPED!' burst",
+          "ogeler": [
+            {"ad": "kacis_kablo", "kelime": "cable", "giris": "ciz", "eylem": "taut steel cable stretches from infirmary window across the outer wall"},
+            {"ad": "projekt_av", "kelime": "spotlights", "giris": "parla", "eylem": "watchtower spotlights slash across the yard barely missing Michael and Lincoln"},
+            {"ad": "duvar_as", "kelime": "wall", "giris": "pop", "eylem": "brothers drop outside the wall into freedom; 'ESCAPED!' flashes"}
+          ],
+          "kamera": "sweeping lateral tracking follow along the cable 1.0 → 1.18",
+          "ikincil": ["night rain", "swaying steel cable", "alarm beacon"],
+          "katmanlar": ["storm sky & watchtowers 0.5", "prison wall, cable & silhouettes (R4 locked) 1.0", "searchlights & HUD 1.0"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Camera whips right from the outer prison wall straight onto the dark night airstrip."
+          },
+          "ses": {
+            "ambiyans": "blaring prison sirens, night wind",
+            "efekt": ["cable zip 'cable'", "siren surge 'spotlights'", "triumphant impact hit 'wall'"],
+            "muzik": "soaring escape climax"
+          }
+        },
+        {
+          "id": "3.10",
+          "anlatim": "You reach the airstrip seconds too late. The plane takes off—now the manhunt begins.",
+          "sure_tahmini": 4.6,
+          "plan": "genis",
+          "duygu": "zafer",
+          "duygu_donusum": {"hedef": "korku", "kelime": "manhunt"},
+          "duygu_tasiyici": "Shrinking plane taillight in night sky, flooding red/blue police sirens, and Act IV open loop: FBI desk lamp snapping on over tattoo photos.",
+          "ogeler": [
+            {"ad": "pist_kosu", "kelime": "airstrip", "giris": "kay_sol", "eylem": "Michael and Lincoln sprint onto the dark wet airstrip tarmac"},
+            {"ad": "ucak_isik", "kelime": "plane", "giris": "eylem", "eylem": "runway plane taillight shrinks into the night sky above running silhouettes"},
+            {"ad": "av_baslar", "kelime": "manhunt", "giris": "pop", "eylem": "red/blue sirens flood tarmac; 'MANHUNT' stamps as FBI tattoo desk flashes (Act IV open loop)"}
+          ],
+          "kamera": "pull-back from shrinking plane light + siren shake 1.0 → 1.16",
+          "ikincil": ["flashing red/blue police lights", "runway mist"],
+          "katmanlar": ["night sky & plane 0.5", "airstrip & running brothers (R4 locked) 1.0", "sirens & MANHUNT HUD 1.0"],
+          "gecis_sonraki": {
+            "tur": "eslesme",
+            "oge_a": "ucak_isik",
+            "oge_b": "mahone_lamba",
+            "bag": "The shrinking plane light morphs into FBI Agent Mahone's desk lamp in Act IV."
+          },
+          "ses": {
+            "ambiyans": "roaring receding jet engine, closing police sirens",
+            "efekt": ["plane takeoff roar 'plane'", "heavy siren hit 'manhunt'"]
+          }
+        }
+      ]
+    }
+  ]
+}

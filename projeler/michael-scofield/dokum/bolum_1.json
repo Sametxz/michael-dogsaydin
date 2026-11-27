@@ -1,0 +1,273 @@
+{
+  "proje": "michael-scofield",
+  "not": "Bölüm I ('Turna') yüksek tempolu F4a sahne dökümü (#1–#8). Canlı kelime-kelime akış, ağır sinematik bekleme yok, %100 anlamsal geçiş.",
+  "bolumler": [
+    {
+      "ad": "I · Turna",
+      "cekimler": [
+        {
+          "id": "1.01",
+          "anlatim": "Henüz doğmadan baban kapıdan çıkıp gidiyor. Soyadın değişiyor.",
+          "sure_tahmini": 4.2,
+          "plan": "orta",
+          "duygu": "huzur",
+          "duygu_donusum": {"hedef": "yalnizlik", "kelime": "gidiyor"},
+          "duygu_tasiyici": "Sıcak ev ışığının kapanan kapıyla soğuk gölgeye dönmesi ve kapı plakasının BURROWS'tan SCOFIELD'a dönmesi.",
+          "ogeler": [
+            {"ad": "baba_golge", "kelime": "baban", "giris": "kay_sag", "eylem": "uzun gölge siluet kapıdan hızla çıkıp kapıyı çarparak kapatır"},
+            {"ad": "ev_kapisi", "kelime": "gidiyor", "giris": "eylem", "eylem": "kapı kapanır, evin sıcak ışığı kesilir"},
+            {"ad": "soyadi_plaka", "kelime": "soyadın", "giris": "pop", "eylem": "pirinç 'BURROWS' plakası hızla dönerek camgöbeği kıvılcımla 'SCOFIELD' olur"}
+          ],
+          "kamera": "kapı tokmağına hızlı itme 1.0 → 1.22; kapanışta kısa darbe sarsıntısı",
+          "ikincil": ["kapı aralığında uçuşan toz", "dışarıda yağmur başlangıcı"],
+          "katmanlar": ["dış sokak 0.2", "ev kapısı 0.8", "pirinç plaka 1.0", "ön plan kapı pervazı 1.35"],
+          "gecis_sonraki": {
+            "tur": "on_plan_sil",
+            "bag": "Kapanan ağır ev kapısı ekranı soldan sağa silerek mutfak masasına açılır."
+          },
+          "ses": {
+            "ambiyans": "yağmurlu akşam, sessiz ev",
+            "efekt": ["kapı çarpması 'gidiyor'", "metal plaka tıkırtısı 'soyadın'"]
+          }
+        },
+        {
+          "id": "1.02",
+          "anlatim": "On bir yaşına geldiğinde annen ölüyor. En azından sana öyle söyleniyor.",
+          "sure_tahmini": 4.8,
+          "plan": "orta",
+          "duygu": "huzur",
+          "duygu_donusum": {"hedef": "yas", "kelime": "ölüyor"},
+          "duygu_tasiyici": "Mutfakta buharı bir anda kesilen çay fincanı, %50 solan renk ve pencere camında beliren ince soru işareti (anne aslında yaşıyor ekimi).",
+          "ogeler": [
+            {"ad": "cay_fincan", "kelime": "yaşına", "giris": "pop", "eylem": "mutfak masasında iki sıcak çay fincanı ve '11 YAŞ' kinetik damgası belirir"},
+            {"ad": "buhar_kesil", "kelime": "ölüyor", "giris": "eylem", "eylem": "fincandaki buhar aniden kesilir, ışık soğuk maviye döner"},
+            {"ad": "mutfak_pencere", "kelime": "söyleniyor", "giris": "ciz", "eylem": "pencere camında iki çocuğun yalnız yansıması ve ince camgöbeği '?' çizilir"}
+          ],
+          "kamera": "masadan mutfak penceresine akıcı kayma + itme 1.0 → 1.18",
+          "ikincil": ["camda süzülen yağmur damlaları", "soğuyan çay yüzeyinde ince titreme"],
+          "katmanlar": ["dış gece 0.15", "mutfak penceresi 0.7", "masa ve fincanlar 1.0", "ön plan sandalye kenarı 1.35"],
+          "gecis_sonraki": {
+            "tur": "maske",
+            "oge_a": "mutfak_pencere",
+            "bag": "Mutfak penceresinin çerçevesinden içeri dalınır; pencere koruyucu ailenin soğuk karanlık odasına açılır."
+          },
+          "ses": {
+            "ambiyans": "cama vuran yağmur, saat tıkırtısı",
+            "efekt": ["fincan koyma sesi 'on bir'", "derin nefes kesilmesi 'ölüyor'"]
+          }
+        },
+        {
+          "id": "1.03",
+          "anlatim": "Ağabeyin Lincoln ıslahevinde. Seni koruyucu aile karanlık bir depoya kilitliyor.",
+          "sure_tahmini": 4.6,
+          "plan": "genis",
+          "duygu": "yalnizlik",
+          "duygu_donusum": {"hedef": "korku", "kelime": "kilitliyor"},
+          "duygu_tasiyici": "15 yaş Lincoln'ün parmaklık ardında uzaklaşması ve depo kapısındaki ağır metal sürgünün sert kapanışı (şiddet gösterilmez).",
+          "ogeler": [
+            {"ad": "lincoln_genc", "kelime": "lincoln", "giris": "kay_sol", "eylem": "solda genç Lincoln'ün silueti parmaklık ardında geriye çekilir"},
+            {"ad": "depo_kapisi", "kelime": "koruyucu", "giris": "kay_sag", "eylem": "koruyucu evin ağır ahşap depo kapısı hızla kapanır"},
+            {"ad": "kilit_surgu", "kelime": "kilitliyor", "giris": "pop", "eylem": "ağır demir sürgü şak diye yerine oturur, 'KİLİT' darbe halkası yayılır"}
+          ],
+          "kamera": "hızlı yana takip + sürgüye keskin itme ve kapanış sarsıntısı",
+          "ikincil": ["koridorda titreyen ampul", "havada uçuşan toz"],
+          "katmanlar": ["uzak koridor 0.3", "Lincoln silueti 0.6", "ahşap depo kapısı 0.9", "demir kilit sürgüsü 1.1"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "kilit_surgu",
+            "bag": "Kilit sürgüsünün karanlık deliğinden deponun içine, 11 yaş Michael'ın karanlığına dalınır."
+          },
+          "ses": {
+            "ambiyans": "soğuk ahşap koridor yankısı",
+            "efekt": ["parmaklık kapanışı 'lincoln'", "ağır demir sürgü şaklaması 'kilitliyor'"]
+          }
+        },
+        {
+          "id": "1.04",
+          "anlatim": "Karanlıkta beynin ayrıntıları süzemiyor. Düşük örtük ketlenme: her şeyi görüyorsun.",
+          "sure_tahmini": 5.2,
+          "plan": "yakin",
+          "duygu": "korku",
+          "duygu_donusum": {"hedef": "merak", "kelime": "görüyorsun"},
+          "duygu_tasiyici": "11 yaş Michael'ın korkuyla açılan gözlerinin canlı CAD taramasına dönüşmesi ve odadaki her ayrıntının 01–06 noktalarıyla yanması.",
+          "vurucu": true,
+          "vfx": "canlı camgöbeği CAD lazer taraması + seri 01–06 nokta patlamaları + gözde camgöbeği parlama",
+          "ogeler": [
+            {"ad": "cocuk_michael", "kelime": "karanlıkta", "giris": "belir", "eylem": "11 yaş Michael'ın gözleri karanlıkta büyür, hızlı nefes alır"},
+            {"ad": "tahta_catlak", "kelime": "süzemiyor", "giris": "ciz", "eylem": "canlı lazer tarama odadaki tahta çatlaklarını, çivileri ve ağları anlık çizer"},
+            {"ad": "plan_noktalar", "kelime": "görüyorsun", "giris": "pop", "eylem": "01–06 numaralı düğümler 0.14 sn arayla patlar; 'HER ŞEYİ GÖRÜYORSUN' tahtaya çizilir"}
+          ],
+          "kamera": "çocuğun gözünden hızla geri çekilip odayı tarama (whip-pull 1.25 → 1.0 → 1.14)",
+          "ikincil": ["çocuğun hızlı nefesi", "ışıkta yüzen tozlar", "plan düğümlerinin nabzı"],
+          "katmanlar": ["depo arka tahtalar 0.4", "11 yaş Michael 0.85", "CAD tarama ve 01–06 noktalar 1.05", "ön plan sandık 1.35"],
+          "gecis_sonraki": {
+            "tur": "eslesme",
+            "oge_a": "tahta_catlak",
+            "oge_b": "sabah_isigi",
+            "bag": "Parlayan yatay tahta çatlağı, ertesi sabah yatak başına vuran sıcak altın güneş şeridine dönüşür."
+          },
+          "ses": {
+            "ambiyans": "boğuk ahşap depo sessizliği",
+            "efekt": ["hızlı CAD tarama vızıltısı 'süzemiyor'", "6 seri kristal ping sesi 'görüyorsun'"],
+            "muzik": "gerilim nabzı analitik merak ritmine döner"
+          }
+        },
+        {
+          "id": "1.05",
+          "anlatim": "Ertesi sabah yatağının yanında bir kâğıt turna buluyorsun. Lincoln'ün işareti: Buradayım.",
+          "sure_tahmini": 5.0,
+          "plan": "detay",
+          "duygu": "yalnizlik",
+          "duygu_donusum": {"hedef": "umut", "kelime": "turna"},
+          "duygu_tasiyici": "Soğuk maviden sıcak altın sabaha ani duygu dönüşümü; çarşafın üstündeki beyaz kâğıt turna (Turna v4) ve altın parıltılı BURADAYIM yazısı.",
+          "ogeler": [
+            {"ad": "sabah_isigi", "kelime": "sabah", "giris": "parla", "eylem": "sıcak altın güneş hüzmesi yatağın üstüne yayılır"},
+            {"ad": "turna", "kelime": "turna", "giris": "dus", "eylem": "kâğıt turna (Turna v4) çarşafa konar, kanatlarını hafifçe açar"},
+            {"ad": "buradayim_yazi", "kelime": "buradayım", "giris": "ciz", "eylem": "'BURADAYIM' kinetik kelimesi turnanın yanında sıcak altın ışıkla çizilir"}
+          ],
+          "kamera": "turnaya yumuşak ama aktif itme 1.0 → 1.22, hafif yukarı tilt",
+          "ikincil": ["güneş ışığında altın toz zerreleri", "turnanın kanatlarında hafif esinti"],
+          "katmanlar": ["oda arka planı 0.3", "yatak çarşafı 0.8", "kâğıt turna 1.0", "altın ışık hüzmesi 1.2"],
+          "gecis_sonraki": {
+            "tur": "nesne_tasi",
+            "oge_a": "turna",
+            "oge_b": "turna",
+            "bag": "Kâğıt turna yatak başından havalanıp kanat çırparak yılları aşar ve lise sırasına konar."
+          },
+          "ses": {
+            "ambiyans": "sakin sabah kuş sesi, yumuşak esinti",
+            "efekt": ["kâğıt kanat hışırtısı 'turna'", "sıcak piyano tek nota 'buradayım'"]
+          }
+        },
+        {
+          "id": "1.06",
+          "anlatim": "Lisede el sanatları dersinde origamiyi öğreniyorsun. Kâğıt senin dilin oluyor.",
+          "sure_tahmini": 4.2,
+          "plan": "orta",
+          "duygu": "umut",
+          "duygu_tasiyici": "Ellerin hızla kâğıt katlaması ve sıradan arka arkaya havalanan turna sürüsü (zaman atlaması hareketle anlatılır).",
+          "ogeler": [
+            {"ad": "turna", "kelime": "lisede", "giris": "eylem", "eylem": "uçan turna okul sırasına konar, 'LİSE' etiketi parlar"},
+            {"ad": "katlanan_kagit", "kelime": "origamiyi", "giris": "pop", "eylem": "kare kâğıt 3 hızlı katlama adımında yeni bir turnaya dönüşür"},
+            {"ad": "turna_suru", "kelime": "dilin", "giris": "yuksel", "eylem": "beş kâğıt turna sıradan arka arkaya havalanıp sağa doğru süzülür"}
+          ],
+          "kamera": "sıradan sağa doğru akıcı takip kayması + hafif zoom 1.0 → 1.12",
+          "ikincil": ["sınıf penceresinden giren güneş şeritleri", "havalanan turnaların kanat çırpışı"],
+          "katmanlar": ["sınıf tahtası 0.3", "okul sırası 0.8", "katlanan kâğıt ve turnalar 1.0", "ön plan uçan turna 1.35"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Sağa doğru hızla uçan turnalarla kamera sağa savrulur ve 18 yaş zarfının masaya inişine düşer."
+          },
+          "ses": {
+            "ambiyans": "uzak sınıf uğultusu",
+            "efekt": ["hızlı kâğıt katlama sesleri 'origamiyi'", "çoklu kanat hışırtısı 'dilin'"]
+          }
+        },
+        {
+          "id": "1.07",
+          "anlatim": "On sekizinde Lincoln sana doksan bin dolar uzatıyor. Annenin sigortası diyor.",
+          "sure_tahmini": 5.0,
+          "plan": "orta",
+          "duygu": "umut",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "sigortası"},
+          "duygu_tasiyici": "Lincoln'ün sıcak uzattığı $90.000 çek ile arkasındaki camda beliren karanlık tefeci gölgeleri arasındaki tezat (gizli bedel ekimi).",
+          "ogeler": [
+            {"ad": "zarf_18", "kelime": "sekizinde", "giris": "dus", "eylem": "masaya kahverengi zarf düşer, '18 YAŞ' kinetik damgası vurur"},
+            {"ad": "cek_kagit", "kelime": "doksan", "giris": "kay_sol", "eylem": "Lincoln'ün eli zarftan çeki çıkarır, '$90.000' altın parıltıyla büyür"},
+            {"ad": "tefeci_golge", "kelime": "sigortası", "giris": "belir", "eylem": "Lincoln'ün arkasındaki pencerede iki karanlık gölge belirip bekler"}
+          ],
+          "kamera": "çektan Lincoln'ün yüzüne ve arkasındaki gölgeye hızlı push-in 1.0 → 1.20",
+          "ikincil": ["Lincoln nefes", "arka camda geçen far ışığı", "masada kâğıt titremesi"],
+          "katmanlar": ["dış sokak ve tefeci gölgeleri 0.3", "Lincoln (kilitli v1) 0.8", "masa ve $90.000 çek 1.05"],
+          "gecis_sonraki": {
+            "tur": "nesne_tasi",
+            "oge_a": "cek_kagit",
+            "oge_b": "diploma",
+            "bag": "$90.000'lık çek havada dönerek Michael'ın inşaat mühendisliği diplomasına dönüşür."
+          },
+          "ses": {
+            "ambiyans": "akşam lokanta uğultusu",
+            "efekt": ["zarf düşüşü 'on sekizinde'", "kâğıt sürtünmesi 'doksan bin'", "düşük gerilim bası 'sigortası'"]
+          }
+        },
+        {
+          "id": "1.08",
+          "anlatim": "O parayla Chicago'da yapı mühendisi oluyorsun. Her binayı içeriden okuyorsun.",
+          "sure_tahmini": 4.4,
+          "plan": "genis",
+          "duygu": "zafer",
+          "duygu_tasiyici": "Diploma mührü ve cam ofisten görünen Chicago gökdelenlerinin canlı CAD lazer taramasıyla camgöbeği çelik iskelete çözülmesi.",
+          "ogeler": [
+            {"ad": "diploma", "kelime": "mühendisi", "giris": "pop", "eylem": "diploma mühürlenir, 'YAPI MÜHENDİSİ' damgası oturur"},
+            {"ad": "cad_plan", "kelime": "okuyorsun", "giris": "ciz", "eylem": "cam ofis dışındaki gökdelenler canlı lazer taramayla camgöbeği çelik plana çözülür"}
+          ],
+          "kamera": "ofis camına hızlı yaklaşma + yukarı tilt (güç ve özgüven, 1.0 → 1.18)",
+          "ikincil": ["şehir ışıkları parıltısı", "camda hafif yansıma", "CAD çizgi nabzı"],
+          "katmanlar": ["Chicago ufuk çizgisi 0.2", "gökdelenler ve CAD iskeleti 0.7", "cam ofis 1.0", "ön plan masa kenarı 1.35"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "cad_plan",
+            "bag": "Gökdelenin camgöbeği plan çizgilerinden mühendislik masasındaki gerçek mavi mimari plana dalınır."
+          },
+          "ses": {
+            "ambiyans": "modern şehir ofisi uğultusu",
+            "efekt": ["mühür damgası 'mühendisi'", "canlı CAD tarama vızıltısı 'okuyorsun'"]
+          }
+        },
+        {
+          "id": "1.09",
+          "anlatim": "Çalıştığın firma bir hapishaneyi yeniliyor. Masandaki mavi planda tek ad var: Fox River.",
+          "sure_tahmini": 4.8,
+          "plan": "detay",
+          "duygu": "merak",
+          "duygu_donusum": {"hedef": "gerilim", "kelime": "fox"},
+          "duygu_tasiyici": "Masada hızla açılan mavi mimari rulo, camgöbeği parlayan FOX RIVER başlığı ve planın tam ortasına konan kâğıt turna.",
+          "ogeler": [
+            {"ad": "mavi_rulo", "kelime": "yeniliyor", "giris": "kay_sag", "eylem": "büyük mavi mimari plan rulosu masada hızla açılır"},
+            {"ad": "masa_turna", "kelime": "planda", "giris": "dus", "eylem": "kâğıt turna süzülüp mavi planın tam ortasına konar"},
+            {"ad": "fox_baslik", "kelime": "fox", "giris": "parla", "eylem": "planın köşesindeki 'FOX RIVER' yazısı camgöbeği yanar, koridorlar belirginleşir"}
+          ],
+          "kamera": "kuşbakışı masaya keskin itme + hafif dönüş 1.0 → 1.22",
+          "ikincil": ["masa lambası ışık titreşimi", "plan çizgilerinde hafif parıltı"],
+          "katmanlar": ["ahşap mühendislik masası 0.5", "mavi mimari plan 0.9", "kâğıt turna ve cetvel 1.1"],
+          "gecis_sonraki": {
+            "tur": "zoom_icinden",
+            "oge_a": "masa_turna",
+            "bag": "Planın ortasındaki kâğıt turnaya kesintisiz yakınlaşılır; turnanın gölgesi 1.10'da parmaklık gölgesine uzar."
+          },
+          "ses": {
+            "ambiyans": "sessiz ofis, masa lambası uğultusu",
+            "efekt": ["kâğıt rulo açılma hışırtısı 'yeniliyor'", "derin synth vuruşu 'fox'"]
+          }
+        },
+        {
+          "id": "1.10",
+          "anlatim": "Henüz bilmiyorsun ama o plan hayatını değiştirecek. Çünkü ağabeyin idamla yargılanıyor.",
+          "sure_tahmini": 4.6,
+          "plan": "yakin",
+          "duygu": "gerilim",
+          "duygu_donusum": {"hedef": "ofke", "kelime": "idamla"},
+          "duygu_tasiyici": "Turnanın gölgesinin parmaklık gölgesine dönüşmesi ve masaya flaşla çakılan İDAM KARARI gazete manşeti (Bölüm II görsel açık döngüsü).",
+          "vurucu": true,
+          "vfx": "kırmızı-beyaz flaş darbesi + kamera sarsıntısı + parmaklık gölge geçişi",
+          "ogeler": [
+            {"ad": "parmaklik_golge", "kelime": "değiştirecek", "giris": "belir", "eylem": "turnanın plan üstündeki gölgesi uzayıp parmaklık gölgesine dönüşür"},
+            {"ad": "idam_manset", "kelime": "idamla", "giris": "dus", "eylem": "'İDAM KARARI' gazete manşeti ve Lincoln'ün fotoğrafı planın üstüne sertçe düşer"}
+          ],
+          "kamera": "manşete ani whip-zoom 1.0 → 1.25 + çarpma sarsıntısı",
+          "ikincil": ["kırmızı flaş titreşimi", "plan çizgilerinde gerilim titremesi"],
+          "katmanlar": ["mavi plan 0.6", "parmaklık gölgesi 0.85", "İDAM KARARI gazete manşeti 1.1"],
+          "gecis_sonraki": {
+            "tur": "savurma",
+            "bag": "Gazete manşetinin çarpma enerjisiyle kamera Bölüm II'nin mahkeme tokmağına savrulur (görsel açık döngü)."
+          },
+          "ses": {
+            "ambiyans": "kesilen ofis sessizliği",
+            "efekt": ["sert gazete darbesi + kamera flaşı 'idamla'"],
+            "muzik": "gerilim akoru keskin biçimde kesilir"
+          }
+        }
+      ]
+    }
+  ]
+}

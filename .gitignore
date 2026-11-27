@@ -19,3 +19,6 @@ projeler/*/ses/*.mp3
 projeler/*/out/
 projeler/*/final/*.mp4
 projeler/*/kapak/*_2560.png
+# geçici kontakt kare önbellekleri (kontakt PNG şeritleri takip edilir)
+projeler/*/blok/kareler*/
+projeler/*/blok/_concat*.txt

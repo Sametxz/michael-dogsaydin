@@ -23,7 +23,7 @@ def _img(cekim, t, surf):
 
 def _ciz_olcekli(c, img, merkez, s, a=1.0, blur=0.0):
     p = skia.Paint(); p.setAlphaf(clamp(a))
-    if blur > 0.3: p.setImageFilter(skia.ImageFilters.Blur(blur, blur))
+    if blur > 0.3 and not os.environ.get("STUDYO_FAST"): p.setImageFilter(skia.ImageFilters.Blur(blur, blur))
     c.save(); c.translate(*merkez); c.scale(s, s); c.translate(-merkez[0], -merkez[1]); c.drawImage(img, 0, 0, SAMP, p); c.restore()
 
 def _konum(cekim, ad, t):
@@ -74,7 +74,7 @@ class ZoomIcinden(Gecis):
             _ciz_olcekli(c, ia, p, 1 + 9 * ease("in", u * 2), blur=18 * u)
         else:
             _ciz_olcekli(c, ib, (W / 2, H / 2), 1.6 - 0.6 * ease("out", (u - 0.5) * 2), blur=14 * (1 - u))
-        f = skia.Paint(Color4f=hexcol(self.renk, max(0, 1 - abs(u - 0.5) * 4) * 0.9)); c.drawRect(skia.Rect(0, 0, W, H), f)
+        f = skia.Paint(Color4f=hexcol(self.renk, max(0, 1 - abs(u - 0.5) * 4) * 0.45)); c.drawRect(skia.Rect(0, 0, W, H), f)
 
 class NesneTasi(Gecis):
     """Nesne A'daki yerinden B'deki yerine kavisle uçar; altta A kayarak çıkar, B kayarak gelir.
@@ -122,9 +122,15 @@ class Savurma(Gecis):
 
 # ───────── Film
 class Writer:
-    def __init__(self, path, crf=18):
-        self.p = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-                                   "-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf), "-pix_fmt", "yuv420p", path], stdin=subprocess.PIPE)
+    def __init__(self, path, crf=18, out_w=None, out_h=None):
+        import shutil
+        ff = shutil.which("ffmpeg")
+        if not ff:
+            import imageio_ffmpeg
+            ff = imageio_ffmpeg.get_ffmpeg_exe()
+        vf = ["-vf", f"scale={out_w}:{out_h}:flags=lanczos"] if (out_w and out_h and (out_w != W or out_h != H)) else []
+        self.p = subprocess.Popen([ff, "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-"] + vf +
+                                   ["-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf), "-pix_fmt", "yuv420p", path], stdin=subprocess.PIPE)
         self.info = skia.ImageInfo.Make(W, H, skia.kRGBA_8888_ColorType, skia.kPremul_AlphaType); self.buf = bytearray(W * H * 4)
     def write(self, surf): surf.readPixels(self.info, self.buf, W * 4); self.p.stdin.write(self.buf)
     def close(self):
@@ -169,9 +175,9 @@ class Film:
             if i > 0 and t < t0 + self.gecisler[i - 1].sure: continue   # önceki geçiş çiziyor
             ck.render(c, t - t0); return
 
-    def render(self, yol, crf=18):
+    def render(self, yol, crf=18, out_w=None, out_h=None):
         surf = skia.Surface(W, H); sa, sb = skia.Surface(W, H), skia.Surface(W, H); c = surf.getCanvas()
-        tmp = yol[:-4] + "_tmp.mp4"; wr = Writer(tmp, crf)
+        tmp = yol[:-4] + "_tmp.mp4"; wr = Writer(tmp, crf, out_w=out_w, out_h=out_h)
         for f in range(int(round(self.sure * FPS))):
             t = f / FPS
             # geçiş aralığı önceki çekimin döngüsünde yakalanır; değilse sıradaki çekim çizer

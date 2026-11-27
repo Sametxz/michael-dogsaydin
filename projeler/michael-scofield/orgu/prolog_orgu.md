@@ -1,0 +1,15 @@
+# Prolog örgüsü v1 · "Kapının altındaki ışık"
+
+**Süre:** ~21 sn anlatım + ~3 sn başlık kartı ≈ **24 sn** · **6 çekim (P.01–P.05 + P.06 başlık kartı)** · **Anlamsal geçiş: 5/5 (%100)** · `dokum_kontrol.py`: **GEÇTİ**
+
+| # | Anlatım | Ekranda ne olur (kilit kelime → eylem) | Kamera | Geçiş → sonraki | Duygu | Süre |
+|---|---|---|---|---|---|---|
+| **P.01** | Michael Scofield olarak doğsaydın, bir hapishaneyi ezbere bilirdin. | «michael» → projektör kuleden yanar, duvarı tarar · «hapishaneyi» → taş duvar camgöbeği plan çizgilerine çözülür · «ezbere» → 01–04 noktaları yanar, kesik rota + `EZBERE` kinetik kelimesi çizilir | aşağıdan yukarı tilt (güç) + duvara yavaş itme `1.0 → 1.15` | **Zoom içinden:** Plandaki `01` noktası hücre penceresidir; kamera içine dalar | merak | 4.6 sn |
+| **P.02** | Sonra kendini içine kilitlerdin. | «kendini» → elini parmaklığa koyar, kapıyı kendi çeker · «kilitlerdin» → kapı çarparak kapanır, kilit dili oturur, parmaklık gölgeleri yüzüne düşer | koridordan hücreye bakış; kapanışta hafif geri çekilme + sarsıntı | **Ön plan silme:** Parmaklık önden kayar, hücre içinde Michael'ın sırtına açılır | gerilim | 3.0 sn |
+| **P.03** | Ve tarihe, haritası teninde yazılı adam olarak geçerdin. | «haritası» → kapı kemeri ve turna plan çizgileri camgöbeği yanar · «teninde» → çizgiler tenden kalkıp havada döner · «adam» → `HARİTA` kinetik kelimesi çizgilerden kurulur | sırta yavaş itme `1.0 → 1.18`, hafif sağa kayma | **Biçim eşleşmesi:** Havadaki tek yatay çizgi → karanlık depo kapı altındaki ışık çizgisine dönüşür | merak | 4.4 sn |
+| **P.04** | Ama şu an? On bir yaşındasın. Karanlıktasın. | «ama» → her şey söner, yalnız kapı altındaki ince ışık çizgisi kalır · «yaşındasın» → iki küçük yıpranmış ayakkabı ucu girer · «karanlıktasın» → yukarı tilt, yarısı ışıkta 11 yaş Michael'ın gözleri korkuyla açılır · ⚡ ters ışık patlaması + sessizlik | yer seviyesinde sabit, sonra yavaşça yukarı tilt yüze | **Zoom içinden:** Çocuğun gözüne dalış → baktığı kapı aralığında plan görüşü | gerilim → korku («karanlıktasın») | 5.0 sn |
+| **P.05** | Ve kapının altından sızan ışığı sayıyorsun. | «kapının» → ışık çizgisi genişler, ötesinden gölge geçer (açık döngü) · «sızan» → tahta çatlakları, çiviler, tozlar camgöbeği yanar · «sayıyorsun» → 01, 02, 03… belirir, çocuğun gözünde camgöbeği yansıma | yüzden ışık çizgisine yavaş itme, sonra çizgiye dalış | **Maske:** Işık çizgisi beyaz bir kapıya genişler → başlık kartı | korku → merak («sayıyorsun») | 4.2 sn |
+| **P.06** | *(Başlık kartı)* | Kapı aralığı beyaza açılır; plan çizgileri **"MICHAEL SCOFIELD OLARAK DOĞSAYDIN?"** başlığını çizer | hafif itme `1.0 → 1.06` | **Maske:** Başlık kapısı → Bölüm I'de babanın çıktığı evin kapısı | merak | 3.0 sn |
+
+- **Tutuculuk:** İlk 5 sn'de plan görüşü kancası · Kinetik kelimeler: `EZBERE`, `HARİTA` · Vurucu an: «Ama şu an?» (ışıklar söner, ses kesilir) · Açık döngü: kapı ötesinden geçen gölge.
+- **Ses:** Gece rüzgârı → koridor yankısı → «Ama»da sessizlik + bas vuruşu → saat tıkırtısı ve yükselen yaylı.

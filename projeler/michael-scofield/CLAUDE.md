@@ -32,6 +32,10 @@ Born in Lore formatında, ikinci tekil şahısla anlatılan ~9 dakikalık Türk�
 - Anlatım sıkıcı olmamalı: sürekli akan, geçişli, dinamik; neredeyse her cümle sahnede karşılık bulur.
 - **Ragnar stiline bağlı kalınmaz** (kullanıcı, 26.11.2026 16:08): görsel dil konuya (hapishane, plan, kaçış) ve yeni akışa göre seçilir. Öncelik: daha dinamik ve hareketli sahneler, her cümle ekranda yaşanır, akış yüksek, **ekranda tutuculuk (izleyiciyi tutma) artırılır**.
 - **Görsel dil: B + A hibrit** (16:20): sinematik 2D dünya + Michael'ın 'plan görüşü' (camgöbeği plan çizgileri; aynı zamanda geçiş aracı). Tutuculuk: geri sayım sayacı, kinetik kilit kelimeler, görsel açık döngüler (`omurga.md §8`). Stil testi: `stil/stil_kontakt.png`.
+- **Anlatım temposu (kritik kullanıcı yönlendirmesi, 26.11.2026 18:28):** Sahneler 3. şahıstan ağır bir sinema filmi izler gibi yavaş akmamalı; **anlık, aktif, her kare cümle akışıyla canlı render oluyormuş gibi** (Born in Lore yüksek tutuculuk temposu: kelime-kelime sahneye giren/çizilen/patlayan görsel öğeler, lazer tarama çizgileri, seri numaralı noktalar, hızlı whip/snap kamera tepkileri, sıfır ağır sinematik bekleme). Vücut anatomisi ve sırttaki özgün dövme motifleri yüksek detaylı modellenir.
+- **Ham video dili: İNGİLİZCE (kullanıcı kararı, 26.11.2026 20:04):** Ham videodaki tüm ekran yazıları, kinetik kelimeler, damgalar, gazeteler, plan başlıkları ve anlatım **İngilizce** üretilir; Türkçe ve diğer diller sonradan YouTube yerelleştirmesi olarak eklenir.
+- **Görsel zenginlik (kullanıcı kararı, 26.11.2026 20:04):** 960 px taslaklarda bile yalın/boş geometrik bloklar (düz dikdörtgen kapı, düz fon, şematik kilit) KESİNLİKLE YASAK; her sahne `am_mekanlar_v1.png` ve `sirt_dovme_v1.png` çıtasında çok katmanlı, dokulu, 6–12 anlamlı detaylı, yüksek görsel aktiviteli illüstrasyon olarak üretilir.
+- **R4-PARALAKS & Çapraz Ajan Geri Bildirimi (kritik kural, 26.11.2026 22:05):** Bir karakterin baş, boyun, gövde, kol ve elleri **ASLA farklı paralaks katmanlarına bölünmez** (tüm karakter anatomisi + tuttuğu nesne aynı derinlikte çizilir; kamera pan/zoom sırasında kafa veya el bedenden kopamaz). Her bölüm sonunda tüm görevli alt ajanlar (Görsel Sanatçılar, Görsel Kurul, A1+A2) kendi alanlarında geri kontrol yapıp diğer ajanlara somut geri bildirim verir; R4-PARALAKS en üst öncelikli kesin red kuralıdır.
 
 ## Teknik
 `studyo/docs/07_TEKNIK_HAT.md`. Motor `studyo/motor/`, karakter sistemi `r3/art3.py`, ses `tts/el.py` + `r3/ses2/`, yayın `r3/final/`, kapak `r3/kapak/`. Kod göreli yol kullanır:
@@ -43,3 +47,8 @@ sys.path[:0] = [str(REPO / "studyo/motor"), str(REPO / "r3"), str(REPO / "r2")]
 
 ## Sıradaki iş
 `OTURUM_DEVRI.md` → "Açık işler".
+
+## R18-HAREKET & R4-ANATOMİ Kalıcı Stüdyo Standardı (27.11.2026)
+- **Slayt gösterisi yasak:** Her sahnede ana eylem (sökülen cıvata + kayan tuvalet, kalkan şalter + ışık değişimi, kabloda kayan figürler + dönen projektör/alarm, havalanan uçak + koşan karakterler) yalnızca kamera pan'ı ile değil, **ayrı katmanlı fiziksel sahne içi hareketle** canlandırılır.
+- **R4-ANATOMİ & Ayırt Edicilik:** Collar-Over-Neck (yaka daima boynun üstünde), kilitli F3 omuz oranları, kesintisiz iki kol, Michael'ın Lincoln'dan net ayrışan ince keskin yüz hattı, ince telkari dövme (düz çubuk yasak), sıfır kutu taşması.
+- **Görsel Kurul (G) ve A1+A2** bu kuralları kullanıcı uyarısına gerek kalmadan her bölümde otonom denetler.
